@@ -12,7 +12,7 @@
 }
 
 .fixed-footer{
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -27,4 +27,29 @@
 
 .flashes h4 {
     line-height: 2;
+}
+
+.footer-img{
+    width: 150px;
+}
+.bg-img img{
+   width: 100%;
+
+  
+ 
+}
+
+.home {
+    background: rgb(16, 26, 114);
+    height: 100%;
+}
+
+
+.home h3{
+    color: rgb(243, 243, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
 }
