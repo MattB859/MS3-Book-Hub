@@ -1,3 +1,16 @@
-body{
-    background-color: rgb(146, 86, 224);
+
+.brand-logo{
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0.5);
+}
+
+
+.nav-bg {
+    background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(79, 29, 243) 85%);
+}
+
+.fixed-footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
