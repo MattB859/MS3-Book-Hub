@@ -61,10 +61,26 @@
     font-family: 'Yeseva One', cursive;
     text-align: center;
     align-items: center;
-    font-size: 70px;
+    font-size: 3vw;
     z-index: 0.5;
     font-weight: 600;
     top: 100px;
+}
+
+@media only screen and (max-width: 1200px){
+    .bg-img {
+        width: 100%;
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        left: 0; right: 0; 
+        bottom: 1px;
+    }
+
+    .header {
+        font-size: 5vw;
+
+    }
 }
 
 
