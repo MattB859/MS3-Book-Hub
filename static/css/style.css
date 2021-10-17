@@ -4,16 +4,10 @@
 }
 
 .nav-bg {
-    background: #fff;
+    background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(81, 53, 173) 85%);
     position: relative;
     top: 0;
     z-index: 1;
-     box-shadow: 2px 5px 20px rgba(0, 0, 1, 0.774);
-}
-
-.nav-bg a{
-    color: black;
-
 }
 
 .footer-bg {
@@ -21,8 +15,7 @@
 }
 
 .fixed-footer {
-    position: fixed;
-    
+    position: relative;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -54,9 +47,8 @@
 }
 
 .home {
-    margin-bottom: 200px;
     position: relative;
-    background: rgb(92, 44, 170);
+    background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(81, 53, 173) 85%);
     height: 750px;
 }
 
@@ -75,6 +67,79 @@
     top: 100px;
 }
 
+.book-header{
+    left: 0;
+    right: 0;
+    font-size: 35px;
+    color: rgb(20, 6, 53);
+    font-weight: 600;
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    align-items: center;
+}
+
+.banner {
+    padding: 50px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(218, 197, 172);
+}
+
+.badge img{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 120px;
+}
+
+.badge-2 img{
+    position: absolute;
+    margin-top: 20px;
+    left: 40px;
+    width: 180px;
+}
+
+.badge-3 img{
+    position: absolute;
+    margin-top: 20px;
+    right: 40px;
+    width: 180px;
+}
+
+
+.banner h3{
+    left: 0;
+    right: 0;
+    font-size: 65px;
+    color: rgb(219, 29, 29);
+    font-weight: 600;
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    align-items: center;
+}
+.banner h3 span{
+    left: 0;
+    right: 0;
+    font-size: 35px;
+    color: rgb(20, 6, 53);
+    font-weight: 600;
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    align-items: center;
+}
+
+.add-banner{
+    padding: 5px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 200;
+    align-items: center;
+    font-size: 17px;
+    background-color: rgb(241, 241, 241);
+}
+
+
 @media only screen and (max-width: 1200px){
     .bg-img {
         width: 90%;
@@ -90,12 +155,18 @@
 
     }
     .home {
-        margin-bottom: 200px;
         position: relative;
-        background: rgb(92, 44, 170);
+        background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(81, 53, 173) 85%);
         height: 650px;
     }
 }
+
+.books-1 {
+    margin: 0 auto;
+    height: 400px;
+}
+
+
 @media only screen and (max-width: 500px){
     .bg-img {
         width: 100%;
@@ -111,7 +182,7 @@
 
     }
     .home {
-        margin-bottom: 200px;
+     
         position: relative;
         background: rgb(92, 44, 170);
         height: 350px;
