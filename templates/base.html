@@ -8,6 +8,7 @@
     integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     {% block styles %}
     {% endblock %}
     <title>Book Hub</title>
@@ -26,7 +27,7 @@
                     <li><a href="#">New Books</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Log Out</a></li>
-                    <li><a href="#">Log In</a></li>
+                    <li><a href="{{ url_for('login') }}">Log In</a></li>
                     <li><a href="{{ url_for('register') }}">Register</a></li>    
                 </ul>
             </div>
@@ -40,54 +41,12 @@
             <li><a href="#">New Books</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Log Out</a></li>
-            <li><a href="#">Log In</a></li>
+            <li><a href="{{ url_for('login') }}">Log In</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>   
         </ul>
     </header>
 
-    <section class="home" id="home">
-        <div class="container">
-        <h3 class="header">Review our books <br> for best recomendations</h3>
-        </div>
-        <div class="row">
-            <div class="bg-img">
-                <img src="{{ url_for('static', filename='images/hero-background.png') }}" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <footer class="page-footer footer-bg fixed-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col 4 s4">
-                    <h5 class="white-text"><i class="fas fa-book-open"></i> Book Hub</h5>
-                    <p>Supporting local bookshops</p>
-                    Follow us <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <div class="col 4 s4">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#">About</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#">Support / Help</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#">Become an Affiliate</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#">Contacts</a></li>
-                    </ul>
-                </div>
-                <div class="col 16 s4">
-                    <img class="footer-img" src="{{ url_for('static', filename='images/trustpilot.png') }}" alt="trustpilot">
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2021 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-        </div>
-    </footer>
+    
 
     <section>
         <!-- flash messages -->
@@ -102,7 +61,7 @@
         {% endwith %}    
     </section>
 
-    <main class="container">
+    <main>
         {% block content %}
         {% endblock %}
     </main>

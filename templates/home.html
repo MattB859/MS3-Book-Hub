@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<div class="row">
+    <section class="col s12 home">
+        <h3 class="header">Review our books <br> for best recomendations</h3>
+            <div class="row">
+                <div class=" bg-img">
+                <img src="{{ url_for('static', filename='images/hero-bg-2.png') }}" style="width: 100%;"
+                        alt="">
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- footer -->
+<footer class="page-footer footer-bg">
+  
+        <div class="row">
+            <div class="col 12 s4">
+                <h5 class="white-text"><i class="fas fa-book-open"></i> Book Hub</h5>
+                <p>Supporting local bookshops</p>
+                Follow us <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="col 4 s4">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#">About</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Support / Help</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Become an Affiliate</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+  
+    <div class="footer-copyright">
+        <div class="container">
+            © 2021 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}

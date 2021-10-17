@@ -1,23 +1,27 @@
-.brand-logo{
+.brand-logo {
     font-weight: 600;
     text-shadow: 2px 2px 2px rgb(0, 0, 0.5);
 }
 
 .nav-bg {
-    background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(79, 29, 243) 85%);
+    background: rgb(92, 44, 170);
+    /*position: fixed;
+    top: 0;
+    z-index: 1;*/
+
 }
 
 .footer-bg {
     background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(79, 29, 243) 85%);
 }
 
-.fixed-footer{
+.fixed-footer {
     position: relative;
     width: 100%;
     bottom: 0;
 }
 
-.fab{
+.fab {
     font-size: 20px;
     padding: 10px;
     border: 1.5px solid #fff;
@@ -29,27 +33,38 @@
     line-height: 2;
 }
 
-.footer-img{
+.footer-img {
     width: 150px;
 }
-.bg-img img{
-   width: 100%;
 
-  
- 
+.bg-img {
+    width: 70vw;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    left: 0; right: 0; 
+    bottom: 1px;
 }
 
 .home {
-    background: rgb(16, 26, 114);
-    height: 100%;
-}
-
-
-.home h3{
-    color: rgb(243, 243, 243);
-    font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 600;
+    background: rgb(92, 44, 170);
+    height: 850px;
 }
+
+.header {
+    color: rgb(243, 243, 243);
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    align-items: center;
+    font-size: 70px;
+    z-index: 0.5;
+    font-weight: 600;
+    top: 100px;
+}
+
+
