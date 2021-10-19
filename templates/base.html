@@ -19,7 +19,7 @@
         <!-- top navbar -->
         <nav class="nav-extended text-shadow nav-bg">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Book Hub</a>
+                <a href="#" class="brand-logo"><span>B</span>ook Hub</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('book_reviews') }}">Home</a></li>
@@ -29,7 +29,7 @@
                         <li><a href="#">About Us</a></li>
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
-                        <li><a href="{{ url_for('login') }}">Log In</a></li>
+                        <li><a href="{{ url_for('login') }}">Sign In</a></li>
                         <li><a href="{{ url_for('register') }}">Register</a></li>  
                      {% endif %} 
                 </ul>

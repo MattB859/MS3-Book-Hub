@@ -1,15 +1,42 @@
-.brand-logo {
+/* navbar styling */
+
+.nav-wrapper{
+    max-width: 1000px;
+}
+.nav-bg {
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+  
+}
+
+.nav-bg a{
+    color: black;
+    font-family: 'Yeseva One', cursive;
+}
+
+.brand-logo{
+    left: 40px;
     font-weight: 600;
     
 }
-
-.nav-bg {
-    background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(81, 53, 173) 85%);
-    position: relative;
-    top: 0;
-    z-index: 1;
+.brand-logo span{
+    color: rgb(199, 17, 17);
 }
 
+
+.bk-8 img{
+   width: 100%;
+}
+
+.bk-9 {
+    padding: 50px;
+    margin-top: 100px;
+}
+
+/* footer styling */
 .footer-bg {
     background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(79, 29, 243) 85%);
 }
@@ -19,6 +46,10 @@
     width: 100%;
     bottom: 0;
     left: 0;
+}
+
+.footer-img {
+    width: 150px;
 }
 
 .fab {
@@ -33,38 +64,38 @@
     line-height: 2;
 }
 
-.footer-img {
-    width: 150px;
-}
 
-.bg-img {
-    width: 60vw;
+/*.bg-img {
+    width: 70%;
+
     position: absolute;
     margin: 0 auto;
     text-align: center;
     left: 0; right: 0; 
-    bottom: 1px;
-}
+    bottom: 0;   
+}*/
+
+/*.bg-img {
+    background-image: url("{{ url_for('static', filename='images/book-shelf.png')}} ");
+
+}*/
 
 .home {
     position: relative;
-    background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(81, 53, 173) 85%);
+    /*background: linear-gradient(259deg, rgb(109, 47, 150) 10%, rgb(95, 38, 175) 53%, rgb(81, 53, 173) 85%);*/
+    background-color: rgb(238, 238, 238);
     height: 750px;
 }
 
 .header {
-    color: rgb(243, 243, 243);
+    color: rgb(12, 11, 22);
     position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
     font-family: 'Yeseva One', cursive;
-    text-align: center;
-    align-items: center;
     font-size: 3vw;
     z-index: 0.5;
     font-weight: 600;
-    top: 100px;
+    top: 3em;
+    left: 1.5em;
 }
 
 .book-header{
@@ -89,7 +120,7 @@
     position: absolute;
     top: 50px;
     left: 40px;
-    width: 120px;
+    width: 100px;
 }
 
 .badge-2 img{
@@ -105,7 +136,6 @@
     right: 40px;
     width: 180px;
 }
-
 
 .banner h3{
     left: 0;
@@ -131,12 +161,12 @@
 .add-banner{
     padding: 5px;
     width: 100%;
+    color: darkblue;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: 200;
     align-items: center;
     font-size: 17px;
-    background-color: rgb(241, 241, 241);
 }
 
 
@@ -156,7 +186,6 @@
     }
     .home {
         position: relative;
-        background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(81, 53, 173) 85%);
         height: 650px;
     }
 }
