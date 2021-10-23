@@ -22,16 +22,16 @@
                 <a href="#" class="brand-logo"><span>B</span>ook Hub</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('book_reviews') }}">Home</a></li>
+                    <li><a class="btn-line" href="{{ url_for('book_reviews') }}">Home</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                        <li><a href="#">New Books</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                        <li><a class="btn-line" href="{{ url_for('add_review') }}">Books</a></li>
+                        <li><a class="btn-line" href="#">About Us</a></li>
+                        <li><a class="btn-line" href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
-                        <li><a href="{{ url_for('login') }}">Sign In</a></li>
-                        <li><a href="{{ url_for('register') }}">Register</a></li>  
-                     {% endif %} 
+                        <li><a class="btn-line" href="{{ url_for('login') }}">Sign In</a></li>
+                        <li><a class="btn-line" href="{{ url_for('register') }}">Register</a></li>  
+                    {% endif %} 
                 </ul>
             </div>
         </nav>
@@ -42,7 +42,7 @@
             <li><a href="{{ url_for('book_reviews') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                <li><a href="#">New Books</a></li>
+                <li><a href="{{ url_for('add_review') }}">Books</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
