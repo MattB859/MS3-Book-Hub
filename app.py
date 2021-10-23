@@ -108,6 +108,11 @@ def add_review():
     return render_template("add_review.html")
 
 
+@app.route("/book_power")
+def book_power():
+    return render_template("book_power.html")    
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

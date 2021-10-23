@@ -200,6 +200,19 @@ h3{
     height: 400px;
 }
 
+.text-body {
+    border: 1px solid rgb(129, 129, 129); 
+}
+
+.description {
+    font-weight: 300;
+    font-family: 'Yeseva One', cursive;
+}
+
+.txt{
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 1200px){
     .bg-img {
         width: 90%;
