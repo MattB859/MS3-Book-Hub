@@ -198,10 +198,12 @@ h3{
 .book_reviews img{
     width: 100%;
     height: 400px;
+    padding: 25px;
 }
 
 .text-body {
-    border: 1px solid rgb(129, 129, 129); 
+    border: 2px solid rgb(47, 60, 119); 
+    border-radius: 10px;
 }
 
 .description {
@@ -210,8 +212,22 @@ h3{
 }
 
 .txt{
-    font-size: 20px;
+    font-size: 18px;
 }
+
+h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+h6{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: burlywood;
+}
+
+/* book carousel */
 
 @media only screen and (max-width: 1200px){
     .bg-img {
@@ -250,14 +266,9 @@ h3{
 
     }
     .home {
-
         position: relative;
         background: rgb(230, 230, 230);
         height: 350px;
-    }
-
-    .carousel{
-        width: 33%%;
     }
 
     .book-header{

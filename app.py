@@ -103,7 +103,7 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_review")
+@app.route("/add_review", methods=["GET", "POST"])
 def add_review():
     return render_template("add_review.html")
 
