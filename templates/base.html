@@ -29,6 +29,7 @@
                         <li><a class="btn-line" href="#">About Us</a></li>
                         <li><a class="btn-line" href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
+                        <li><a class="btn-line" href="#">About Us</a></li>
                         <li><a class="btn-line" href="{{ url_for('login') }}">Sign In</a></li>
                         <li><a class="btn-line" href="{{ url_for('register') }}">Register</a></li>  
                     {% endif %} 

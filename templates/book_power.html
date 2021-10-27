@@ -4,6 +4,7 @@
 <h3 class="light-blue-text text-darken-4 center-align"> Add Review</h3>
 
 <div class="container">
+  
     <div class="row">
         <div class="col s7 push-s5">
             <span class="flow-text">
@@ -11,32 +12,58 @@
                 <p class="txt">by <span class="light-blue-text">Robert Greene</span></p>
 
                 <h4 class="description">Description</h4>
-                <p class="txt">The 48 Laws of Power is a non-fiction book by American author Robert Greene. The book is a
+                <p class="txt">The 48 Laws of Power is a non-fiction book by American author Robert Greene. The book is
+                    a
                     bestseller, selling over 1.2 million copies in the United States, and is popular with prison inmates
                     and celebrities </p>
             </span>
         </div>
-
+        
+        <!--book image -->
         <div class="col s5 pull-s7">
             <span class="flow-text">
-                <img src="{{ url_for('static', filename='images/book-1.png') }}" style="width: 60%;" alt="book">
+                <img class="materialboxed" src="{{ url_for('static', filename='images/book-1.png') }}" style="width: 60%;" alt="book">
             </span>
         </div>
     </div>
 
-    <h6>Share your thoughts</h6>
+    <hr class="hr">
 
-    <div class="row">
-        <form class="col s6 text-body">
+    <h6>Add a written review</h6>
+  
+    <!-- text form -->
+    <div class="row card-panel grey lighten-5 col s6">
+        <form class="text-body" method="POST" action="{{ url_for('book_power') }}">
             <div class="row">
                 <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Textarea</label>
+                    <textarea id="book_review" name="book_review" minlength="5" maxlength="200"
+                        class="materialize-textarea" required></textarea>
+                    <label for="book_review">What did you like or dislike about this book?</label>
                 </div>
+                <!-- submit button -->
+                <button class="btn waves-effect orange darken-4 waves-light" type="submit">Submit
+                    <i class="fas fa-share"></i>
+                </button>
             </div>
         </form>
     </div>
 
-</div>
+    <h3 class="text-darken-4 center-align">Top Reviews from United Kindom</h3>
+    
+    <div class="container">
+        {% for review in reviews %}
+        <div class="row">
+            <div class="col s12 s6">
+                <div class="card-panel">
+                    <p class="post"><em>{{ review.created_by }}</em></p>
+                    <p class="post">{{ review.book_review }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    
+    
 
 {% endblock %}

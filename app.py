@@ -22,7 +22,7 @@ mongo = PyMongo(app)
 @app.route("/book_reviews")
 def book_reviews():
     reviews = mongo.db.reviews.find()
-    return render_template("home.html", reviews=reviews)
+    return render_template("book_power.html", reviews=reviews)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -108,8 +108,18 @@ def add_review():
     return render_template("add_review.html")
 
 
-@app.route("/book_power")
+@app.route("/book_power", methods=["GET", "POST"])
 def book_power():
+    if request.method == "POST":
+        review = {
+           "book_review": request.form.get("book_review"),
+           "created_by": session["user"]
+        }
+        mongo.db.reviews.insert_one(review)
+        flash("Review Successfully Added")
+        return redirect(url_for("book_power"))
+        
+        reviews = list(mongo.db.reviews.find())
     return render_template("book_power.html")    
 
 

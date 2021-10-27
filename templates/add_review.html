@@ -3,10 +3,35 @@
 
 <h3 class="light-blue-text text-darken-4 center-align"> Add Review</h3>
 
+<div class="row">
+    <div class="carousel carousel-slider center">
+        <div class="carousel-item grey darken-4 white-text" href="#three!">
+            <img src="{{ url_for('static', filename='images/book_review.png') }}"
+            style="width: 50%; height: 450px;" alt="book">  
+           
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+            <img src="{{ url_for('static', filename='images/elon-musk.png') }}"
+            style="width: 400px; height: 450px;" alt="book">    
+        </div>
+        <div class="carousel-item red white-text" href="#one!">
+            <img src="{{ url_for('static', filename='images/book-21.png') }}"
+            style="width: 300px; height: 450px;" alt="book">    
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+            <img src="{{ url_for('static', filename='images/book_review.png') }}"
+            style="width: 50%; height: 450px;" alt="book">  
+        </div>
+    </div>
+</div>
+
 
 <!-- books collection -->
 <section>
     <div class="container">
+
+        <h1 class="small-header">This Weeks Top Picks...</h1> 
+
         <!--- book row 1 --->
         <div class="row">
             <div class="col s12 m6 l3 book_reviews">
@@ -45,8 +70,11 @@
 
         <hr>
 
-        <!--- book row 2 -->
+        <h1 class="small-header">Our Best Sellers...</h1>
+
+        <!-- book row 2 -->
         <div class="row">
+            <div class="card">
             <div class="col s12 m6 l3 book_reviews">
                 <a href="{{ url_for('book_power') }}">
                     <img src="{{ url_for('static', filename='images/book-5.jpg') }}" alt="book">
@@ -54,6 +82,7 @@
                 <h5 class="center-align">The Subtle Art <br> Of Not Giving A F*ck</h5>
                 <h6 class="center-align">Mark Manson</h6>
                 <h5 class="center-align">$10.99</h5>
+            </div>
             </div>
             <div class="col s12 m6 l3 book_reviews">
                 <a href="{{ url_for('book_power') }}">
@@ -83,7 +112,9 @@
 
         <hr>
 
-        <!--- book row 3 -->
+        <h1 class="small-header">Best Self Help Books</h1>
+
+        <!-- book row 3 -->
         <div class="row">
             <div class="col s12 m6 l3 book_reviews">
                 <a href="{{ url_for('book_power') }}">
@@ -121,7 +152,9 @@
 
         <hr>
 
-        <!--- book row 4 -->
+        <h1 class="small-header">Educational Books</h1>
+
+        <!-- book row 4 -->
         <div class="row">
             <div class="col s12 m6 l3 book_reviews">
                 <a href="{{ url_for('book_power') }}">
@@ -156,6 +189,7 @@
                 <h5 class="center-align">$15.99</h5>
             </div>
             </div>
+
         </div>
 </section>
 

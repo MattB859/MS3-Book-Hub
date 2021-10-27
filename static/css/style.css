@@ -10,7 +10,6 @@
     position: fixed;
     box-shadow: 25px 5px 15px rgba(219, 219, 219, 0.877);
     z-index: 3;
-  
 }
 
 .button{
@@ -18,7 +17,6 @@
     top: 30em;
     left: 5em;
 }
-
 
 .nav-bg a{
     color: black;
@@ -49,7 +47,7 @@ h3{
 
 /* footer styling */
 .footer-bg {
-    background: linear-gradient(259deg, rgba(123,22,190,1) 10%, rgba(96,6,219,1) 53%, rgb(79, 29, 243) 85%);
+    background-color: rgb(65, 65, 65);
 }
 
 .fixed-footer {
@@ -73,9 +71,22 @@ h3{
 
 .flashes h5 {
     line-height: 2;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 60px;
-    font-weight: 500;
+    font-weight: 600;
 
+}
+
+.small-header{
+    font-size: 26px;
+    font-style: italic;
+    color: rgb(49, 49, 49);
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.card-image{
+    width: 200px;
 }
 
 
@@ -201,10 +212,7 @@ h3{
     padding: 25px;
 }
 
-.text-body {
-    border: 2px solid rgb(47, 60, 119); 
-    border-radius: 10px;
-}
+
 
 .description {
     font-weight: 300;
@@ -226,6 +234,17 @@ h6{
     font-size: 18px;
     color: burlywood;
 }
+
+
+.hr{
+    margin: 50px 0;
+}
+
+.post {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
 
 /* book carousel */
 
