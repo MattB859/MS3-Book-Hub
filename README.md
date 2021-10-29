@@ -26,4 +26,11 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
         3. As a Returning Visitor, I want to be able to edit and delete my reviews.
         4. As a Returning Visitor, I want to log in and see my reviews.
         5. As a Returning Visitor, I want to be updated about the lastest books.
+
+    -   ### Frequent User Goals
+
+        1. As a Frequent User, I want to log into my profile to read all of the lastest reviews from the bookhub community. 
+        2. As a Frequent User, I want to add new reviews on the lastest books.
+        3. As a Frequent User, I want to see which books are the best to buy based on good or bad reviews from other users.
+        4. As a Frequent User, I want edit or delete my reviews.
         

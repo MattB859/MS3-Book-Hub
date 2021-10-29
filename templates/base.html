@@ -16,34 +16,36 @@
     <title>Book Hub</title>
 </head>
 <body>
-
-    <header>
-        <div class="main-header">
-             <a class="header-logo center-align" href="{{ url_for('home') }}"><span>B</span>ook Hub</a>
+    
+    <!-- top header -->
+    <header class="main-header">
+        <div>
+            <a class="header-logo center-align" href="{{ url_for('home') }}"><span>B</span>ook Hub</a>
         </div>
-        <!-- top navbar -->
-        <nav class="nav-extended nav-bg navbar-fixed">
-            <div class="container">
-                <!--<a href="#" class="brand-logo"><span>B</span>ook Hub</a>-->
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="btn-line" href="{{ url_for('home') }}">Home</a></li>
-                    {% if session.user %}
-                        <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                        <li><a class="btn-line" href="{{ url_for('add_review') }}">Review Books</a></li>
-                        <li><a class="btn-line" href="{{ url_for('logout') }}">Log Out</a></li>
-                    {% else %}
-                
-                        <li><a class="btn-line" href="{{ url_for('login') }}">Sign In</a></li>
-                        <li><a class="btn-line" href="{{ url_for('register') }}">Register</a></li>  
-                    {% endif %} 
-                </ul>
-            </div>
-        </nav>
+    </header>
+    <!-- top navbar -->
+    <nav class="nav-extended nav-bg navbar-fixed">
+        <div class="container">
+            <!--<a href="#" class="brand-logo"><span>B</span>ook Hub</a>-->
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="btn-line" href="{{ url_for('home') }}">Home</a></li>
+                {% if session.user %}
+                <li><a class="btn-line" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                <li><a class="btn-line" href="{{ url_for('add_review') }}">Review Books</a></li>
+                <li><a class="btn-line" href="{{ url_for('logout') }}">Log Out</a></li>
+                {% else %}
+
+                <li><a class="btn-line" href="{{ url_for('login') }}">Sign In</a></li>
+                <li><a class="btn-line" href="{{ url_for('register') }}">Register</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
 
         <!-- mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
-            <li><h4 class="center-align light-blue-text text-darken-4"><i class="fas fa-book-open"></i> Book Hub</h4></li>
+            <li><h4 class="header-logo center-align"><span>B</span>ook Hub</h4></li>
             <li><a href="{{ url_for('home') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
@@ -55,7 +57,7 @@
                 <li><a href="{{ url_for('register') }}">Register</a></li>  
             {% endif %}   
         </ul>
-    </header>
+   
 
     
     <section>
@@ -83,8 +85,8 @@
                 <h1>Download Our App</h1>
                 <p>Get your book reviews anytime, anywhwere with the bookhub app.</p>
                 <div class="app-logo">
-                    <img src="{{ url_for('static', filename='images/app-logo2.png') }}" style="width: 200px;">
-                    <img src="{{ url_for('static', filename='images/app-logo4.png') }}" style="width: 200px;">
+                    <a href="https://www.apple.com/uk/app-store/" target="_blank"><img src="{{ url_for('static', filename='images/app-logo2.png') }}" style="width: 200px;"></a>
+                    <a href="https://play.google.com/store/search?q=bookhub&c=apps" target="_blank"><img src="{{ url_for('static', filename='images/app-logo4.png') }}" style="width: 200px;"></a>
                 </div>
             </div>
         </div>
@@ -95,9 +97,9 @@
         <div class="container">
             <div class="row">
                 <div class="col 12 s4">
-                    <h5 class="white-text"><i class="fas fa-book-open"></i> Book Hub</h5>
+                    <h6 class="white-text"><i class="fas fa-book-open"></i> Book Hub</h6>
                     <p>Supporting local bookshops</p>
-                    Follow us <i class="fab fa-twitter"></i>
+                    <h6 class="white-text"> Follow us </h6><i class="fab fa-twitter"></i>
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-instagram"></i>
                 </div>
@@ -111,11 +113,12 @@
                     </ul>
                 </div>
             </div>
+            <hr>
+        </div>
         <div class="footer-copyright">
             <div class="container center-align">
-                © 2021 Copyright Text
+                <h6 class="white-text"> © 2021 Copyright</h6>
             </div>
-        </div>
         </div>
     </footer>
     

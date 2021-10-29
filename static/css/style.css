@@ -1,11 +1,84 @@
+
+/* header styling */
+
+.main-header {
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid rgb(165, 165, 165);
+    background: rgb(252, 252, 252);
+}
+
+.title{
+    font-weight: 600;
+    color: rgb(4, 15, 37);
+}
+
+.main-header,
+.header-logo {
+    text-align: center;
+    color: rgb(10, 4, 65);
+    font-family: 'Satisfy', cursive;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.underline{
+    width: 10em;
+    border: 2px solid rgb(228, 3, 3);
+    margin-bottom: 50px;
+   
+}
+
+
+.small-header {
+    font-size: 26px;
+    font-style: italic;
+    color: rgb(49, 49, 49);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+
+.book-header {
+    left: 0;
+    right: 0;
+    font-size: 35px;
+    color: rgb(20, 6, 53);
+    font-weight: 600;
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    align-items: center;
+}
+
+
+.header-logo span {
+    color: rgb(199, 17, 17);
+}
+
+.header {
+    color: rgb(26, 3, 3);
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5vw;
+    z-index: 0.5;
+    font-weight: 600;
+    top: 2em;
+    left: 1.5em;
+}
+
+.header span-1{
+    font-weight: 100;
+}
+
+.header span-2{
+    color: rgb(207, 20, 13);
+}
+
+
 /* navbar styling */
 .nav-bg {
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    top: 150px;
     position: absolute;
-    /*box-shadow: 25px 5px 15px rgba(219, 219, 219, 0.877);*/
-    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
 }
 
 .button {
@@ -15,14 +88,21 @@
 
 .nav-bg a {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif
 }
 
 .nav-bg a:hover {
     background: none;
 
+}
+
+nav ul a{
+    margin: 20px 10px;
+}
+
+.btn-line, a{
+    line-height: 1.3;
 }
 
 h3 {
@@ -63,8 +143,8 @@ h3 {
 .fab {
     font-size: 20px;
     padding: 10px;
-    border: 1.5px solid rgb(245, 245, 245);
-    color: rgb(238, 64, 52);
+    border: 2px solid rgb(255, 46, 46);
+    color: rgb(255, 255, 255);
     border-radius: 50%;
     margin: 5px;
 }
@@ -76,78 +156,10 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 60px;
     font-weight: 600;
-
 }
-
 
 .card-image {
     width: 200px;
-}
-
-
-/* header styling */
-.main-header {
-    padding: 30px;
-    width: 100%;
-    background: rgb(252, 254, 255);
-}
-
-.title{
-    font-weight: 600;
-    color: rgb(4, 15, 37);
-}
-
-
-.main-header,
-.header-logo {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-family: 'Satisfy', cursive;
-    font-weight: 600;
-    font-size: 70px;
-}
-
-
-.small-header {
-    font-size: 26px;
-    font-style: italic;
-    color: rgb(49, 49, 49);
-    font-family: Georgia, 'Times New Roman', Times, serif
-}
-
-.header-logo span {
-    color: rgb(199, 17, 17);
-}
-
-.header {
-    color: rgb(26, 3, 3);
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3.5vw;
-    z-index: 0.5;
-    font-weight: 600;
-    top: 2em;
-    left: 1.5em;
-}
-
-.header span-1{
-    font-weight: 100;
-}
-
-.header span-2{
-    color: rgb(207, 20, 13);
-}
-
-
-.book-header {
-    left: 0;
-    right: 0;
-    font-size: 35px;
-    color: rgb(20, 6, 53);
-    font-weight: 600;
-    font-family: 'Yeseva One', cursive;
-    text-align: center;
-    align-items: center;
 }
 
 
@@ -169,7 +181,6 @@ h3 {
     height: 780px;
    
 }
-
 
 .badge img {
     position: absolute;
@@ -436,8 +447,7 @@ h6 {
     }
 
     .header-logo {
-        font-size: 12vw;
-        border-bottom: 3.5px solid rgb(209, 26, 1);
+        font-size: 10vw;
         padding: 1px;
     }
 
