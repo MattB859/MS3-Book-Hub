@@ -33,4 +33,14 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
         2. As a Frequent User, I want to add new reviews on the lastest books.
         3. As a Frequent User, I want to see which books are the best to buy based on good or bad reviews from other users.
         4. As a Frequent User, I want edit or delete my reviews.
+
+-   ### Website Design 
+
+    -   ### Home Page
+
+        1. For the home page it is important that first time visitors understand what the site is all about. The background hero image is designed to show new and exsisting vistors the collection of books that are available to review on the website.
+
+        2. On the left of the image is some text which gives a warm inviting message.
+       
+        <img align="center" src="./static/images/book-hub-read.png">
         

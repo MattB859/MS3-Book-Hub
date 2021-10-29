@@ -69,7 +69,14 @@
     font-weight: 100;
 }
 
+.header-2 span-a{
+    font-weight: 100;
+}
 .header span-2{
+    color: rgb(207, 20, 13);
+}
+
+.header-2 span-b{
     color: rgb(207, 20, 13);
 }
 
@@ -170,8 +177,16 @@ h3 {
     height: 800px;
 }
 
+.woman img{
+    position: absolute;
+    width: 35%;
+    bottom: 400px;
+    left: 100px;
+  
+}
+
 .bg-img img {
-    width: 100%;
+    width: 120em;
     position: absolute;
     top: 30px;
     right: 10px;
@@ -210,16 +225,40 @@ h3 {
 }
 
 .book_reviews img {
-    margin: 40px 0;
+    margin: 10px 0;
     width: 180px;
     height: 250px;
+    border: 1px solid rgb(187, 187, 187);
   
 }
+
+/* about styling */
+.about{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+}
+
+.header-2 {
+    color: rgb(26, 3, 3);
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5vw;
+    font-weight: 600;
+    top: -100px;
+}
+
 
 .description {
     font-weight: 300;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif
+}
+
+/* all text stying */
+
+.bold{
+    font-weight: 600;
 }
 
 .txt,

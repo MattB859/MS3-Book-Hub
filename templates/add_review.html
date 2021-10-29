@@ -15,25 +15,28 @@
 </div>
 
 
+ 
 <!-- books collection -->
 <section>
     <div class="container">
         <h1 class="small-header">This Weeks Top Picks...</h1>
 
+        <hr>
         <!--- the 48 laws of power --->
         <div class="row">
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_reviews') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-1.png') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</i></a>
                 
                 <h5 class="center-align">The 48 Laws Of Power</h5>
                 <h5 class="center-align">Robert Greene</h5>
                 <h6 class="center-align ">£10.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align" target="_blank">Buy Now</a>
-                <a href="{{ url_for('book_reviews') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
+                <!--<a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                    class="waves-effect waves-light btn-small orange darken-4 center-align" target="_blank">Buy Now</a>-->
+
             </div>
 
             <!--- book the secret --->
@@ -41,27 +44,24 @@
                 <a href="{{ url_for('the_secret_book') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-2.jpg') }}" alt="book"></a>
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                 <h5 class="center-align">The Secret</h5>
                 <h5 class="center-align">Rhonda Byrne</h5>
                 <h6 class="center-align">£15.31</h6>
-                <a href="https://www.amazon.co.uk/Secret-Rhonda-Byrne/dp/1471172392/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1635418158&sr=8-1"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align" target="_blank">Buy Now</a>
-                <a href="{{ url_for('the_secret_book') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
-
             </div>
 
             <!--- the wild silence --->
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-19.jpg') }}" alt="book"></a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                 <h5 class="center-align">The Wild Silence</h5>
                 <h5 class="center-align">Raynor Winn</h5>
                 <h6 class="center-align">£15.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
 
             <!--- the power of now --->
@@ -69,20 +69,18 @@
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-4.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                 <h5 class="center-align">The Power Of Now</h5>
                 <h5 class="center-align">Eckhart Tolle</h5>
                 <h6 class="center-align">£10.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
         </div>
 
-        <hr>
-
         <h1 class="small-header">Our Best Sellers...</h1>
 
+        <hr>
         <!-- the subtle art... -->
         <div class="row">
             <div class="card">
@@ -90,14 +88,12 @@
                     <a href="{{ url_for('book_power') }}">
                         <img class="hoverable" src="{{ url_for('static', filename='images/book-5.jpg') }}" alt="book">
                     </a>
+
+                    <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                     <h5 class="center-align">The Subtle Art <br> Of Not Giving A F*ck</h5>
                     <h5 class="center-align">Mark Manson</h5>
                     <h6 class="center-align">£10.99</h6>
-                    <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                        class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                    <a href="{{ url_for('book_power') }}"
-                        class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add
-                        Review</a>
                 </div>
             </div>
 
@@ -106,43 +102,40 @@
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-18.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                 <h5 class="center-align">Manifest</h5>
                 <h5 class="center-align">Roxir Nafousi</h5>
                 <h6 class="center-align">£11.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-7.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                 <h5 class="center-align">Think And Grow Rich</h5>
                 <h5 class="center-align">Napoleon Hill</h5>
                 <h6 class="center-align">£10.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-8.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                 <h5 class="center-align">Who Moved My Cheese</h5>
                 <h5 class="center-align">Dr Spencer Johnson</h5>
                 <h6 class="center-align">£5.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
         </div>
 
-        <hr>
-
         <h1 class="small-header">Best Self Help Books</h1>
+
+        <hr>
 
         <!-- book row 3 -->
         <div class="row">
@@ -151,58 +144,53 @@
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-9.jpg') }}" alt="book">
                 </a>
 
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                 <h5 class="center-align">The Four Agreements</h5>
                 <h5 class="center-align">Don Miguel Ruiz</h5>
                 <h6 class="center-align">£10.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
 
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-11.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                 <h5 class="center-align">The Alchemist</h5>
                 <h5 class="center-align">Paulo Coelho</h5>
                 <h6 class="center-align">£10.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
 
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-12.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                 <h5 class="center-align">Can't Hurt Me</h5>
                 <h5 class="center-align">David Goggins</h5>
                 <h6 class="center-align">£10.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
 
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-13.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</a>
+
                 <h5 class="center-align">Feel The Fear & <br> Do It Anyway</h5>
                 <h5 class="center-align">Robert Greene</h5>
                 <h6 class="center-align">£10.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
         </div>
 
-        <hr>
-
         <h1 class="small-header">Educational Books</h1>
+
+         <hr>
 
         <!-- book row 4 -->
         <div class="row">
@@ -210,56 +198,55 @@
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-14.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</i></a>
+
                 <h5 class="center-align">JavaScript & JQuery</h5>
                 <h5 class="center-align">Jon Duckett</h5>
                 <h6 class="center-align">£15.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
-
             </div>
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-15.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</i></a>
+
                 <h5 class="center-align">HTML & CSS </h5>
                 <h5 class="center-align">Jon Duckett</h5>
                 <h6 class="center-align">£10.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
 
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-16.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</i></a>
+
                 <h5 class="center-align">The 1-Page Marketing Plan</h5>
                 <h5 class="center-align">Allan Dib</h5>
                 <h6 class="center-align">£15.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
 
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-17.jpg') }}" alt="book">
                 </a>
+
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you reviews</i></a>
+
                 <h5 class="center-align">Agile Scrum</h5>
                 <h5 class="center-align">Liam Taylor</h5>
                 <h6 class="center-align">£15.99</h6>
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
-                <a href="{{ url_for('book_power') }}"
-                    class="waves-effect waves-light btn-small black-text yellow lighten-5 center-align">Add Review</a>
             </div>
         </div>
 
+        <hr>
+        
     </div>
 </section>
+
+
 
 {% endblock %}
