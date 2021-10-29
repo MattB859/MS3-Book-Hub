@@ -2,77 +2,126 @@
 {% block content %}
 
     <!-- home section -->
-    <section class="col s12 home">
-        <h3 class="header"> Amazing deals on <br> best selling books <br>
-            </h3>
-            <div class="row">
-                <div class="bg-img">
-                <img src="{{ url_for('static', filename='images/book-shelf.png') }}" style="width: 100%;"
-                        alt="hero image">
+    <section class="home">
+        <div class="row">
+            <!-- header -->
+            <div class="col s6">
+                <h3 class="header"><span-1>Join our community</span-1> <br> and start <span-2>reviewing</span-2><br> <span-3></span-3> best selling books</h3>
             </div>
-            <div class="hero-img">
-                <img src="{{ url_for('static', filename='images/hero-bg3.jpg') }}" style="width: 100%;"
-                alt="hero image">
+
+            <!-- hero image -->
+            <div class="col s6">
+                <div class="bg-img">
+                    <img src="{{ url_for('static', filename='images/book-shelf.png') }}" alt="image of books">  
+                </div>
             </div>
         </div>
-        <!--<div class="button">
-            <a class="waves-effect waves-light btn-large red">Register Now</a>
-        </div>-->
     </section>
     <!-- end home -->
 
-    <div class="row">
-        <div class="carousel carousel-slider center ">
-            <div class="carousel-item grey darken-4 white-text" href="#three!">
-                <img src="{{ url_for('static', filename='images/design-book-promotional-banner.jpg') }}"
-                style="width: 100%; height: 650px;" alt="book">  
-            
-            </div>
-            <div class="carousel-item amber white-text" href="#two!">
-                <img src="{{ url_for('static', filename='images/Banners-4.jpg') }}"
-                style="width: 100%; height: 650px;" alt="book">    
-            </div>
-            <div class="carousel-item black white-text" href="#one!">
-                <img src="{{ url_for('static', filename='images/20-BEST-SELF-HELP-BOOKS.jpg') }}"
-                style="width: 80%; height: 650px;" alt="book">    
-            </div>
-            <div class="carousel-item blue white-text" href="#four!">
-                <img src="{{ url_for('static', filename='images/Dean-Koontz-Banner.png') }}"
-                style="width: 100%; height: 650px;" alt="book">  
+    <section>
+        <div class="banner-logo">
+            <div class="app_banner black">
+                <img src="{{ url_for('static', filename='images/20-BEST-SELF-HELP-BOOKS.jpg') }}" alt="image">
+                <h1 class="yellow-text text-darken-2">Review Our Best Sellers</h1>
+                <a href="{{ url_for('register') }}"> <p> <span class="reg">Register Now </span></a> to review our books anytime, anywhere with bookhub</p>
+                
             </div>
         </div>
-    </div>
-           
- 
+    </section>
+  
+    <h3 class="title center-align">Featured Books</h3>
+    
 
-<!-- footer -->
+    <section>
+        <div class="container">
+            <!--- the 48 laws of power --->
+            <div class="row">
+                <div class="col s6 m6 l3 book_reviews center-align">
+                    <img src="{{ url_for('static', filename='images/book-1.png') }}" alt="book">
+                    <h5 class="center-align">The 48 Laws Of Power</h5>
+                    <h5 class="center-align">Robert Greene</h5>
+                    <h6 class="center-align ">£10.99</h6>
+                    <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                        class="waves-effect waves-light btn-small orange darken-4 center-align" target="_blank">Buy
+                        Now</a>
+                </div>
 
-<footer class="page-footer footer-bg fixed-footer">
-    <div class="container">
+                <!--- book the secret --->
+                <div class="col s6 m6 l3 book_reviews center-align">
+                    <img src="{{ url_for('static', filename='images/book-2.jpg') }}" alt="book">
+                    <h5 class="center-align">The Secret</h5>
+                    <h5 class="center-align">Rhonda Byrne</h5>
+                    <h6 class="center-align">£15.31</h6>
+                    <a href="https://www.amazon.co.uk/Secret-Rhonda-Byrne/dp/1471172392/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1635418158&sr=8-1"
+                        class="waves-effect waves-light btn-small orange darken-4 center-align" target="_blank">Buy
+                        Now</a>
+                </div>
+
+                <!--- the wild silence --->
+                <div class="col s6 m6 l3 book_reviews center-align">                 
+                    <img src="{{ url_for('static', filename='images/book-19.jpg') }}">                
+                    <h5 class="center-align">The Wild Silence</h5>
+                    <h5 class="center-align">Raynor Winn</h5>
+                    <h6 class="center-align">£15.99</h6>
+                    <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                        class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>                 
+                </div>
+
+                <!--- the power of now --->
+                <div class="col s6 m6 l3 book_reviews center-align">
+                    <img src="{{ url_for('static', filename='images/book-4.jpg') }}" alt="book">                
+                    <h5 class="center-align">The Power Of Now</h5>
+                    <h5 class="center-align">Eckhart Tolle</h5>
+                    <h6 class="center-align">£10.99</h6>
+                    <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                        class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>                  
+                </div>
+            </div>
+
+            <!-- the subtle art... -->
         <div class="row">
-            <div class="col 12 s4">
-                <h5 class="white-text"><i class="fas fa-book-open"></i> Book Hub</h5>
-                <p>Supporting local bookshops</p>
-                Follow us <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
+            <div class="card">
+                <div class="col s6 m6 l3 book_reviews center-align">
+                    <img  src="{{ url_for('static', filename='images/book-5.jpg') }}" alt="book">
+                    <h5 class="center-align">The Subtle Art Of <br> Not Giving A F*ck</h5>
+                    <h5 class="center-align">Mark Manson</h5>
+                    <h6 class="center-align">£10.99</h6>
+                    <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                        class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
+                </div>
             </div>
-            <div class="col 4 s4 right">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                    <li><a class="grey-text text-lighten-3" href="#">About</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#">Support / Help</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#">Become an Affiliate</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#">Contacts</a></li>
-                </ul>
-            </div>
-        </div>
-    <div class="footer-copyright">
-        <div class="container center-align">
-            © 2021 Copyright Text
-        </div>
-    </div>
-    </div>
-</footer>
 
+            <!--- Manifest --->
+            <div class="col s6 m6 l3 book_reviews center-align">
+                <img src="{{ url_for('static', filename='images/book-18.jpg') }}" alt="book">
+                <h5 class="center-align">Manifest</h5>
+                <h5 class="center-align">Roxir Nafousi</h5>
+                <h6 class="center-align">£11.99</h6>
+                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
+            </div>
+
+            <div class="col s6 m6 l3 book_reviews center-align">
+                <img src="{{ url_for('static', filename='images/book-7.jpg') }}" alt="book">
+                <h5 class="center-align">Think And Grow Rich</h5>
+                <h5 class="center-align">Napoleon Hill</h5>
+                <h6 class="center-align">£10.99</h6>
+                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
+               
+            </div>
+            <div class="col s6 m6 l3 book_reviews center-align">
+                <img  src="{{ url_for('static', filename='images/book-8.jpg') }}" alt="book">         
+                <h5 class="center-align">Who Moved My Cheese</h5>
+                <h5 class="center-align">Dr Spencer Johnson</h5>
+                <h6 class="center-align">£5.99</h6>
+                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                    class="waves-effect waves-light btn-small orange darken-4 center-align">Buy Now</a>
+            </div>
+        </div>
+
+        </div>
+    </section>
+           
 {% endblock %}

@@ -22,7 +22,7 @@
              <a class="header-logo center-align" href="{{ url_for('home') }}"><span>B</span>ook Hub</a>
         </div>
         <!-- top navbar -->
-        <nav class="nav-extended text-shadow nav-bg">
+        <nav class="nav-extended nav-bg navbar-fixed">
             <div class="container">
                 <!--<a href="#" class="brand-logo"><span>B</span>ook Hub</a>-->
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
@@ -30,10 +30,10 @@
                     <li><a class="btn-line" href="{{ url_for('home') }}">Home</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                        <li><a class="btn-line" href="{{ url_for('add_review') }}">Books</a></li>
+                        <li><a class="btn-line" href="{{ url_for('add_review') }}">Review Books</a></li>
                         <li><a class="btn-line" href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
-                        <li><a class="btn-line" href="#">About Us</a></li>
+                
                         <li><a class="btn-line" href="{{ url_for('login') }}">Sign In</a></li>
                         <li><a class="btn-line" href="{{ url_for('register') }}">Register</a></li>  
                     {% endif %} 
@@ -47,7 +47,7 @@
             <li><a href="{{ url_for('home') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                <li><a href="{{ url_for('add_review') }}">Books</a></li>
+                <li><a href="{{ url_for('add_review') }}">Review Books</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
                 <li><a href="#">About Us</a></li>
@@ -56,6 +56,7 @@
             {% endif %}   
         </ul>
     </header>
+
     
     <section>
         <!-- flash messages -->
@@ -74,6 +75,49 @@
         {% block content %}
         {% endblock %}
     </main>
+
+    
+    <section>
+        <div class="bag-logo">
+            <div class="app">
+                <h1>Download Our App</h1>
+                <p>Get your book reviews anytime, anywhwere with the bookhub app.</p>
+                <div class="app-logo">
+                    <img src="{{ url_for('static', filename='images/app-logo2.png') }}" style="width: 200px;">
+                    <img src="{{ url_for('static', filename='images/app-logo4.png') }}" style="width: 200px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer footer-bg fixed-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col 12 s4">
+                    <h5 class="white-text"><i class="fas fa-book-open"></i> Book Hub</h5>
+                    <p>Supporting local bookshops</p>
+                    Follow us <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="col 4 s4 right">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">About</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Support / Help</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Become an Affiliate</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2021 Copyright Text
+            </div>
+        </div>
+        </div>
+    </footer>
     
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
