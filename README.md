@@ -18,4 +18,12 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
         3. As a First Time Visitor, I want the registration process to be simple and straight forward.
         4. As a First Time Visitor, I want to purchase books using links provided.
         5. As a First Time Visitor, I want to read and add my reviews.
+
+    -   ### Returning Visitor Goals 
+
+        1. As a Returning Visitor, I want to log in and see my reviews. 
+        2. As a Returning Visitor, I want to see if there are any newly added books to review.
+        3. As a Returning Visitor, I want to be able to edit and delete my reviews.
+        4. As a Returning Visitor, I want to log in and see my reviews.
+        5. As a Returning Visitor, I want to be updated about the lastest books.
         
