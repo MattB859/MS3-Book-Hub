@@ -1,11 +1,12 @@
 <h1 align="center">The Book Hub</h1>
 
+<img align="center" src="./static/images/book_hub.png">
+
+<h1>About</h1>
+
 This is the main website for Book Hub. Book Hub is a community for book lovers to add reviews and share their thoughts with other users. Users are then able to purchase books using links on the website to enjoy for themselves. Book Hub is designed to be responsive and accessible on multiple devices, making it easy to navigate for new and existing visitors.
 
 [visit website here](http://book-hub-project.herokuapp.com/home)
-
-
-<img align="center" src="./static/images/book_hub.png">
 
 ## Contents
 
@@ -53,44 +54,48 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
         3. As a Frequent User, I want to see which books are the best to buy based on good or bad reviews from other users.
         4. As a Frequent User, I want edit or delete my reviews.
 
--   ### Website Design 
+## Site Owner Goals
+  
+-   To Earn money on each book purchased via an affiliate link from the website.    
 
-    -   ### Home Page
+## Website Design 
 
-        1. For the home page it is important that first time visitors understand what the site is all about. The background hero image is designed to show new and exsisting vistors the collection of books that are available to review on the website.
+-   ### Home Page
 
-        2. On the left of the image is some text which gives a warm inviting message.
+    - For the home page it is important that first time visitors understand what the site is all about. The background hero image is designed to show new and exsisting vistors the collection of books that are available to review on the website.
+
+    - On the left of the image is some text which gives a warm inviting message.
        
         <img align="center" src="./static/images/book-hub-read.png">
 
-    -   ### Navigation bar
+-   ### Navigation bar
 
-        1. When entering the website, users are instantly greeted with a clean and easy to read navigation bar to go to the page of their choice.
+    - When entering the website, users are instantly greeted with a clean and easy to read navigation bar to go to the page of their choice.
 
-        2. On the navigation bar is a registration link that allows visitors to create an account by registering their details.
+    - On the navigation bar is a registration link that allows visitors to create an account by registering their details.
 
-        3. Frequent users can sign in to accsess their profile and leave reviews on all the latest books.
+    - Frequent users can sign in to accsess their profile and leave reviews on all the latest books.
 
-        4. For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
+    - For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
 
 
-    -   ### Colour Scheme
+-   ### Colour Scheme
 
-        -    The main colours used for the site are Crimson, Dark Grey, and Dark Pink.
+    - The main colours used for the site are Crimson, Dark Grey, and Dark Pink.
 
-    -   ### Featured Books
+-   ### Featured Books
 
-        Visitors are able to view a selection of books featured with affiliate links underneath that will take them to the Amazon website if they wish to buy the book.
+    - Visitors are able to view a selection of books featured with affiliate links underneath that will take them to the Amazon website if they wish to buy the book.
 
-    -   ### App Banner
+-   ### App Banner
 
-        Here visitors can find links to the app store to download the mobile app for a quicker and easier acsess on the go.     
+    - Here visitors can find links to the app store to download the mobile app for a quicker and easier acsess on the go.     
 
-    -   ### Typography
+-   ### Typography
 
-        -    The Haettenschweiler font is used for the websites header logo with Arial, Helvetica, sans-serif for the rest of the website's font.
+    -  The Haettenschweiler font is used for the websites header logo with Arial, Helvetica, sans-serif for the rest of the website's font.
     
-    -   ### Wireframes
+-   ### Wireframes
 
     -   Home Page Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r0742)
     -   Mobile Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r2278)
