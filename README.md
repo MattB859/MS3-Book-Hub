@@ -48,7 +48,12 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
         1. When entering the website, users are instantly greeted with a clean and easy to read navigation bar to go to the page of their choice.
 
-        2. For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
+        2. On the navigation bar is a link that allows visitors to create an account by registering their details.
+
+        3. Frequent users can sign in to accsess their profile and leave reviews.
+
+        4. For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
+
 
     -   ### Colour Scheme
 
