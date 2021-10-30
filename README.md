@@ -105,5 +105,38 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
         1. To add an online payment system that allows users to buy books directly from the website.
 
-    
+    ## Technologies Used
+
+-   ### Languages Used
+
+    -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    -   [CSS3](https://en.wikipedia.org/wiki/CSS)
+    -   [Python3](https://en.wikipedia.org/wiki/Python)
+    -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    -   [JQuery](https://en.wikipedia.org/wiki/JQuery)
+
+
+    ### Frameworks, Libraries & Programs Used
+    1. [JQuery:](https://jquery.com/)
+    -  Used for the initialisation of Materialize CSS components.
+    1. [Materialize](https://getbootstrap.com/docs/5.0/getting-started/download/) 
+    -  Used to design a mobile-first responsive website along with custom components.
+    1. [Flask](https://en.wikipedia.org/wiki/Flask)
+    -  Used as a lightweight WSGI web application framework.
+    1. [PyMongo](https://docs.mongodb.com/drivers/pymongo/)
+    - A Python distribution containing tools for working with MongoD.
+    1. [Werkzeug](https://de.wikipedia.org/wiki/Werkzeug)
+        A comprehensive WSGI web application library
+    1. [Google Fonts:](https://fonts.google.com/)
+    -  Google fonts were used to import 'Merienda' 'Volkhov' and 'Open Sans' font as a link in the html page header which is used on all pages throughout the website.
+    1. [Font Awesome:](https://fontawesome.com/) 
+    - Font Awesome was used on the social icons of the website.
+    1. [Git:](https://git-scm.com/)
+    -  Git was used for version control by utilizing the Gitpod terminal to commit to Git and Puch to GitHub.
+    1. [GitHub:](https://github.com/)
+    -  GitHub is used to store project codes after being pushed from the Gitpod terminal.
+    1. [Affinity Designer:](https://affinity.serif.com/en-gb/designer/)
+    -  Affinity Designer was used to create the hero background image for the website.
+    1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process.
         
