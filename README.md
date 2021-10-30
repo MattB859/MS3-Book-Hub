@@ -43,4 +43,26 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
         2. On the left of the image is some text which gives a warm inviting message.
        
         <img align="center" src="./static/images/book-hub-read.png">
+
+    -   ### Navigation bar
+
+        1. When entering the website, users are instantly greeted with a clean and easy to read navigation bar to go to the page of their choice.
+
+        2. For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
+
+    -   ### Colour Scheme
+    
+        -    The main colours used for the site are Crimson, Dark Grey, and Dark Pink.
+
+    -   ### Typography
+        -    The Haettenschweiler font is used for the websites header logo with Arial, Helvetica, sans-serif for the rest of the website's font.
+    
+    -   ### Wireframes
+
+    -   Home Page Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r0742)
+    -   Mobile Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r2278)
+    -   Tablet Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/rCA01) 
+
+
+    
         
