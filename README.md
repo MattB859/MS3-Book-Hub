@@ -51,10 +51,19 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
         2. For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
 
     -   ### Colour Scheme
-    
+
         -    The main colours used for the site are Crimson, Dark Grey, and Dark Pink.
 
+    -   ### Featured Books
+
+        Visitors are able to view a selection of books featured with affiliate links underneath that will take them to the Amazon website if they wish to buy the book.
+
+    -   ### App Banner
+
+        Here visitors can find links to the app store to download the mobile app for a quicker and easier acsess on the go.     
+
     -   ### Typography
+
         -    The Haettenschweiler font is used for the websites header logo with Arial, Helvetica, sans-serif for the rest of the website's font.
     
     -   ### Wireframes
@@ -62,6 +71,22 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     -   Home Page Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r0742)
     -   Mobile Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r2278)
     -   Tablet Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/rCA01) 
+    
+    -   ## Features
+
+    -   ### Current Features
+
+        1. This is a two-page website with 5 sections for the first page and a contact section for the second page.
+
+        2. All pages are fully responsive on all devices.
+
+    -   ###  Future Features
+
+        1. To add an online booking system that allows customers to book a table reservation.
+
+        2. To add a photo gallery carousel.
+
+        3. To add a food and drinks menu page.    
 
 
     
