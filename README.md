@@ -29,32 +29,33 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 ## User Experience (UX)
 
--   ### User stories
+### User stories
 
-    -   ### First Time Visitor Goals
+-   ### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about what book hub has to offer.
-        2. As a First Time Visitor, I want to easily navigate throught the site to   find information.
-        3. As a First Time Visitor, I want the registration process to be simple and straight forward.
-        4. As a First Time Visitor, I want to purchase books using links provided.
-        5. As a First Time Visitor, I want to read and add my reviews.
+    - As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about what book hub has to offer.
+     - As a First Time Visitor, I want to easily navigate throught the site to find information.
+     As a First Time Visitor, I want the site to be responsive on all devices
+    - As a First Time Visitor, I want the registration process to be simple and straight forward.
+    - As a First Time Visitor, I want to purchase books using links provided.
+    - As a First Time Visitor, I want to read and add my reviews.
 
-    -   ### Returning Visitor Goals 
+-   ### Returning Visitor Goals 
 
-        1. As a Returning Visitor, I want to log in and see my reviews. 
-        2. As a Returning Visitor, I want to see if there are any newly added books to review.
-        3. As a Returning Visitor, I want to be able to edit and delete my reviews.
-        4. As a Returning Visitor, I want to log in and see my reviews.
-        5. As a Returning Visitor, I want to be updated about the lastest books.
+    - As a Returning Visitor, I want to log in and see my reviews. 
+    - As a Returning Visitor, I want to see if there are any newly added books to review.
+     - As a Returning Visitor, I want to be able to edit and delete my reviews.
+     - As a Returning Visitor, I want to log in and see my reviews.
+     - As a Returning Visitor, I want to be updated about the lastest books.
 
-    -   ### Frequent User Goals
+-   ### Frequent User Goals
 
-        1. As a Frequent User, I want to log into my profile to read all of the lastest reviews from the bookhub community. 
-        2. As a Frequent User, I want to add new reviews on the lastest books.
-        3. As a Frequent User, I want to see which books are the best to buy based on good or bad reviews from other users.
-        4. As a Frequent User, I want edit or delete my reviews.
+    - As a Frequent User, I want to log into my profile to read all of the lastest reviews from the bookhub community. 
+    - As a Frequent User, I want to add new reviews on the lastest books.
+     - As a Frequent User, I want to see which books are the best to buy based on good or bad reviews from other users.
+     - As a Frequent User, I want to be able to edit and delete my reviews.
 
-## Site Owner Goals
+### Site Owner Goals
   
 -   To Earn money on each book purchased via an affiliate link from the website.    
 
@@ -105,29 +106,29 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -   ### Current Features
 
-    1. This is a six-page website.
+    - This is a six-page website.
 
-    2. Home page.
+    - Home page.
 
-    3. Profile page.
+    - Profile page.
 
-    4. Review books page.
+    - Review books page.
 
-    5. Log In page.
+    - Log In page.
 
-    6. Register page.
+    - Register page.
 
-    7. Log Out page.
+    - Log Out page.
 
-    8. The website has sub pages with more description on the books, and allows all registered users to view and leave reviews.
+    - The website has sub pages with more description on the books, and allows all registered users to view and leave reviews.
 
-    9. Users can leave reviews by filling out a form that promps them to enter a heading and add written review. User can also edit post and delete any reviews they make.
+    - Users can leave reviews by filling out a form that promps them to enter a heading and add written review. User can also edit post and delete any reviews they make.
 
-    2. All pages are fully responsive on all devices.
+    - All pages are fully responsive on all devices.
 
 -   ###  Future Features
 
-    1. To add an online payment system that allows users to buy books directly from the website.
+    - To add an online payment system that allows users to buy books directly from the website.
 
 ## Technologies Used
 
