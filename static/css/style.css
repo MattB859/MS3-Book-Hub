@@ -1,11 +1,8 @@
 
 /* header styling */
-
 .main-header {
     padding: 10px;
     width: 100%;
-    border-bottom: 1px solid rgb(165, 165, 165);
-    background: rgb(252, 252, 252);
 }
 
 .title{
@@ -16,39 +13,11 @@
 .main-header,
 .header-logo {
     text-align: center;
-    color: rgb(10, 4, 65);
+    color: rgb(22, 22, 22);
     font-family: 'Satisfy', cursive;
     font-weight: 600;
     font-size: 50px;
 }
-
-.underline{
-    width: 10em;
-    border: 2px solid rgb(228, 3, 3);
-    margin-bottom: 50px;
-   
-}
-
-
-.small-header {
-    font-size: 26px;
-    font-style: italic;
-    color: rgb(49, 49, 49);
-    font-family: Georgia, 'Times New Roman', Times, serif
-}
-
-
-.book-header {
-    left: 0;
-    right: 0;
-    font-size: 35px;
-    color: rgb(20, 6, 53);
-    font-weight: 600;
-    font-family: 'Yeseva One', cursive;
-    text-align: center;
-    align-items: center;
-}
-
 
 .header-logo span {
     color: rgb(199, 17, 17);
@@ -58,7 +27,7 @@
     color: rgb(26, 3, 3);
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3.5vw;
+    font-size: 60px;
     z-index: 0.5;
     font-weight: 600;
     top: 2em;
@@ -79,6 +48,43 @@
 .header-2 span-b{
     color: rgb(207, 20, 13);
 }
+/* end of header */
+
+.underline{
+    width: 10em;
+    border: 2px solid rgb(228, 3, 3);
+    margin-bottom: 50px;
+   
+}
+.small-header {
+    font-size: 26px;
+    font-style: italic;
+    color: rgb(49, 49, 49);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* home page styling */
+.book-header {
+    left: 0;
+    right: 0;
+    font-size: 35px;
+    color: rgb(20, 6, 53);
+    font-weight: 600;
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    align-items: center;
+}
+
+.button-1{
+    position: absolute;
+    z-index: 1;
+    border-radius: 15px;
+    bottom: 250px;
+    left: 90px;
+    width: 250px;
+
+}
+
 
 
 /* navbar styling */
@@ -151,7 +157,7 @@ h3 {
     font-size: 20px;
     padding: 10px;
     border: 2px solid rgb(255, 46, 46);
-    color: rgb(255, 255, 255);
+    color: rgb(238, 41, 41);
     border-radius: 50%;
     margin: 5px;
 }
@@ -177,12 +183,11 @@ h3 {
     height: 800px;
 }
 
-.woman img{
-    position: absolute;
-    width: 35%;
-    bottom: 400px;
-    left: 100px;
-  
+.buy-button{
+    width: 95%;
+    border-radius: 5%;
+    background-color: rgb(99, 104, 102);
+   
 }
 
 .bg-img img {
@@ -236,7 +241,6 @@ h3 {
 .about{
     position: relative;
     background-color: rgb(255, 255, 255);
-    height: 600px;
 }
 
 .header-2 {
@@ -245,7 +249,7 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3.5vw;
     font-weight: 600;
-    top: -100px;
+    top: -30px;
 }
 
 
@@ -299,6 +303,11 @@ h6 {
     font-weight: 600;
 }
 
+.post-box{
+    padding: 5px;
+    background-color: rgb(243, 243, 243);
+}
+
 .price {
     padding: 20px;
     width: 50%;
@@ -313,7 +322,7 @@ h6 {
 
 .fa-user-circle {
     font-size: 25px;
-    color: rgb(124, 124, 124);
+    color: rgb(0, 0, 0);
 
 }
 
@@ -532,6 +541,23 @@ h6 {
 
     .txt {
         font-size: 10px;
+    }
+
+    .book_reviews img{
+        width: 80px;
+        height: 120px;
+    } 
+    
+    .button-1{
+        position: absolute;
+        z-index: 1;
+        border-radius: 15px;
+        top: 360px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 200px;
+
     }
 
 }

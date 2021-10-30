@@ -7,6 +7,25 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 <img align="center" src="./static/images/book_hub.png">
 
+## Contents
+
+-  ###  UX (User Experience)
+    -   User Stories
+    -   Site Owner Goals
+
+-  ###  Website Design 
+    -   Typography
+    -   Colours
+    -   Imagery
+    -   Wireframes
+
+-  ###  Technologies
+    -   Languages
+    -   Database
+    -   Frameworks, Libraries & Programs       
+
+
+
 ## User Experience (UX)
 
 -   ### User stories
@@ -77,66 +96,104 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     -   Mobile Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r2278)
     -   Tablet Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/rCA01) 
     
--   ## Features
+## Features
 
-    -   ### Current Features
+-   ### Current Features
 
-        1. This is a six-page website.
+    1. This is a six-page website.
 
-        2. Home page.
+    2. Home page.
 
-        3. Profile page.
+    3. Profile page.
 
-        4. Review books page.
+    4. Review books page.
 
-        5. Log In page.
+    5. Log In page.
 
-        6. Register page.
+    6. Register page.
 
-        7. Log Out page.
+    7. Log Out page.
 
-        8. The website has sub pages with more description on the books, and allows all registered users to view and leave reviews.
+    8. The website has sub pages with more description on the books, and allows all registered users to view and leave reviews.
 
-        9. Users can leave reviews by filling out a form that promps them to enter a heading and add written review. User can also edit post and delete any reviews they make.
+    9. Users can leave reviews by filling out a form that promps them to enter a heading and add written review. User can also edit post and delete any reviews they make.
 
-        2. All pages are fully responsive on all devices.
+    2. All pages are fully responsive on all devices.
 
-    -   ###  Future Features
+-   ###  Future Features
 
-        1. To add an online payment system that allows users to buy books directly from the website.
+    1. To add an online payment system that allows users to buy books directly from the website.
 
-    ## Technologies Used
+## Technologies Used
 
--   ### Languages Used
+### Languages Used
 
-    -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
-    -   [CSS3](https://en.wikipedia.org/wiki/CSS)
-    -   [Python3](https://en.wikipedia.org/wiki/Python)
-    -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-    -   [JQuery](https://en.wikipedia.org/wiki/JQuery)
+-   ### [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    -   Used as the main markup lanuage for the website content.
+-   ### [CSS3](https://en.wikipedia.org/wiki/CSS)
+    -   Used to add styling to the website.
+-   ### [Python3](https://en.wikipedia.org/wiki/Python)
+    -   Used to run the site and speak to the mongodb database.
+-   ### [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    -   Used to validate the materialize inputs.
 
+### Database Used
 
-    ### Frameworks, Libraries & Programs Used
-    1. [JQuery:](https://jquery.com/)
-    -  Used for the initialisation of Materialize CSS components.
-    1. [Materialize](https://getbootstrap.com/docs/5.0/getting-started/download/) 
-    -  Used to design a mobile-first responsive website along with custom components.
-    1. [Flask](https://en.wikipedia.org/wiki/Flask)
-    -  Used as a lightweight WSGI web application framework.
-    1. [PyMongo](https://docs.mongodb.com/drivers/pymongo/)
-    - A Python distribution containing tools for working with MongoD.
-    1. [Werkzeug](https://de.wikipedia.org/wiki/Werkzeug)
-        A comprehensive WSGI web application library
-    1. [Google Fonts:](https://fonts.google.com/)
-    -  Google fonts were used to import 'Merienda' 'Volkhov' and 'Open Sans' font as a link in the html page header which is used on all pages throughout the website.
-    1. [Font Awesome:](https://fontawesome.com/) 
-    - Font Awesome was used on the social icons of the website.
-    1. [Git:](https://git-scm.com/)
-    -  Git was used for version control by utilizing the Gitpod terminal to commit to Git and Puch to GitHub.
-    1. [GitHub:](https://github.com/)
-    -  GitHub is used to store project codes after being pushed from the Gitpod terminal.
-    1. [Affinity Designer:](https://affinity.serif.com/en-gb/designer/)
-    -  Affinity Designer was used to create the hero background image for the website.
-    1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the wireframes during the design process.
+-   ### [MongoDB Atlas](https://cloud.mongodb.com/)
+    -   Used to store structured user and book review data.
+
+## Frameworks, Libraries & Programs Used
+
+-  ### [JQuery:](https://jquery.com/)
+    -  Used for the initialisation of Materialize CSS components
+-  ### [Materialize:](https://getbootstrap.com/docs/5.0/getting-started/download/) 
+    -  Used to design a mobile-first responsive website along with custom components
+-  ### [Flask:](https://en.wikipedia.org/wiki/Flask)
+    -  Used as a lightweight WSGI web application framework
+-  ### [PyMongo:](https://docs.mongodb.com/drivers/pymongo/)
+    -  A Python distribution containing tools for working with MongoD
+-  ### [Flask-PyMongo:](https://flask-pymongo.readthedocs.io/en/latest/)
+    -  Flask-PyMongo bridges Flask and PyMono
+-  ### [Werkzeug:](https://de.wikipedia.org/wiki/Werkzeug)
+    -  A comprehensive WSGI web application library
+-  ### [itsDangerous:](https://itsdangerous.palletsprojects.com/en/2.0.x/)
+    -  Allows data to be sent and received safely using python and secret keys
+-  ### [DNSPython:](https://pypi.org/project/dnspython/)
+    -  A DNS toolkit for Python
+-  ### [Jinja2:](https://jinja.palletsprojects.com/en/3.0.x/)
+    -  Jinja2 is a full-featured template engine for python    
+-  ### [Click:](https://click.palletsprojects.com/en/8.0.x/)
+    -  A Python package for creating beautiful command line interfaces 
+-  ### [Heroku:](https://id.heroku.com/)
+    -  Used to deploy, manage, and scale modern apps
+-  ### [Git:](https://git-scm.com/)
+    -  Git was used for version control by utilizing the Gitpod terminal to commit to Git and Puch to GitHub
+-  ### [GitHub:](https://github.com/)
+    -  GitHub is used to store project codes after being pushed from the Gitpod    terminal
+-  ### [Google Fonts:](https://fonts.google.com/)
+    -  Google fonts were used to import 'Haettenschweiler' for the main website logo
+-  ### [Font Awesome:](https://fontawesome.com/) 
+    -  Font Awesome were used on all social icons of the website.
+-  ### [Affinity Designer:](https://affinity.serif.com/en-gb/designer/)
+    -  Affinity Designer was used to create the hero background image for the website
+-  ### [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process
         
+## Testing
+    
+-   ### Validator Testing    
+
+    - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+-   ### HTML5 
+
+    -  [W3C Markup Validator](https://validator.w3.org/#validate_by_input+with_options)
+
+-   ### CSS3
+
+    -  [W3C CSS Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+
+        
+    -   ###  All pages came back with no errors.
+
+## Testing User Stories from User Experience (UX) Section
