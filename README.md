@@ -48,9 +48,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
         1. When entering the website, users are instantly greeted with a clean and easy to read navigation bar to go to the page of their choice.
 
-        2. On the navigation bar is a link that allows visitors to create an account by registering their details.
+        2. On the navigation bar is a registration link that allows visitors to create an account by registering their details.
 
-        3. Frequent users can sign in to accsess their profile and leave reviews.
+        3. Frequent users can sign in to accsess their profile and leave reviews on all the latest books.
 
         4. For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
 
@@ -77,22 +77,33 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     -   Mobile Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r2278)
     -   Tablet Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/rCA01) 
     
-    -   ## Features
+-   ## Features
 
     -   ### Current Features
 
-        1. This is a two-page website with 5 sections for the first page and a contact section for the second page.
+        1. This is a six-page website.
+
+        2. Home page.
+
+        3. Profile page.
+
+        4. Review books page.
+
+        5. Log In page.
+
+        6. Register page.
+
+        7. Log Out page.
+
+        8. The website has sub pages with more description on the books, and allows all registered users to view and leave reviews.
+
+        9. Users can leave reviews by filling out a form that promps them to enter a heading and add written review. User can also edit post and delete any reviews they make.
 
         2. All pages are fully responsive on all devices.
 
     -   ###  Future Features
 
-        1. To add an online booking system that allows customers to book a table reservation.
-
-        2. To add a photo gallery carousel.
-
-        3. To add a food and drinks menu page.    
-
+        1. To add an online payment system that allows users to buy books directly from the website.
 
     
         
