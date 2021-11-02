@@ -1,4 +1,5 @@
 import os
+import datetime
 from flask import (
     Flask, flash, render_template, 
     redirect, request, session, url_for)
@@ -125,11 +126,12 @@ def book_power():
         review = {
             "headline": request.form.get("headline"),
             "book_review": request.form.get("book_review"),
-            "created_by": session["user"]
+            "created_by": session["user"],
+            "date_time": datetime.datetime.now().strftime("%d %B %Y")
         }
         mongo.db.reviews.insert_one(review)
         flash("Review Successfully Added")
-        return redirect(url_for("book_power"))
+        return redirect(url_for("book_reviews"))
         
         reviews = list(mongo.db.reviews.find())
     return render_template("book_power.html")
@@ -151,8 +153,15 @@ def the_secret():
     return render_template("the_secret.html")
 
 
+@app.route("/edit_reviews/<review_id>", methods=["GET", "POST"])
+def edit_reviews(review_id):
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+    reviews = list(mongo.db.reviews.find())
+
+    return render_template("edit_power.html", review=review, reviews=reviews)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-

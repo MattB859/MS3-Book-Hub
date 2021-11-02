@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    <h4 class="center-align title">Edit Reviews</h4>
+
+    <!-- text form -->
+    <div class="row box" id="post">
+        <form class="text-body" method="POST" action="{{ url_for('edit_reviews', reviews_id=reviews._id) }}">
+            <div class="row">
+
+                <!-- review headline  -->
+                <div class="col s12 ">
+                    <h6>Add a headline</h6>
+                    <label for="headline">comments:</label>
+                    <textarea id="headline" placeholder="What's most important to know?" name="headline" minlength="5"
+                        maxlength="100" required></textarea>
+                </div>
+
+                <!-- review textarea -->
+                <div class="col s12 height">
+                    <h6>Add a written review</h6>
+                    <label for="book_review">comments:</label>
+                    <textarea id="book_review" placeholder="What did you like or dislike about this book?"
+                        name="book_review" minlength="5" style="height: 150px;" maxlength="600" required></textarea>
+
+                    <!-- submit button -->
+                    <button class="btn waves-effect orange darken-4 waves-light" type="submit">Edit Review
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <a href="#" class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
+                    <a href="#" class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <h6 class="text-darken-4 center-align margin-top">Top Reviews from United Kindom</h6>
+
+    <hr>
+
+    <div class="container post-box">
+        {% for review in reviews %}
+        <div class="row">
+            <div class="col s12 s6">
+                <div class="card-panel">
+                    <p><em><i class="fas fa-user-circle"></i> {{ review.created_by }}</em></p>
+                    <p class="post">{{ review.headline }}</p>
+                    <p>{{ review.book_review }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

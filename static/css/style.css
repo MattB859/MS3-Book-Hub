@@ -86,7 +86,6 @@
 }
 
 
-
 /* navbar styling */
 .nav-bg {
     position: absolute;
@@ -189,12 +188,22 @@ h3 {
     background-color: rgb(99, 104, 102);
    
 }
-
-.bg-img img {
+/* hero background image */
+/*.bg-img img {
     width: 120em;
     position: absolute;
     top: 30px;
     right: 10px;
+}*/
+
+.bg-img{
+    background: url("../images/book-shelf.png"
+    ) no-repeat right top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 85vh;
+    margin-top: 50px;
 }
 
 .hero-img img{
@@ -233,8 +242,6 @@ h3 {
     margin: 10px 0;
     width: 180px;
     height: 250px;
-    border: 1px solid rgb(187, 187, 187);
-  
 }
 
 /* about styling */
@@ -487,12 +494,33 @@ h6 {
 }
 
 @media only screen and (max-width: 500px) {
-    .bg-img img {
+    /*.bg-img img {
         width: 200%;
         position: absolute;
         top: 30px;
         right: 1px;
+    }*/
+
+    .bg-img img{
+        display: none;
     }
+
+    .bg-img{
+        background: url("../images/book-shelf.png"
+        ) no-repeat right top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        min-height: 85vh;
+        margin-top: 50px;
+    }
+
+    /*.bg-img{
+        background: url("../images/book-shelf.png"
+        ) no-repeat right;
+        background-size: cover;
+        height: 90vh; 
+    }*/
 
     .header-logo {
         font-size: 10vw;
@@ -515,7 +543,8 @@ h6 {
     .home {
         position: relative;
         background: rgb(255, 255, 255);
-        height: 350px;
+        /*height: 350px;*/
+        height: 60vh;
     }
 
     .book-header {
@@ -549,15 +578,7 @@ h6 {
     } 
     
     .button-1{
-        position: absolute;
-        z-index: 1;
-        border-radius: 15px;
-        top: 360px;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        width: 200px;
-
+        display: none;
     }
 
 }
