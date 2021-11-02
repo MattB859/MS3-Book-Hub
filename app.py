@@ -170,8 +170,9 @@ def edit_review(review_id):
        
     edit = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     flash("Successfully updated")
+    return redirect(url_for("review_post"))
 
-    reviews = mongo.db.reviews.find().sort("book_review", 1)
+    reviews = mongo.db.reviews.find()
     return render_template(
         "edit_power.html", edit=edit, reviews=reviews)
     
