@@ -37,6 +37,12 @@ def the_secret_book():
     return render_template("the_secret.html", reviews=reviews)
 
 
+@app.route("/edit_post")
+def edit_post():
+    reviews = mongo.db.reviews.find()
+    return render_template("edit_power.html", reviews=reviews)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -127,7 +133,8 @@ def book_power():
             "headline": request.form.get("headline"),
             "book_review": request.form.get("book_review"),
             "created_by": session["user"],
-            "date_time": datetime.datetime.now().strftime("%d %B %Y")
+            "date_time": datetime.datetime.now().strftime("%d %B %Y"),
+            "ratings": request.form.get("ratings")
         }
         mongo.db.reviews.insert_one(review)
         flash("Review Successfully Added")
@@ -143,7 +150,9 @@ def the_secret():
         the_secret_review = {
             "headline": request.form.get("headline"),
             "the_secret_review": request.form.get("the_secret_review"),
-            "created_by": session["user"]
+            "created_by": session["user"],
+            "date_time": datetime.datetime.now().strftime("%d %B %Y"),
+            "ratings": request.form.get("ratings")
         }
         mongo.db.reviews_2.insert_one(the_secret_review)
         flash("Review Successfully Added")
@@ -153,13 +162,19 @@ def the_secret():
     return render_template("the_secret.html")
 
 
-@app.route("/edit_reviews/<review_id>", methods=["GET", "POST"])
-def edit_reviews(review_id):
-    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
-    reviews = list(mongo.db.reviews.find())
+@app.route("/edit_review/<review_id>", methods=["GET", "POST"])
+def edit_review(review_id):
+    """
+    this will allow users to edit their own reviews
+    """
+       
+    edit = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+    flash("Successfully updated")
 
-    return render_template("edit_power.html", review=review, reviews=reviews)
-
+    reviews = mongo.db.reviews.find().sort("book_review", 1)
+    return render_template(
+        "edit_power.html", edit=edit, reviews=reviews)
+    
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

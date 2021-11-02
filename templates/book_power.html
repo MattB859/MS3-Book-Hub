@@ -58,8 +58,19 @@
         <form class="text-body" method="POST" action="{{ url_for('book_power') }}">
             <div class="row">
 
+                <div class="col s12">
+                    <h6>Overall rating</h6>
+                    <input type="hidden" name="review_rating" value="3" required>
+                    <input id="review_rating" name="review_rating" type="hidden" value="3" required>
+                    <div id="review_rating" class="rating-star true"><input type="submit" value="&#9733;"></div>
+                    <div id="review_rating" class="rating-star true"><input type="submit" value="&#9733;"></div>
+                    <div id="review_rating" class="rating-star true"><input type="submit" value="&#9733;"></div>
+                    <div id="review_rating" class="rating-star true"><input type="submit" value="&#9733;"></div>
+                    <div id="review_rating" class="rating-star true"><input type="submit" value="&#9733;"></div>
+                </div>
+
                 <!-- review headline  -->
-                <div class="col s12 ">
+                <div class="col s12">
                     <h6>Add a headline</h6>
                     <label for="headline">comments:</label>
                     <textarea id="headline" placeholder="What's most important to know?" name="headline" minlength="5"
@@ -77,7 +88,7 @@
                     <button class="btn waves-effect orange darken-4 waves-light" type="submit">Submit
                         <i class="fas fa-share"></i>
                     </button>
-                    <a href="{{ url_for('edit_reviews', review_id=reviews._id) }}" class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
+                    <a href="{{ url_for('edit_post', review_id=reviews._id) }}" class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
                     <a href="#" class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
                 </div>
             </div>
@@ -89,18 +100,20 @@
     <hr>
 
     <div class="container post-box">
-        {% for review in reviews %}
-        <div class="row">
-            <div class="col s12 s6">
-                <div class="card-panel">
-                    <p><em><i class="fas fa-user-circle"></i> {{ review.created_by }}</em></p>
-                    <p class="post">{{ review.headline }}</p>
-                    <p><em>Reviewed in the United Kingdom on</em> {{ review.date_time }}</p>
-                    <p>{{ review.book_review }}</p>
-                </div>
+        {% for review in review %}
+            <div class="row">
+                <div class="col s12 s6">
+                    <div class="card-panel"> 
+                        <p><em><i class="fas fa-user-circle"></i> {{ review.created_by }}</em></p>
+                        <p class="post">{{ review.headline }}</p>
+                        <p class="bold">{{ review.ratings }}</p>
+                        <p class="post-2 bold text-color">Verified</p>
+                        <p><em>Reviewed in the United Kingdom on</em> {{ review.date_time }}</p>
+                        <p>{{ review.book_review }}</p>
+                    </div>
+                </div>  
             </div>
-            {% endfor %}
-        </div>
+        {% endfor %}
     </div>
-
+</div>
 {% endblock %}

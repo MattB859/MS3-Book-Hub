@@ -1,16 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="container">
+    <h4 class="center-align title edit">Edit Reviews</h4>
 
-    <h4 class="center-align title">Edit Reviews</h4>
-
-    <!-- text form -->
+    <!-- edit review form -->
     <div class="row box" id="post">
-        <form class="text-body" method="POST" action="{{ url_for('edit_reviews', reviews_id=reviews._id) }}">
+        <form class="text-body" method="POST" action="{{ url_for('edit_review', review_id=reviews._id) }}">
             <div class="row">
+        
+                <!-- star rating -->
+                <div class="col s12">
+                    <h6>Overall rating</h6>
+                    <input type="hidden" name="review_rating" value="3" required>
+                    <input id="review_rating" name="review_rating" type="hidden" value="3" required>
+                    <div id="review_rating" class="rating-star true">
+                        <input type="submit" value="&#9733;">
+                    </div>
+                    <div id="review_rating" class="rating-star true">
+                        <input type="submit" value="&#9733;">
+                    </div>
+                    <div id="review_rating" class="rating-star true">
+                        <input type="submit" value="&#9733;">
+                    </div>
+                    <div id="review_rating" class="rating-star true">
+                        <input type="submit" value="&#9733;">
+                    </div>
+                    <div id="review_rating" class="rating-star true">
+                        <input type="submit" value="&#9733;">
+                    </div>
+                </div>
 
-                <!-- review headline  -->
-                <div class="col s12 ">
+                <!-- review headline -->
+                <div class="col s12">
                     <h6>Add a headline</h6>
                     <label for="headline">comments:</label>
                     <textarea id="headline" placeholder="What's most important to know?" name="headline" minlength="5"
@@ -22,7 +44,9 @@
                     <h6>Add a written review</h6>
                     <label for="book_review">comments:</label>
                     <textarea id="book_review" placeholder="What did you like or dislike about this book?"
-                        name="book_review" minlength="5" style="height: 150px;" maxlength="600" required></textarea>
+                        name="book_review" minlength="5" style="height: 150px;" maxlength="600" required>
+                       
+                    </textarea>
 
                     <!-- submit button -->
                     <button class="btn waves-effect orange darken-4 waves-light" type="submit">Edit Review
@@ -41,16 +65,21 @@
 
     <div class="container post-box">
         {% for review in reviews %}
-        <div class="row">
-            <div class="col s12 s6">
-                <div class="card-panel">
-                    <p><em><i class="fas fa-user-circle"></i> {{ review.created_by }}</em></p>
-                    <p class="post">{{ review.headline }}</p>
-                    <p>{{ review.book_review }}</p>
+            {% if review.book_review == review.book_review %}      
+            <div class="row">
+                <div class="col s12 s6">
+                    <div class="card-panel">
+                        <p><em><i class="fas fa-user-circle"></i> {{ review.created_by }}</em></p>
+                        <p class="post">{{ review.headline }}</p>
+                        <p class="bold">{{ review.ratings }}</p>
+                        <p class="post-2 bold text-color">Verified</p>
+                        <p><em>Reviewed in the United Kingdom on</em> {{ review.date_time }}</p>
+                        <p>{{ review.book_review }}</p>
+                    </div>
                 </div>
-            </div>
-            {% endfor %}
-        </div>
+            </div>   
+            {% endif %}
+        {% endfor %}
     </div>
-
+</div>
 {% endblock %}
