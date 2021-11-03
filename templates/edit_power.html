@@ -4,6 +4,7 @@
     <h4 class="center-align title edit">Edit Reviews ;) </h4>
 
     {% for review in reviews %}  
+    {% if session.user|lower == review.created_by|lower %}
     <!-- edit review form -->
     <div class="row box" id="post">
         <form class="text-body" method="POST" action="{{ url_for('edit_review', review_id=review._id) }}">
@@ -57,19 +58,20 @@
                     </a>
 
                     <!-- submit button -->
-                    <button class="btn waves-effect waves-light blue" type="submit">Edit Review
+                    <button class="btn waves-effect waves-light blue" type="submit">Update Review
                         <i class="fas fa-edit"></i>
                     </button>
                     <a href="{{ url_for('delete_review', review_id=review._id) }}" class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
-                </div>
-            </div>   
-        </form>
+                </div>       
+            </div>    
+        </form> 
     </div>
+    {% endif %} 
     {% endfor %} 
     <h6 class="text-darken-4 center-align margin-top">Top Reviews from United Kindom</h6>
 
     <hr>
-
+    
     <div class="container post-box">
         {% for review in reviews %}
             <div class="row">
@@ -80,7 +82,7 @@
                         <p class="bold">{{ review.ratings }}</p>
                         <p class="post-2 bold text-color">Verified</p>
                         <p><em>Reviewed in the United Kingdom on</em> {{ review.date_time }}</p>
-                        <p>{{ review.book_review }}</p>
+                        <p>{{ review.book_review }}</p>                     
                         <a href="{{ url_for('edit_post', review_id=review._id) }}" class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
                         <a href="{{ url_for('delete_review', review_id=review._id) }}" class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
                     </div>     

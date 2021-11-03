@@ -49,6 +49,12 @@ def delete_post():
     return render_template("edit_power.html", reviews=reviews)
 
 
+@app.route("/profile_review")
+def profile_review():
+    reviews = mongo.db.reviews.find()
+    return render_template("profile.html", reviews=reviews)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":

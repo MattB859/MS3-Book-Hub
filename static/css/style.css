@@ -250,6 +250,17 @@ h3 {
     background-color: rgb(255, 255, 255);
 }
 
+/* profile user */
+.profile-user{
+    height: 100vh;
+    
+}
+
+.profile-user-2{
+    height: 100vh;
+    
+}
+
 .header-2 {
     color: rgb(26, 3, 3);
     position: absolute;
@@ -365,13 +376,18 @@ h6 {
   }
 
 .profile {
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    font-size: 100px;
-    margin-left: 100px;
+    font-size: 10vw;
     color: rgb(44, 96, 207);
+}
 
+.user-name{
+    font-size: 30px;
+}
+
+.font{
+    font-weight: 600;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 /* review box */
