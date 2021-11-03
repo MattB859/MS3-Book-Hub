@@ -43,6 +43,12 @@ def edit_post():
     return render_template("edit_power.html", reviews=reviews)
 
 
+@app.route("/delete_post")
+def delete_post():
+    reviews = mongo.db.reviews.find()
+    return render_template("edit_power.html", reviews=reviews)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -177,6 +183,14 @@ def edit_review(review_id):
     reviews = mongo.db.reviews.find().sort("reviews", 1)
     return render_template(
         "edit_power.html", edit=edit, reviews=reviews)
+
+
+@app.route("/delete_review/<review_id>")
+def delete_review(review_id):
+    mongo.db.reviews.remove({"_id": ObjectId(review_id)})
+    flash("Review Successfully Deleted")
+    return redirect(url_for("book_reviews"))
+
 
 
 if __name__ == "__main__":

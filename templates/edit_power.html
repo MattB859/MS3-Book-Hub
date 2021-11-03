@@ -49,10 +49,7 @@
                   
                     <textarea id="book_review" placeholder="What did you like or dislike about this book?"
                         name="book_review" minlength="5" style="height: 150px;" maxlength="600" required>
-                    
-                    {{- review.book_review -}}
-                         
-                    
+                    {{- review.book_review -}}     
                     </textarea>
                     <!-- cancel button -->
                     <a href="{{ url_for('book_reviews') }}" class="btn grey darken- text-shadow">
@@ -60,11 +57,10 @@
                     </a>
 
                     <!-- submit button -->
-                    <button class="btn waves-effect orange darken-4 waves-light" type="submit">Edit Review
+                    <button class="btn waves-effect waves-light blue" type="submit">Edit Review
                         <i class="fas fa-edit"></i>
                     </button>
-                    <a href="#" class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
-                    <a href="#" class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
+                    <a href="{{ url_for('delete_review', review_id=review._id) }}" class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
                 </div>
             </div>   
         </form>
@@ -85,8 +81,8 @@
                         <p class="post-2 bold text-color">Verified</p>
                         <p><em>Reviewed in the United Kingdom on</em> {{ review.date_time }}</p>
                         <p>{{ review.book_review }}</p>
-                          <a href="{{ url_for('edit_post', review_id=review._id) }}" class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
-                    <a href="#" class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
+                        <a href="{{ url_for('edit_post', review_id=review._id) }}" class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
+                        <a href="{{ url_for('delete_review', review_id=review._id) }}" class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
                     </div>     
                 </div>  
             </div>
