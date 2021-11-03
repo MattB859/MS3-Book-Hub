@@ -91,11 +91,11 @@ def login():
                         "profile", username=session["user"]))
             else:
                 # invalid password match
-                flash("Incorrect Username and/or Password")
+                flash("Incorrect Password")
                 return redirect(url_for("login"))
         else:
             # username doesn't exist
-            flash("Incorrect Username and/or Password")
+            flash("Incorrect Username")
             return redirect(url_for("login"))
 
     return render_template("login.html")
@@ -151,8 +151,7 @@ def the_secret():
             "headline": request.form.get("headline"),
             "the_secret_review": request.form.get("the_secret_review"),
             "created_by": session["user"],
-            "date_time": datetime.datetime.now().strftime("%d %B %Y"),
-            "ratings": request.form.get("ratings")
+            "date_time": datetime.datetime.now().strftime("%d %B %Y")
         }
         mongo.db.reviews_2.insert_one(the_secret_review)
         flash("Review Successfully Added")
@@ -164,18 +163,21 @@ def the_secret():
 
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
-    """
-    this will allow users to edit their own reviews
-    """
-       
-    edit = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
-    flash("Successfully updated")
-    return redirect(url_for("review_post"))
+    if request.method == "POST":
+        submit = {
+            "headline": request.form.get("headline"),
+            "book_review": request.form.get("book_review"),
+            "created_by": session["user"],
+            "date_time": datetime.datetime.now().strftime("%d %B %Y")
+        }
+        mongo.db.reviews.update({"_id": ObjectId(review_id)}, submit)
+        flash("Review Successfully Updated")
 
-    reviews = mongo.db.reviews.find()
+    edit = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+    reviews = mongo.db.reviews.find().sort("reviews", 1)
     return render_template(
         "edit_power.html", edit=edit, reviews=reviews)
-    
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

@@ -101,20 +101,21 @@
 
     <div class="container post-box">
         {% for review in reviews %}
+            
             <div class="row">
                 <div class="col s12 s6">  
-                    <div class="card-panel"> 
+                    <div class="card-panel">  
                         <p><em><i class="fas fa-user-circle"></i> {{ review.created_by }}</em></p>
                         <p class="post">{{ review.headline }}</p>
                         <p class="bold">{{ review.ratings }}</p>
                         <p class="post-2 bold text-color">Verified</p>
                         <p><em>Reviewed in the United Kingdom on</em> {{ review.date_time }}</p>
-                        <p>{{ review.book_review }}</p>
-                          <a href="{{ url_for('edit_post', review_id=review._id) }}" class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
-                    <a href="#" class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
+                        <p>{{ review.book_review }}</p>   
+                        {% if session.user|lower == review.created_by|lower %}
+                            <a href="{{ url_for('edit_post', review_id=review._id) }}" class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
+                            <a href="#" class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
+                        {% endif %}
                     </div>
-                  
-                    
                 </div>  
             </div>
         {% endfor %}
