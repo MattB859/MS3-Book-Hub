@@ -2,12 +2,11 @@
 {% block content %}
 
     <!-- home section -->
-    <section class="home grey lighten-4">
+    <section class="home">
         <div class="row">
             <!-- header -->
             <div class="col s6">
-                <h3 class="header"><span-1>Join our community</span-1> <br> and start <span-2>reviewing</span-2><br> <span-3></span-3> best selling books</h3>
-                
+                <h3 class="header"><span-1>Join our community</span-1> <br> and start <span-2>reviewing</span-2><br> <span-3></span-3> best selling books</h3>     
             </div>
             <div class="bg-img"></div>
             <!-- hero image -->
@@ -23,32 +22,22 @@
     <!-- end home -->
  
 
-    <!--<section>
-        <div class="about banner-logo">
-            <div class="app_banner grey darken-4">
-                <a href="{{ url_for('register') }}"> <p> <span class="reg">Register Now </span></a> to review our books anytime, anywhere with bookhub</p>   
-            </div>
-        </div>
-    </section>-->
-  
-    <h3 class="title center-align">Featured Books</h3>
-
-    <hr class="underline">
-
     <section >
         <div class="container home-books white">
-            <!--- the 48 laws of power --->
+            <h1 class="small-header">This Weeks Top Picks...</h1>
+            
             <div class="row">
-                <div class="col s4 m4 l2 book_reviews center-align">
+
+                <!--- the 48 laws of power --->
+                <div class="bold col s6 m4 l3 book_reviews center-align">
                     <img src="{{ url_for('static', filename='images/book-1.png') }}" alt="book">
                     <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
                         class=" bold waves-effect waves-light btn-small center-align buy-button" target="_blank">Buy
-                        Now <i class="fas fa-shopping-cart"></i></a>
-                       
+                        Now <i class="fas fa-shopping-cart"></i></a>    
                 </div>
 
                 <!--- book the secret --->
-                <div class="col s4 m4 l2 book_reviews center-align">
+                <div class="bold col s6 m4 l3 book_reviews center-align">
                     <img src="{{ url_for('static', filename='images/book-2.jpg') }}" alt="book">
                    
                     <a href="https://www.amazon.co.uk/Secret-Rhonda-Byrne/dp/1471172392/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1635418158&sr=8-1"
@@ -57,7 +46,7 @@
                 </div>
 
                 <!--- the wild silence --->
-                <div class="bold col s4 m4 l2 book_reviews center-align">                 
+                <div class="bold col s6 m4 l3 book_reviews center-align">                 
                     <img src="{{ url_for('static', filename='images/book-19.jpg') }}">                
                   
                 
@@ -66,17 +55,25 @@
                         Buy Now <i class="fas fa-shopping-cart"></i></a>                 
                 </div>
 
+             
                 <!--- the power of now --->
-                <div class="col s4 m4 l2 book_reviews center-align">
+                <div class="bold col s6 m4 l3 book_reviews center-align">
                     <img src="{{ url_for('static', filename='images/book-4.jpg') }}" alt="book">                
                  
                    
                     <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
                         class="bold waves-effect waves-light btn-small center-align buy-button">Buy Now <i class="fas fa-shopping-cart"></i></a>                  
                 </div>
+            </div>
+
+            <hr>
+
+            <h1 class="small-header">Top Best Sellers...</h1>
+
+            <div class="row">
                 <!--- the alchemist --->
                 <div class="card">
-                    <div class="col s4 m4 l2 book_reviews center-align">
+                    <div class="col s6 m4 l3 book_reviews center-align">
                         <img  src="{{ url_for('static', filename='images/book-11.jpg') }}" alt="book">
                         
                         
@@ -84,9 +81,11 @@
                             class="bold waves-effect waves-light btn-small center-align buy-button">Buy Now <i class="fas fa-shopping-cart"></i></a>
                     </div>
                 </div>
-                <!--- cant hurt me --->
+
+                
+                <!-- cant hurt me -->
                 <div class="card">
-                    <div class="col s4 m4 l2 book_reviews center-align">
+                    <div class="col s6 m4 l3 book_reviews center-align">
                         <img  src="{{ url_for('static', filename='images/book-12.jpg') }}" alt="book">
                       
                     
@@ -94,14 +93,32 @@
                             class="bold waves-effect waves-light btn-small center-align buy-button">Buy Now <i class="fas fa-shopping-cart"></i></a>
                     </div>
                 </div>
-            </div>
 
-    
+                <!--- feel the fear.. --->
+                <div class="col s6 m4 l3 book_reviews center-align">
+                    <img src="{{ url_for('static', filename='images/book-13.jpg') }}" alt="book">
+                    <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                        class="bold waves-effect waves-light btn-small center-align buy-button">Buy Now <i
+                        class="fas fa-shopping-cart"></i></a>
+                </div>
+
+                <!--- the mountain is you  --->
+                <div class="col s6 m4 l3 book_reviews center-align">
+                    <img src="{{ url_for('static', filename='images/book-20.jpg') }}" alt="book">
+                    <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                        class="bold waves-effect waves-light btn-small center-align buy-button">Buy Now <i
+                            class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            
+            <hr>
+
+        <h1 class="small-header">Best Reviews Of The Week...</h1>
 
             <!-- the subtle art... -->
         <div class="row">
             <div class="card">
-                <div class="col s4 m4 l2 book_reviews center-align">
+                <div class="col s6 m4 l3 book_reviews center-align">
                     <img  src="{{ url_for('static', filename='images/book-5.jpg') }}" alt="book">
             
                  
@@ -111,7 +128,7 @@
             </div>
 
             <!--- Manifest --->
-            <div class="col s4 m4 l2 book_reviews center-align">
+            <div class="col s6 m4 l3 book_reviews center-align">
                 <img src="{{ url_for('static', filename='images/book-18.jpg') }}" alt="book">
               
         
@@ -119,7 +136,7 @@
                     class="bold waves-effect waves-light btn-small center-align buy-button">Buy Now <i class="fas fa-shopping-cart"></i></a>
             </div>
 
-            <div class="col s4 m4 l2 book_reviews center-align">
+            <div class="col s6 m4 l3 book_reviews center-align">
                 <img src="{{ url_for('static', filename='images/book-7.jpg') }}" alt="book">
               
             
@@ -127,28 +144,13 @@
                     class="bold waves-effect waves-light btn-small center-align buy-button">Buy Now <i class="fas fa-shopping-cart"></i></a>
                
             </div>
-            <div class="col s4 m4 l2 book_reviews center-align">
+            <div class="col s6 m4 l3 book_reviews center-align">
                 <img  src="{{ url_for('static', filename='images/book-8.jpg') }}" alt="book">         
                
            
                 <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
                     class="bold waves-effect waves-light btn-small center-align buy-button">Buy Now <i class="fas fa-shopping-cart"></i></a>
             </div>
-            <div class="col s4 m4 l2 book_reviews center-align">
-                <img  src="{{ url_for('static', filename='images/book-13.jpg') }}" alt="book">         
-              
-           
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="bold waves-effect waves-light btn-small center-align buy-button">Buy Now <i class="fas fa-shopping-cart"></i></a>
-            </div>
-            <div class="col s4 m4 l2 book_reviews center-align">
-                <img  src="{{ url_for('static', filename='images/book-20.jpg') }}" alt="book">         
-              
-               
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="bold waves-effect waves-light btn-small center-align buy-button">Buy Now <i class="fas fa-shopping-cart"></i></a>
-            </div>
-            
         </div>
 
         </div>

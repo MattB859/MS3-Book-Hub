@@ -179,6 +179,7 @@ def edit_review(review_id):
         submit = {
             "headline": request.form.get("headline"),
             "book_review": request.form.get("book_review"),
+            "the_secret_review": request.form.get("the_secret_review"),
             "created_by": session["user"],
             "date_time": datetime.datetime.now().strftime("%d %B %Y")
         }
@@ -188,7 +189,25 @@ def edit_review(review_id):
     edit = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     reviews = mongo.db.reviews.find().sort("reviews", 1)
     return render_template(
-        "edit_power.html", edit=edit, reviews=reviews)
+        "edit_power.html, edit_secret.html", edit=edit, reviews=reviews)
+
+
+@app.route("/edit_secret/<review_id>", methods=["GET", "POST"])
+def edit_secret(review_id):
+    if request.method == "POST":
+        submit = {
+            "headline": request.form.get("headline"),
+            "the_secret_review": request.form.get("the_secret_review"),
+            "created_by": session["user"],
+            "date_time": datetime.datetime.now().strftime("%d %B %Y")
+        }
+        mongo.db.reviews_2.update({"_id": ObjectId(review_id)}, submit)
+        flash("Review Successfully Updated")
+
+    edit = mongo.db.reviews_2.find_one({"_id": ObjectId(review_id)})
+    reviews = mongo.db.reviews_2.find().sort("reviews", 1)
+    return render_template(
+        "edit_secret.html", edit=edit, reviews=reviews)
 
 
 @app.route("/delete_review/<review_id>")

@@ -569,6 +569,7 @@ h6 {
         color: rgb(2, 2, 2);
         border-left: 1px solid rgb(175, 175, 175);
         border-right: 1px solid rgb(175, 175, 175);
+        font-family: 'Yeseva One', cursive;
         padding: 5px;
         font-size: 7vw;
     }

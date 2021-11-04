@@ -19,14 +19,22 @@
 <body>
     
     <!-- top header -->
-    <header class="main-header">
-        <div>
-            <a class="header-logo center-align" href="{{ url_for('home') }}"><span>B</span>ook Hub</a>
-        </div>
+
+   <header class="main-header">
+            <a class="center-align" href="{{ url_for('home') }}"><span>Book Hub</span></a>
     </header>
+
     <!-- top navbar -->
     <nav class="nav-extended nav-bg navbar-fixed">
-        <div class="container">
+        <div class="container center-align">
+           <a class="header-logo" href="{{ url_for('home') }}"><span>Book Hub</span></a>
+           <i class="fas fa-search"></i>
+           <a href="https://www.google.com/maps/@51.3998848,-0.2081109,14z" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+           {% if session.user %}
+           <a class="btn-line" href="{{ url_for('profile', username=session['user']) }}"><i class="fas fa-user-alt"></i></a>
+           {% else %}
+           <a class="btn-line" href="{{ url_for('register') }}"><i class="fas fa-user-alt"></i></a>
+           {% endif %}
             <!--<a href="#" class="brand-logo"><span>B</span>ook Hub</a>-->
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
@@ -46,7 +54,8 @@
 
         <!-- mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
-            <li><h4 class="header-logo center-align"><span>B</span>ook Hub</h4></li>
+            
+            <li><h4 class="bold blue-text darken-4 mobile-logo center-align"><span>B</span>ook Hub</h4></li>
             <li><a href="{{ url_for('home') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
@@ -83,7 +92,7 @@
     <section>
         <div class="bag-logo">
             <div class="app grey darken-4">
-                <h1 class="red-text darken-4">Download Our App</h1>
+                <h1>Download Our App</h1>
                 <p>Get your book reviews anytime, anywhwere with the bookhub app.</p>
                 <div class="app-logo ">
                     <a href="https://www.apple.com/uk/app-store/" target="_blank"><img src="{{ url_for('static', filename='images/app-logo2.png') }}" style="width: 200px;"></a>
