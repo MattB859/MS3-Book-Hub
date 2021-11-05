@@ -9,7 +9,7 @@
     padding: 10px;
     width: 100%;
     text-align: center;
-    color: rgb(22, 22, 22);
+    border-bottom: 1px solid rgb(221, 221, 221) ;
     font-family: 'Satisfy', cursive;
     font-weight: 600;
     font-size: 50px;
@@ -27,28 +27,38 @@
 
 .main-header span {
     color: rgb(5, 11, 44);
+    padding: 10px;
+    font-family: 'Yeseva One', cursive;
+    border-left: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 .header {
     color: rgb(26, 3, 3);
     position: absolute;
+    background-color: rgba(236, 236, 236, 0.61);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
+    text-transform: uppercase;
     z-index: 0.5;
     font-weight: 600;
     top: 2em;
     left: 1.5em;
 }
 
-.header span-1{
+.header span-1 {
     font-weight: 100;
+    font-size: 35px;
+    text-transform: none
 }
 
 .header-2 span-a{
     font-weight: 100;
 }
 .header span-2{
-    color: rgb(0, 155, 226);
+    color: rgb(77, 77, 77);
 }
 
 
@@ -75,7 +85,7 @@
 .button-1{
     position: absolute;
     z-index: 1;
-    border-radius: 15px;
+    background-color: rgb(39, 39, 39);
     bottom: 250px;
     left: 90px;
     width: 250px;
@@ -118,10 +128,11 @@
 }
 
 nav ul a{
-    margin: 20px 10px;
+    border-left: 1px solid rgb(160, 160, 160);
+    margin: 10px 0;
 }
 
-.btn-line, a{
+.btn-line{
     line-height: 1.3;
 }
 
@@ -150,7 +161,7 @@ h3 {
 
 /* footer styling */
 .footer-bg {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(255, 255, 255);
 }
 
 .fixed-footer {
@@ -192,19 +203,17 @@ h3 {
     height: 800px;
 }
 
+.home-btn {
+    position: relative;
+    float: right;
+   
+}
+
 .buy-button{
     width: 60%;
     border-radius: 5%;
     background-color: rgb(37, 139, 207);  
 }
-
-/* hero background image */
-/*.bg-img img {
-    width: 120em;
-    position: absolute;
-    top: 30px;
-    right: 10px;
-}*/
 
 .bg-img{
     background: url("../images/book-shelf.png"
@@ -239,7 +248,7 @@ h3 {
     display: block;
     width: 0%;
     height: 3px;
-    background-color: rgb(221, 25, 25);
+    background-color: rgb(19, 19, 19);
     transition: 0.4s;
 }
 
@@ -253,11 +262,7 @@ h3 {
     height: 250px;
 }
 
-/* about styling */
-.about{
-    position: relative;
-    background-color: rgb(255, 255, 255);
-}
+
 
 /* profile user */
 .profile-user{
@@ -349,14 +354,18 @@ h6 {
 .post {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    line-height: 1;
+    line-height: 2;
 }
 .edit{
     margin-top: 100px;
 }
 
 .post-2{
-    line-height: 0;
+    line-height: 2;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
 }
 
 .text-color{
@@ -421,13 +430,16 @@ h6 {
 	
 .bag-logo h1{
 	margin-top: 20px;
-    color: rgb(49, 162, 228);
+    color: rgb(0, 0, 0);
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-weight: 100;}
 
 .app {
 	width: 100%;
 	margin-top: 100px;
+    background: url("../images/pexels-pixabay.jpg"
+    ) no-repeat right;
+    background-size: cover;
 	padding: 70px;}
 
 
@@ -448,11 +460,11 @@ h6 {
 
 .app, .app_banner h1{
 	font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }	
 	
 .app, .app_banner p{
-    color: #fcfcfc;
+    color: #000000;
     margin-top: 10px;
     font-size: 20px;}
 
@@ -554,30 +566,49 @@ h6 {
         ) no-repeat left ;
           background-size: cover;    
     }
-
+    
+    /* mobile nav header */
     .header-logo {
         left: 0;
         right: 0;
-        top: 10px;
+        top: 2.5px;
         position: absolute;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         display: block;
         z-index: 1;    
     }
-
+    
+     /* mobile nav header */
     .header-logo span{
         color: rgb(2, 2, 2);
         border-left: 1px solid rgb(175, 175, 175);
         border-right: 1px solid rgb(175, 175, 175);
         font-family: 'Yeseva One', cursive;
         padding: 5px;
+        font-weight: 100;
         font-size: 7vw;
     }
 
+    /* sidenav header */
+    .mobile-logo {
+        font-family: 'Yeseva One', cursive;
+        color: rgb(2, 2, 2);
+        text-transform: uppercase;
+    }
+    
+    /* large screen header blocked */
     .main-header{
         display: none;
-    } 
+    }
     
+    /* sidenav text color*/
+   .sidenav li a{
+       margin: 10px;
+       font-size: 17px;
+       color: rgb(0, 102, 128);
+   }
+    
+    /* mobile nav styling */
     .nav-bg {
         top: 0;
         position: fixed;
@@ -585,7 +616,8 @@ h6 {
         background-color: rgb(250, 250, 250);
         box-shadow: none;
     }
-
+    
+    /* mobile nav icon */
     .fa-search{
         position: relative;
         display: block;
@@ -596,6 +628,7 @@ h6 {
         float: right;
     }
 
+    /* mobile nav icon */
     .fa-map-marker-alt{
         position: relative;
         display: block;
@@ -605,7 +638,8 @@ h6 {
         color: rgb(145, 9, 4);
         float: left;
     }
-    
+
+    /* mobile nav icon */
     .fa-user-alt{
         position: relative;
         display: block;
@@ -616,23 +650,32 @@ h6 {
         color: rgb(15, 15, 15);
         float: right;
     }
-     
+    
+    /* hero background image */
     .hero-img img {
         height: 350px;
     }
-
+    
+    /* home text header */
     .header {
         left: 0;
         right: 0;
         text-align: center;
+        background-color: rgba(236, 236, 236, 0.61);
+        background-size: cover;
         padding: 15px;
-        color: rgb(0, 0, 0);
+        color: rgb(1, 7, 68);
         position: absolute;
-        font-size: 9vw;
-        top: -40px;
+        font-size: 8vw;
+        top: -50px;
 
     }
 
+    .header span-1{
+        font-size: 5vw;
+    }
+
+    /* mobile app store */
     .app_banner img{
         width: 100%;
     }
@@ -680,5 +723,17 @@ h6 {
     .button-1{
         display: none;
     }
+
+    .fixed-footer li {
+        padding: 5px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+
+    .txt {
+        font-size: 15px;
+    }
+
 
 }
