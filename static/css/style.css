@@ -161,7 +161,7 @@
 }
 
 .nav-bg a {
-    color: black;
+    color: rgb(29, 46, 78);
     font-size: 18px;
     font-weight: 600;
 }
@@ -508,15 +508,60 @@ h6 {
 .app, .app_banner p{
     color: #000000;
     margin-top: 10px;
-    font-size: 20px;}
+    font-size: 20px;
+}
 
 .app-logo{
     cursor: pointer;
-    margin-top: 20px;}
+    margin-top: 20px;
+}
     
 .app-logo img{
     padding: 0 5px 0;
-    width:60px;}
+    width:60px;
+}
+
+.fa-search{
+   display: block;
+   position: absolute;
+   top: 8px;
+}
+
+form.example input[type=text] {
+    padding: 15px;
+    height: 5px;
+    font-size: 17px;
+    border: 2px solid #191a2c;
+    float: left;
+    margin-left: 100px;
+    width: 15%;
+    margin-top: 10px;
+    background: #ffffff;
+  }
+  
+  form.example button {
+    position: absolute;
+    float: left;
+    margin-top: 10px;
+    width: 3%;
+    padding: 18.5px;
+    background: #191a2c;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #da230b;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 
 @media only screen and (max-width: 1200px) {
@@ -599,6 +644,12 @@ h6 {
     .txt {
         font-size: 10px;
     }
+    form.example input[type=text]{
+        display: none;
+    }
+    form.example button {
+        display: none;
+    }
 
 }
 
@@ -648,8 +699,8 @@ h6 {
        margin: 10px;
        font-size: 17px;
        color: rgb(0, 102, 128);
-   }
-    
+    }
+
     /* mobile nav styling */
     .nav-bg {
         top: 0;

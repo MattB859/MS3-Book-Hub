@@ -107,7 +107,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -   ### Current Features
 
-    - This is a six-page website.
+    All dynamics of CRUD functionality have been implemented in this site for registered users who are logged in.
+
+    - This is a 5 page website.
 
     - Home page.
 
@@ -121,7 +123,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - Log Out page.
 
-    - The website has sub pages with more description on the books, and allows all registered users to view and leave reviews.
+    - The website has sub pages with more description of the books, and allows all registered users to view and leave reviews.
 
     - Users can leave reviews by filling out a form that promps them to enter a heading and add written review. User can also edit post and delete any reviews they make.
 

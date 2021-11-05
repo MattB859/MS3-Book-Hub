@@ -21,7 +21,7 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    
+
     <!-- top header -->
    <header class="main-header">
             <a class="center-align" href="{{ url_for('home') }}"><span>Book Hub</span></a>
@@ -29,17 +29,22 @@
             style="width: 50px;" alt="">
     </header>
 
+    
+
     <!-- top navbar -->
     <nav class="nav-bg navbar-fixed" id="myHeader">
+        
         <div class="container center-align">
-           <a class="header-logo" href="{{ url_for('home') }}"><span>Book Hub</span></a>
-           <i class="fas fa-search"></i>
-           <a href="https://www.google.com/maps/@51.3998848,-0.2081109,14z" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
-           {% if session.user %}
-           <a class="btn-line" href="{{ url_for('profile', username=session['user']) }}"><i class="fas fa-user-alt"></i></a>
-           {% else %}
-           <a class="btn-line" href="{{ url_for('register') }}"><i class="fas fa-user-alt"></i></a>
-           {% endif %}
+            <a class="header-logo" href="{{ url_for('home') }}"><span>Book Hub</span></a>
+            <i class="fas fa-search"></i>
+            <a href="https://www.google.com/maps/@51.3998848,-0.2081109,14z" target="_blank"><i
+                    class="fas fa-map-marker-alt"></i></a>
+            {% if session.user %}
+            <a class="btn-line" href="{{ url_for('profile', username=session['user']) }}"><i
+                    class="fas fa-user-alt"></i></a>
+            {% else %}
+            <a class="btn-line" href="{{ url_for('register') }}"><i class="fas fa-user-alt"></i></a>
+            {% endif %}
             <!--<a href="#" class="brand-logo"><span>B</span>ook Hub</a>-->
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
@@ -55,6 +60,11 @@
                 {% endif %}
             </ul>
         </div>
+        <!-- search form -->
+        <form class="example" action="/action_page.php">
+            <input type="text" placeholder="Title, author, keyword" name="search2">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
     </nav>
 
         <!-- mobile sidenav -->
