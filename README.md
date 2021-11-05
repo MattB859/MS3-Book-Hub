@@ -88,53 +88,64 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     All dynamics of CRUD functionality have been implemented in this site for registered users who are logged in.
 
 
-    | Function      | Location      | 
-    | ------------- | ------------- | 
-    | Create        | Add Reviews   | 
-    |               | Share Thoughts| 
-    | Read          | All Reviews   | 
-    |               | Book Reviews  | 
+    | Function      | Location       | 
+    | ------------- | -------------  | 
+    | Create        | Review Books   | 
+    |               | Write Review   | 
+    | Read          | Book Reviews   | 
+    |               | All Reviews    |
+    | Update        | Edit Review    |
+    |               | Update Review  | 
+    | Delete        | Book Reviews   |   
     
 
-
-    ## Home page.
-
--   ### Hero Section
-
-    - For the hero section it is important that first time visitors understand what the site is all about. The background hero image shows images of book covers that are featured on the site.
-
-    - On the left of the image is some text that invites new visitors to join.
-       
-        <img align="center" src="./static/images/book-hub-read.png">
+###  Header
 
 -   ### Navigation bar
 
-    - When entering the website, users are instantly greeted with a clean and easy to read navigation bar to go to the page of their choice.
+    - On entering the website, users are greeted with a clean and easy to read navigation bar which contains links that are fixed to the top of the page so users are never left without accsess to go to the page of their choice.
 
     - On the navigation bar is a registration link that allows visitors to create an account by registering their details.
 
-    - Frequent users can sign in to accsess their profile and leave reviews on all the latest books.
+    - At the top of the navigation bar users can find the site header logo, when clicked will direct users back to the home page.
 
-    - As visitors srcoll further down they are met with a selection of books featured on the site. Underneath each book visitors can find links to the Amazon website where they can purchase books if they wish to buy.
+    - Jinja if statements were used to ensure only certain navigation links are visible to registered users. Unregistered users will not have accsess to review books. 
 
     - For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
 
+-   ### Hero Section
 
-    - Profile page.
+    - The background hero image shows images of book covers that are featured on the site.
 
-    - Review books page.
-   
-    - Log In page.
+    - On the left of the image is some text that invites new visitors to join.
 
-    - Register page.
+    - As visitors srcoll further down they are met with a selection of books featured on the site. Underneath each book visitors can find links to the Amazon website where they can purchase books if they wish to buy.
 
-    - Log Out page.
+    - All pages are fully responsive on all devices.
+
+    <img align="center" src="./static/images/home-hero-img.png">
+
+-   ### Log In
+
+    - Frequent users can sign in to accsess additional links to leave reviews on all the latest books.
+
+-   ### Register
+
+    <img align="center" src="./static/images/register.png">
+
+    -  New visitors are able to Register their details by providing an email address, user name and password to create an account.
+
+    - Registered users have accsess to their profile page that gives a warm greeting when logged in.
+
+-   ### Review books
+
+    - Users can add reviews by clicking on the book cover image or pressing the write a review button below. Users are then taken to a page were they can fill out a form that promps them to enter a heading and written review. User can also edit and delete their reviews.
 
     - The website has sub pages with more description of the books, and allows all registered users to view and leave reviews.
 
-    - Users can leave reviews by filling out a form that promps them to enter a heading and add written review. User can also edit post and delete any reviews they make.
+-   ### Log Out
 
-    - All pages are fully responsive on all devices.
+    - Users with accounts can log out of their accounts.
 
 -   ###  Future Features
 
