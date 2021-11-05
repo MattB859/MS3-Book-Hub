@@ -113,7 +113,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
 
--   ### Hero Section
+###  Hero Section
+
+-   ### Home Page
 
     - The background hero image shows images of book covers that are featured on the site.
 
@@ -125,13 +127,15 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     <img align="center" src="./static/images/home-hero-img.png">
 
--   ### Log In
+###  Log In
 
-    - Frequent users can sign in to accsess additional links to leave reviews on all the latest books.
+-  ### User Log In
 
-    ## Register
+    - Frequent users can log in to accsess additional links to leave reviews on all the latest books.
+
+###  Register
  
--   ### Sign Up
+-   ### Sign Up Page
 
     <img align="center" src="./static/images/register.png">
 
@@ -139,23 +143,47 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - Registered users have accsess to their profile page that gives a warm greeting when logged in.
 
-    ## Profile 
+###  Profile Page 
 
 -   ### Welcome    
 
     - Flask provides a really simple way to give feedback to a user with the flashing system. The message is shown at the top of the page and reads "log in was successful" this lets the user know they have logged in. 
 
-    ## Review books
+###  Review books
 
-    - Users can add reviews by clicking on the book cover image or pressing the write a review button below. Users are then taken to a page were they can fill out a form that promps them to enter a heading and written review. User can also edit and delete their reviews.
+-  ### Book Reviews
+
+     <img align="center" src="./static/images/book-review.png">
+
+    - Users can add reviews by clicking on the book cover image or pressing the write a review button below. Users are then taken to a page where they can fill out a form that promps them to enter a heading and written review. 
 
     - The website has sub pages with more description of the books, and allows all registered users to view and leave reviews.
 
-    ## Log Out
+### Edit 
+
+-  ### Edit Reviews
+
+    <img align="center" src="./static/images/edit-delete.png">
+
+   - User are able to edit their own reviews using an edit button located at the bottom of the reivew.
+
+### Delete
+
+-  ### Delete Reviews
+
+    <img align="center" src="./static/images/edit-delete.png">
+
+   - User are able to delete their reviews using the delete button located at the bottom of the reivew.
+
+###  Log Out Page
+
+-  ### User Log Out
 
     - When a user logs out of their account a flash message is  displayed that reads "You have been logged out" to let users know they have logged out.
 
--   ##  Future Features
+###  Features
+
+-  ### Future Features
 
     - To add an online payment system that allows users to buy books directly from the website.
 
