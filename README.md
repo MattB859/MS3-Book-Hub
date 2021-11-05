@@ -1,6 +1,6 @@
 <h1 align="center">The Book Hub</h1>
 
-<img align="center" src="./static/images/book_hub.png">
+<img align="center" src="./static/images/book-hub-site.png">
 
 <h1>About</h1>
 
@@ -65,7 +65,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -   ### Colour Scheme
 
-    - The main colours used for the site are Crimson, Dark Grey, and Dark Pink.
+    - The main colours used for the site are White and Dark Grey.
 
 -   ### App Banner
 
@@ -81,11 +81,11 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     -   Mobile Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r2278)
     -   Tablet Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/rCA01) 
     
-    ## Features
+## Features
 
 -   ### Current Features
 
-    All dynamics of CRUD functionality have been implemented in this site for registered users who are logged in.
+    - All dynamics of CRUD functionality have been implemented in this site for registered users who are logged in.
 
 
     | Function      | Location       | 
@@ -129,7 +129,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - Frequent users can sign in to accsess additional links to leave reviews on all the latest books.
 
--   ### Register
+    ## Register
+ 
+-   ### Sign Up
 
     <img align="center" src="./static/images/register.png">
 
@@ -137,17 +139,23 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - Registered users have accsess to their profile page that gives a warm greeting when logged in.
 
--   ### Review books
+    ## Profile 
+
+-   ### Welcome    
+
+    - Flask provides a really simple way to give feedback to a user with the flashing system. The message is shown at the top of the page and reads "log in was successful" this lets the user know they have logged in. 
+
+    ## Review books
 
     - Users can add reviews by clicking on the book cover image or pressing the write a review button below. Users are then taken to a page were they can fill out a form that promps them to enter a heading and written review. User can also edit and delete their reviews.
 
     - The website has sub pages with more description of the books, and allows all registered users to view and leave reviews.
 
--   ### Log Out
+    ## Log Out
 
-    - Users with accounts can log out of their accounts.
+    - When a user logs out of their account a flash message is  displayed that reads "You have been logged out" to let users know they have logged out.
 
--   ###  Future Features
+-   ##  Future Features
 
     - To add an online payment system that allows users to buy books directly from the website.
 
