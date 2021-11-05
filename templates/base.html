@@ -22,6 +22,8 @@
 
    <header class="main-header">
             <a class="center-align" href="{{ url_for('home') }}"><span>Book Hub</span></a>
+            <img src="{{ url_for('static', filename='images/pngwing-7.png') }}"
+            style="width: 50px;" alt="">
     </header>
 
     <!-- top navbar -->
@@ -54,13 +56,17 @@
 
         <!-- mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
-            
-            <li><h4 class="bold blue-text darken-4 mobile-logo center-align"><span>B</span>ook Hub</h4></li>
+            <li><h4 class="mobile-logo center-align"><span>B</span>ook Hub</h4></li>
+            <hr class="mobile-hr">
             <li><a href="{{ url_for('home') }}">Home</a></li>
+            <hr>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                <hr>
                 <li><a href="{{ url_for('add_review') }}">Review Books</a></li>
+                <hr>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                <hr class="mobile-hr">
             {% else %}
                 <li><a href="#">About Us</a></li>
                 <li><a href="{{ url_for('login') }}">Log In</a></li>
@@ -91,9 +97,9 @@
     
     <section>
         <div class="bag-logo">
-            <div class="app grey darken-4">
+            <div class="app grey lighten-2 ">
                 <h1>Download Our App</h1>
-                <p>Get your book reviews anytime, anywhwere with the bookhub app.</p>
+                <p class="bold">Get your book reviews anytime, anywhwere with the bookhub app.</p>
                 <div class="app-logo ">
                     <a href="https://www.apple.com/uk/app-store/" target="_blank"><img src="{{ url_for('static', filename='images/app-logo2.png') }}" style="width: 200px;"></a>
                     <a href="https://play.google.com/store/search?q=bookhub&c=apps" target="_blank"><img src="{{ url_for('static', filename='images/app-logo4.png') }}" style="width: 200px;"></a>
@@ -103,17 +109,18 @@
     </section>
 
     <!-- footer -->
-    <footer class="page-footer footer-bg fixed-footer white black-text">
+    <footer class="page-footer footer-bg fixed-footer black-text">
         <div class="container">
             <div class="row">
-                <div class="col 12 s4">
-                    <h6 class="black-text"><i class="fas fa-book-open"></i> Book Hub</h6>
+                <div class="col s12 l4">
+                    <h6 class="black-text"></i> Book Hub</h6>
                     <p>Supporting local bookshops</p>
-                    <h6 class="black-text"> Follow us </h6><i class="fab fa-twitter"></i>
+                    <h6 class="black-text"> Follow us</h6>
+                    <i class="fab fa-twitter"></i>
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-instagram"></i>
                 </div>
-                <div class="col 4 s4 right">
+                <div class="col s12 l4 right">
                     <h5 class="black-text bold">Links</h5>
                     <ul>
                         <li><a class="black-text text-lighten-3" href="#">About</a></li>

@@ -26,46 +26,48 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     -   Frameworks, Libraries & Programs       
 
 
-
 ## User Experience (UX)
 
 ### User stories
 
 -   ### First Time Visitor Goals
 
-    - As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about what book hub has to offer.
-     - As a First Time Visitor, I want to easily navigate throught the site to find information.
-     As a First Time Visitor, I want the site to be responsive on all devices
-    - As a First Time Visitor, I want the registration process to be simple and straight forward.
-    - As a First Time Visitor, I want to purchase books using links provided.
-    - As a First Time Visitor, I want to read and add my reviews.
+    - As a First Time Visitor, I want to understand the main purpose of the site and learn more about what the site has to offer.
+    - As a First Time Visitor, I want to easily navigate throught the site to find information.
+    - As a First Time Visitor, I want the site to be responsive on all devices.
+    - As a First Time Visitor, I want to register my information so i can access features that are exclusive to registered users.
+    - As a First Time Visitor, I want to buy recomended books using the links provided.
+    - As a First Time Visitor, I want to see the book cover images to get an idea of what will be availble to reivew and buy.
+
 
 -   ### Returning Visitor Goals 
 
     - As a Returning Visitor, I want to log in and see my reviews. 
     - As a Returning Visitor, I want to see if there are any newly added books to review.
-     - As a Returning Visitor, I want to be able to edit and delete my reviews.
-     - As a Returning Visitor, I want to log in and see my reviews.
-     - As a Returning Visitor, I want to be updated about the lastest books.
+    - As a Returning Visitor, I want to be able to edit and delete my reviews.
+    - As a Returning Visitor, I want to see all other user reviews on the site.
 
 -   ### Frequent User Goals
 
-    - As a Frequent User, I want to log into my profile to read all of the lastest reviews from the bookhub community. 
-    - As a Frequent User, I want to add new reviews on the lastest books.
-     - As a Frequent User, I want to see which books are the best to buy based on good or bad reviews from other users.
-     - As a Frequent User, I want to be able to edit and delete my reviews.
+    - As a Frequent User, I want to log into my account and read all the lastest reviews. 
+    - As a Frequent User, I want to add new reviews.
+    - As a Frequent User, I want to see which books are the best to buy based on good or bad reviews from other users.
+    - As a Frequent User, I want to edit and delete my reviews when necessary.
+    - As a Frequent User, I want my reviews to be safe and secure.
+    - As a Frequent User, I want to see the dates for all reviews so I can determine when each review was made.
 
-### Site Owner Goals
-  
--   To Earn money on each book purchased via an affiliate link from the website.    
+-   ### Site Owner Goals
+
+    -  As a Site Owner, I want to earn money on each book purchased via an affiliate link from the website.    
+
 
 ## Website Design 
 
 -   ### Home Page
 
-    - For the home page it is important that first time visitors understand what the site is all about. The background hero image is designed to show new and exsisting vistors the collection of books that are available to review on the website.
+    - For the home page it is important that first time visitors understand what the site is all about. The background hero image shows images of book covers that are featured on the site.
 
-    - On the left of the image is some text which gives a warm inviting message.
+    - On the left of the image is some text that invites new visitors to join.
        
         <img align="center" src="./static/images/book-hub-read.png">
 
@@ -78,7 +80,6 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     - Frequent users can sign in to accsess their profile and leave reviews on all the latest books.
 
     - For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
-
 
 -   ### Colour Scheme
 
