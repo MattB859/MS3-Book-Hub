@@ -61,33 +61,11 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     -  As a Site Owner, I want to earn money on each book purchased via an affiliate link from the website.    
 
 
-## Website Design 
-
--   ### Home Page
-
-    - For the home page it is important that first time visitors understand what the site is all about. The background hero image shows images of book covers that are featured on the site.
-
-    - On the left of the image is some text that invites new visitors to join.
-       
-        <img align="center" src="./static/images/book-hub-read.png">
-
--   ### Navigation bar
-
-    - When entering the website, users are instantly greeted with a clean and easy to read navigation bar to go to the page of their choice.
-
-    - On the navigation bar is a registration link that allows visitors to create an account by registering their details.
-
-    - Frequent users can sign in to accsess their profile and leave reviews on all the latest books.
-
-    - For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
+## Design Choices 
 
 -   ### Colour Scheme
 
     - The main colours used for the site are Crimson, Dark Grey, and Dark Pink.
-
--   ### Featured Books
-
-    - Visitors are able to view a selection of books featured with affiliate links underneath that will take them to the Amazon website if they wish to buy the book.
 
 -   ### App Banner
 
@@ -103,20 +81,49 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     -   Mobile Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r2278)
     -   Tablet Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/rCA01) 
     
-## Features
+    ## Features
 
 -   ### Current Features
 
     All dynamics of CRUD functionality have been implemented in this site for registered users who are logged in.
 
-    - This is a 5 page website.
 
-    - Home page.
+    | Function      | Location      | 
+    | ------------- | ------------- | 
+    | Create        | Add Reviews   | 
+    |               | Share Thoughts| 
+    | Read          | All Reviews   | 
+    |               | Book Reviews  | 
+    
+
+
+    ## Home page.
+
+-   ### Hero Section
+
+    - For the hero section it is important that first time visitors understand what the site is all about. The background hero image shows images of book covers that are featured on the site.
+
+    - On the left of the image is some text that invites new visitors to join.
+       
+        <img align="center" src="./static/images/book-hub-read.png">
+
+-   ### Navigation bar
+
+    - When entering the website, users are instantly greeted with a clean and easy to read navigation bar to go to the page of their choice.
+
+    - On the navigation bar is a registration link that allows visitors to create an account by registering their details.
+
+    - Frequent users can sign in to accsess their profile and leave reviews on all the latest books.
+
+    - As visitors srcoll further down they are met with a selection of books featured on the site. Underneath each book visitors can find links to the Amazon website where they can purchase books if they wish to buy.
+
+    - For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
+
 
     - Profile page.
 
     - Review books page.
-
+   
     - Log In page.
 
     - Register page.
