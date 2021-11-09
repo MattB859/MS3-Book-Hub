@@ -22,8 +22,12 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -  ###  [Technologies](#Technologies-Used)
     -   [Languages](#Languages-Used)
-    -   [Database Used](#Database-Used)
+    -   [Database](#Database-Used)
     -   [Libraries](#frameworks-Libraries-&-Programs-Used)
+
+-  ###  [Features](#Features)  
+    -   [Site Navigation](#Site-Navigation)
+    -   [Current Features](#Current-Features)
 
 
 ## User Experience (UX)
@@ -65,6 +69,8 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -   ### Colour Scheme
 
+    <img align="center" src="./static/images/color-palette.png">  
+
     - The main colours used for the site are White and Dark Grey.
 
 -   ### App Banner
@@ -99,9 +105,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     - [Log In](https://balsamiq.cloud/seqremb/pt4bgf1/r340B)
     
     
-# Features
+## Features
 
-##  Site Navigation
+###  Site Navigation
 
 -  ### User's Logged In
 
@@ -177,19 +183,11 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - The website has sub pages with more description of the books, and allows all registered users to view and leave reviews.
 
-### Edit 
+### Edit/Delete [see here](/static/images/edit-delete.png)
 
--  ### Edit Reviews
-
-    <img align="center" src="./static/images/edit-delete.png">
+-  ### Edit OR Delete Reviews
 
    - User are able to edit their own reviews using an edit button located at the bottom of the reivew.
-
-### Delete
-
--  ### Delete Reviews
-
-    <img align="center" src="./static/images/edit-delete.png">
 
    - User are able to delete their reviews using the delete button located at the bottom of the reivew.
 
