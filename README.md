@@ -10,20 +10,20 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 ## Contents
 
--  ###  UX (User Experience)
-    -   User Stories
-    -   Site Owner Goals
+-  ###  [UX User Experience](#User-Experience-(UX))
+    -   [User Stories](#User-stories)
+    -   [Site Owner Goals](#Site-Owner-Goals)
 
--  ###  Website Design 
-    -   Typography
-    -   Colours
-    -   Imagery
-    -   Wireframes
+-  ###  [Website Design](#Design-Choices) 
+    -   [Typography](#Typography)
+    -   [Colours](#Colour-Scheme)
+    -   [Imagery](#Imagery)
+    -   [Wireframes](#Wireframes)
 
--  ###  Technologies
-    -   Languages
-    -   Database
-    -   Frameworks, Libraries & Programs       
+-  ###  [Technologies](#Technologies-Used)
+    -   [Languages](#Languages-Used)
+    -   [Database Used](#Database-Used)
+    -   [Libraries](#frameworks-Libraries-&-Programs-Used)
 
 
 ## User Experience (UX)
@@ -75,17 +75,28 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     -  The Haettenschweiler font is used for the websites header logo with Arial, Helvetica, sans-serif for the rest of the website's font.
     
--   ### Wireframes
+## Wireframes
 
-    -   Home Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/r18CA)
-    -   Register Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rE207)
-    -   Log In Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rCA90)
-    -   Review Books Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/r1276)
-    -   Add Review Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rE984)
-     -   Edit/Delete Review Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/r5BA5)
-    -   User Profile Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rA5CC)
-    -   Log Out Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rDE5E)
-    -   Mobile Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rE784)
+-   ### Desktop view
+
+    - [Home](https://balsamiq.cloud/seqremb/pt4bgf1/r18CA)
+    - [Register](https://balsamiq.cloud/seqremb/pt4bgf1/rE207)
+    - [Log In](https://balsamiq.cloud/seqremb/pt4bgf1/rCA90)
+    - [Review Books](https://balsamiq.cloud/seqremb/pt4bgf1/r1276)
+    - [Add Review](https://balsamiq.cloud/seqremb/pt4bgf1/rE984)
+    - [Edit/Delete](https://balsamiq.cloud/seqremb/pt4bgf1/r5BA5)
+    - [User Profile](https://balsamiq.cloud/seqremb/pt4bgf1/rA5CC)
+    - [Log Out](https://balsamiq.cloud/seqremb/pt4bgf1/rDE5E)
+    - [Site Map](https://balsamiq.cloud/seqremb/pt4bgf1/r3295)
+
+-   ### Mobile view
+
+    - [Home](https://balsamiq.cloud/seqremb/pt4bgf1/rE784)
+    - [Menu](https://balsamiq.cloud/seqremb/pt4bgf1/rE04B)
+    - [Add Review](https://balsamiq.cloud/seqremb/pt4bgf1/r114A)
+    - [Edit/Delete](https://balsamiq.cloud/seqremb/pt4bgf1/r16A9)
+    - [Register](https://balsamiq.cloud/seqremb/pt4bgf1/rC596)
+    - [Log In](https://balsamiq.cloud/seqremb/pt4bgf1/r340B)
     
     
 # Features
@@ -126,9 +137,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
 
-###  Hero Section
+###  Imagery
 
--   ### Home Page
+-   ### Home [see here](/static/images/home-hero-img.png)
 
     - The background hero image shows images of book covers that are featured on the site.
 
@@ -138,19 +149,15 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - All pages are fully responsive on all devices.
 
-    <img align="center" src="./static/images/home-hero-img.png">
-
 ###  Log In
 
 -  ### User Log In
 
     - Frequent users can log in to accsess additional links to leave reviews on all the latest books.
 
-###  Register
+###  Register [see here](/static/images/register.png)
  
--   ### Sign Up Page
-
-    <img align="center" src="./static/images/register.png">
+-  ### Sign Up Page 
 
     -  New visitors are able to Register their details by providing an email address, user name and password to create an account.
 
@@ -162,11 +169,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - Flask provides a really simple way to give feedback to a user with the flashing system. The message is shown at the top of the page and reads "log in was successful" this lets the user know they have logged in. 
 
-###  Review books
+###  Review books [see here](/static/images/book-review.png)
 
--  ### Book Reviews
-
-     <img align="center" src="./static/images/book-review.png">
+-  ### Book Reviews 
 
     - Users can add reviews by clicking on the book cover image or pressing the write a review button below. Users are then taken to a page where they can fill out a form that promps them to enter a heading and written review. 
 
