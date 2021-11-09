@@ -77,11 +77,24 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     
 -   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r0742)
-    -   Mobile Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/r2278)
-    -   Tablet Wireframe - [View](https://balsamiq.cloud/seqremb/ppq8zy/rCA01) 
+    -   Home Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/r18CA)
+    -   Register Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rE207)
+    -   Log In Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rCA90)
+    -   Review Books Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/r1276)
+    -   Add Review Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rE984)
+     -   Edit/Delete Review Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/r5BA5)
+    -   User Profile Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rA5CC)
+    -   Log Out Page Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rDE5E)
+    -   Mobile Wireframe - [View](https://balsamiq.cloud/seqremb/pt4bgf1/rE784)
     
-## Features
+    
+# Features
+
+##  Site Navigation
+
+-  ### User's Logged In
+
+    <img align="center" src="./static/images/site-map.png">  
 
 -   ### Current Features
 
@@ -96,9 +109,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     |               | All Reviews    |
     | Update        | Edit Review    |
     |               | Update Review  | 
-    | Delete        | Book Reviews   |   
+    | Delete        | Book Reviews   | 
     
-
+    
 ###  Header
 
 -   ### Navigation bar
@@ -211,35 +224,35 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     -  Used for the initialisation of Materialize CSS components
 -  ### [Materialize:](https://getbootstrap.com/docs/5.0/getting-started/download/) 
     -  Used to design a mobile-first responsive website along with custom components
--  ### [Flask:](https://en.wikipedia.org/wiki/Flask)
+-  ### [Flask](https://en.wikipedia.org/wiki/Flask)
     -  Used as a lightweight WSGI web application framework
--  ### [PyMongo:](https://docs.mongodb.com/drivers/pymongo/)
+-  ### [PyMongo](https://docs.mongodb.com/drivers/pymongo/)
     -  A Python distribution containing tools for working with MongoD
--  ### [Flask-PyMongo:](https://flask-pymongo.readthedocs.io/en/latest/)
+-  ### [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/)
     -  Flask-PyMongo bridges Flask and PyMono
--  ### [Werkzeug:](https://de.wikipedia.org/wiki/Werkzeug)
+-  ### [Werkzeug](https://de.wikipedia.org/wiki/Werkzeug)
     -  A comprehensive WSGI web application library
--  ### [itsDangerous:](https://itsdangerous.palletsprojects.com/en/2.0.x/)
+-  ### [itsDangerous](https://itsdangerous.palletsprojects.com/en/2.0.x/)
     -  Allows data to be sent and received safely using python and secret keys
--  ### [DNSPython:](https://pypi.org/project/dnspython/)
+-  ### [DNSPython](https://pypi.org/project/dnspython/)
     -  A DNS toolkit for Python
--  ### [Jinja2:](https://jinja.palletsprojects.com/en/3.0.x/)
+-  ### [Jinja2](https://jinja.palletsprojects.com/en/3.0.x/)
     -  Jinja2 is a full-featured template engine for python    
--  ### [Click:](https://click.palletsprojects.com/en/8.0.x/)
+-  ### [Click](https://click.palletsprojects.com/en/8.0.x/)
     -  A Python package for creating beautiful command line interfaces 
--  ### [Heroku:](https://id.heroku.com/)
+-  ### [Heroku](https://id.heroku.com/)
     -  Used to deploy, manage, and scale modern apps
--  ### [Git:](https://git-scm.com/)
+-  ### [Git](https://git-scm.com/)
     -  Git was used for version control by utilizing the Gitpod terminal to commit to Git and Puch to GitHub
--  ### [GitHub:](https://github.com/)
+-  ### [GitHub](https://github.com/)
     -  GitHub is used to store project codes after being pushed from the Gitpod    terminal
--  ### [Google Fonts:](https://fonts.google.com/)
+-  ### [Google Fonts](https://fonts.google.com/)
     -  Google fonts were used to import 'Haettenschweiler' for the main website logo
--  ### [Font Awesome:](https://fontawesome.com/) 
+-  ### [Font Awesome](https://fontawesome.com/) 
     -  Font Awesome were used on all social icons of the website.
--  ### [Affinity Designer:](https://affinity.serif.com/en-gb/designer/)
+-  ### [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
     -  Affinity Designer was used to create the hero background image for the website
--  ### [Balsamiq:](https://balsamiq.com/)
+-  ### [Balsamiq](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process
         
 ## Testing
