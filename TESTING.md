@@ -18,7 +18,7 @@
 
 | <p align="center">Feature</p>  | <p align="center">Expected</p> | <p align="center">Testing</p>    | <p align="center">Results </p>  | Pass/Fail  |
 | ------------------------------ | -----------------------------  | -------------------------------- | ------------------------------  | :--------: |
-| Buy Now       | Clicking Buy Now button will <br> direct users to Amazon  | Click Buy Now   | navigates to the Amazon website   | Pass       |
+| Buy Now       | Clicking Buy Now button will <br> direct users to Amazon.co.uk  | Click Buy Now   | navigates to the Amazon website   | Pass       |
 | Write A Review| Clicking the Write A Review <br> button will direct users to <br> the books add review page   | Click Write A Review   | navigates users to the <br> books add review page  | Pass    |
 | Scroll Up     | Click the scroll up button <br> to redirect users back <br> to the top of the page    | Click Scroll Up | Takes users back to <br> the top of the page     | Pass       |
 
@@ -36,7 +36,10 @@
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
-| Register   | Username and Password must <br> be between 5 and 15 characters | Attempt to enter username <br> and password with lessthan 5 <br> characters | error displays" please match the <br> requested formate" | Pass |
+| Register   | Username and Password must <br> have a minimum length <br> of 5 characters | Attempt to enter username <br> and password with less than 5 <br> characters | error displays "please match the <br> requested formate" | Pass |
+|          | Username and Password must <br> have a maximum length <br> of 15 characters | Attempt to enter username <br> and password with more than 15 <br> characters | Form restrcits the user from <br> using more than 15 characters | Pass |
+|          | Users can not register <br> with an existing username | Attempt to register with <br> an existing username | error flash message <br> "Username already exists" | Pass |
+
 
 
 
