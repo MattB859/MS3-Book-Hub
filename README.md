@@ -71,16 +71,28 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     <img align="center" src="./static/images/color-palette.png">  
 
-    - The main colours used for the site are White and Dark Grey.
+    - The Coolors palette was used to put together a nutral colour scheme for the site which complements the grey wooden hero image.
 
--   ### App Banner
+## Typography
 
-    - Here visitors can find links to the app store to download the mobile app for a quicker and easier acsess on the go.     
+-  ### Fonts
 
--   ### Typography
+    -  The [Yeseva One](https://fonts.google.com/specimen/Yeseva+One?preview.text=BOOK%20HUB&preview.text_type=custom) font is used for the websites main header logo.
 
-    -  The Haettenschweiler font is used for the websites header logo with Arial, Helvetica, sans-serif for the rest of the website's font.
+    - Helvetica sans-serif is used for the rest of the website's font.
+
+##  Imagery
+
+-   ### Home [see here](/static/images/home-hero-img.png)
+
+    - The background hero image shows a book shelf with a wooden background and images of books that are featured on the site.
+
+    - On the left of the image is some text that invites new visitors to join.
+
+    - As visitors srcoll further down they are met with a selection of books featured on the site. Underneath each book visitors can find links to the Amazon website where they can purchase books if they wish to buy.
     
+    - All pages are fully responsive on all devices.
+
 ## Wireframes
 
 -   ### Desktop view
@@ -109,9 +121,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 ###  Site Navigation
 
--  ### User's Logged In
+-  ### User site map
 
-    <img align="center" src="./static/images/site-map.png">  
+    <img align="center" src="./static/images/site-map-1.png">  
 
 -   ### Current Features
 
@@ -142,18 +154,6 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     - Jinja if statements were used to ensure only certain navigation links are visible to registered users. Unregistered users will not have accsess to review books. 
 
     - For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
-
-###  Imagery
-
--   ### Home [see here](/static/images/home-hero-img.png)
-
-    - The background hero image shows images of book covers that are featured on the site.
-
-    - On the left of the image is some text that invites new visitors to join.
-
-    - As visitors srcoll further down they are met with a selection of books featured on the site. Underneath each book visitors can find links to the Amazon website where they can purchase books if they wish to buy.
-
-    - All pages are fully responsive on all devices.
 
 ###  Log In
 
@@ -221,7 +221,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 -   ### [MongoDB Atlas](https://cloud.mongodb.com/)
     -   Used to store structured user and book review data.
 
-## Frameworks, Libraries & Programs Used
+### Frameworks & Libraries
 
 -  ### [JQuery:](https://jquery.com/)
     -  Used for the initialisation of Materialize CSS components
@@ -243,21 +243,29 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     -  Jinja2 is a full-featured template engine for python    
 -  ### [Click](https://click.palletsprojects.com/en/8.0.x/)
     -  A Python package for creating beautiful command line interfaces 
+
+
+### Programs Used
+
 -  ### [Heroku](https://id.heroku.com/)
     -  Used to deploy, manage, and scale modern apps
+-  ### [Gitpod](https://www.gitpod.io/)
+    -  An online IDE linked to the GitHub repository used to write my code.    
 -  ### [Git](https://git-scm.com/)
     -  Git was used for version control by utilizing the Gitpod terminal to commit to Git and Puch to GitHub
 -  ### [GitHub](https://github.com/)
     -  GitHub is used to store project codes after being pushed from the Gitpod    terminal
+-  ### [JSHint](https://jshint.com/) 
+    -  Used to detect errors in the JavaScript files 
 -  ### [Google Fonts](https://fonts.google.com/)
-    -  Google fonts were used to import 'Haettenschweiler' for the main website logo
+    -  Google fonts were used to import 'Yeseva One' for the main website logo
 -  ### [Font Awesome](https://fontawesome.com/) 
     -  Font Awesome were used on all social icons of the website.
 -  ### [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
     -  Affinity Designer was used to create the hero background image for the website
 -  ### [Balsamiq](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process
-        
+
 ## Testing
     
 -   ### Validator Testing    

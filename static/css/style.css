@@ -38,13 +38,10 @@
 
 /* header styling */
 .main-header{
-    padding: 10px;
     width: 100%;
     text-align: center;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(221, 221, 221) ;
-    font-family: 'Satisfy', cursive;
-    font-weight: 600;
     font-size: 50px;
 }
 
@@ -52,7 +49,6 @@
     font-weight: 600;
     color: rgb(4, 15, 37);
 }
-
 
 .header-logo {
     display: none;
