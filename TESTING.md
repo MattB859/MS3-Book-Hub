@@ -4,7 +4,7 @@
 
     | Feature       | Expected                      | Testing         | Results                        | Pass/Fail  |
     | ------------- | ----------------------------- | ---------       | ---------------------------    | :--------: |
-    | Nav link      | Clicking Home will redirect   | Click Home      | navigates to home page         | Pass       |
+    | Nav links     | Clicking home will redirect <br> | Click Home      | navigates to home page         | Pass       |
     |               | users to the home page        |                 |                                |            |            
     |               | Clicking review books takes   | Click           | navigates to the book          | Pass       |
     |               | users to the book review page | Review books    | review page                    |            |
