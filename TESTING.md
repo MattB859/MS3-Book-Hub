@@ -1,7 +1,6 @@
-## Testing
+# Testing
 
--   ### Navigation testing
-
+- ## Navigation testing
 
     | Feature       | Expected                      | Testing         | Results                        | Pass/Fail  |
     | ------------- | ----------------------------- | ---------       | ---------------------------    | :--------: |
@@ -23,15 +22,28 @@
 
 -   ### Buttons
 
-    | Feature       | Expected                      | Testing         | Results                        | Pass/Fail  |
-    | ------------- | ----------------------------- | ---------       | ---------------------------    | :--------: |
-    | Buy Now       | Clicking Buy Now button will  | Click Buy Now   | navigates to the Amazon        | Pass       |
-    |               | direct users to Amazon        |                 | website                        |            |
-    | Write A       | Clicking the Write A Review   | Click Write A   | navigates users to the books   | Pass       |
-    | Review        | button will direct users to   | Review          | add review page                |            |
-    |               | the books add review page     |                 |                                |            |
+    | Feature       | Expected                      | Testing         | Results                          | Pass/Fail  |
+    | ------------- | ----------------------------- | --------------- | ------------------------------   | :--------: |
+    | Buy Now       | Clicking Buy Now button will  | Click Buy Now   | navigates to the Amazon          | Pass       |
+    |               | direct users to Amazon        |                 | website                          |            |
+    | Write A Review| Clicking the Write A Review   | Click Write A   | navigates users to the books add | Pass       |
+    |               | button will direct users to   | Review          | review page                      |            |
+    |               | the books add review page     |                 |                                  |            |
+    | Scroll Up     | Click the scroll up button    | Click Scroll Up | Takes users back to the top      | Pass       |                     
+    |               | to redirect users back        |                 | of the page                      |            |
+    |               | to the top of the page        |                 |                                  |            |
 
 
+-   ### Log In 
+
+    | Feature        | Expected                      | Testing             | Results                          | Pass/Fail  |
+    | -------------  | ----------------------------- | ---------------     | ------------------------------   | :--------: |
+    | Log In         | Enter the correct user,       | Log in with correct | Directs users to their profile   | Pass       |              
+    |                | password, email address will  | username/password/  | page with their name displayed   |            |
+    |                | direct users to their profile | email address       | and a welcome message            |            |
+    |                | page with name displayed      |                     |                                  |            |
+    |                | and a welcome flash message   |                     |                                  |            |
+  
 
 
  
