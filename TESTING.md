@@ -45,7 +45,16 @@
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
-| Write a <br> new review | New reviews are saved  to the <br> selected books page | Fill in the form  and  click <br> submit | New reviews are added to the <br>  bottom of the books page | Pass |
+| Write a <br> new review | New reviews are saved  to the <br> selected books page | Fill in the form  and  click <br> submit | Flash message "Review <br>Successfully Added" informs <br> user the review was successful. <br> New reviews are added to the <br>  bottom of the books page | Pass |                        
+
+## Edit/Delete Review Page 
+
+| <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
+| -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
+| Edit function                    | Only users who are logged in <br> can edit reviews | Log in as a regular user, <br> navigate to Review Books <br> click the Write A Review button <br> underneath the selected book, <br> scroll down to locate a previous <br> review, click the blue edit button <br>underneath the review, click<br>  submit | Flash message displays "Review  <br> Successfully Updated" | Pass
+| Delete function |  Only users who are logged in <br> can delete their reviews | Log in as a regular user, <br> navigate to Review Books <br> click the Write A Review button <br> underneath the selected book, <br> scroll down to locate a previous <br> review, click the red delete button <br>underneath the review. <br> | Flash message displays "Review  <br> Successfully Deleted" | Pass         
+
+
 
 
 
