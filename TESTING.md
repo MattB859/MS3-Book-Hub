@@ -41,6 +41,15 @@
 |          | Users can not register <br> with an existing username | Attempt to register with <br> an existing username | error flash message <br> "Username already exists" | Pass |
 
 
+## Add Review Page 
+
+| <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
+| -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
+| Write a <br> new review | New reviews are saved  to the <br> selected books page | Fill in the form  and  click <br> submit | New reviews are added to the <br>  bottom of the books page | Pass |
+
+
+
+
 
 
  
