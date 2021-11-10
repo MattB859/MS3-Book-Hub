@@ -1,49 +1,43 @@
 # Testing
 
-- ## Navigation testing
-
-    | Feature       | Expected                      | Testing         | Results                        | Pass/Fail  |
-    | ------------- | ----------------------------- | ---------       | ---------------------------    | :--------: |
-    | Nav links     | Clicking home will redirect <br> | Click Home      | navigates to home page         | Pass       |
-    |               | users to the home page        |                 |                                |            |            
-    |               | Clicking review books takes   | Click           | navigates to the book          | Pass       |
-    |               | users to the book review page | Review books    | review page                    |            |
-    |               | Clicking Profile takes users  | Click Profile   | navigates to the               | Pass       |
-    |               | to their profile page         |                 | priofile page                  |            |
-    |               | Clicking Log Out              | Click Log Out   | User is logged out and taken   | Pass       |            
-    |               | logs out the user             |                 | back to the log in page        |            |
-    | Social Media  | Redirect to Facebook          | Click Facebook  | Facebook page opens in new tap | Pass       |
-    | Links         | in a new tap                  | Icon            |                                |            |
-    |               | Redirects to Twitter in       | Click Twitter   | Twitter page opens in new tap  | Pass       |
-    |               | new tap                       | Icon            |                                |            |
-    |               | Redirects to Instagram in     | Click Instagram | Instagram page opens           | Pass       |
-    |               | new tap                       | Icon            | in new tab                     |            |
+## Navigation 
 
 
--   ### Buttons
-
-    | Feature       | Expected                      | Testing         | Results                          | Pass/Fail  |
-    | ------------- | ----------------------------- | --------------- | ------------------------------   | :--------: |
-    | Buy Now       | Clicking Buy Now button will  | Click Buy Now   | navigates to the Amazon          | Pass       |
-    |               | direct users to Amazon        |                 | website                          |            |
-    | Write A Review| Clicking the Write A Review   | Click Write A   | navigates users to the books add | Pass       |
-    |               | button will direct users to   | Review          | review page                      |            |
-    |               | the books add review page     |                 |                                  |            |
-    | Scroll Up     | Click the scroll up button    | Click Scroll Up | Takes users back to the top      | Pass       |                     
-    |               | to redirect users back        |                 | of the page                      |            |
-    |               | to the top of the page        |                 |                                  |            |
+| <p align="center">Feature</p>    | <p align="center">Expected</p> | <p align="center">Testing </p> | <p align="center">Results </p> | Pass/Fail  |
+| -------------------------------- | -----------------------------  | ------------------------       | ---------------------------    | :--------: |
+| Nav links     | Clicking home will redirect <br>  users to the home page  | Click Home   | navigates to home page   | Pass          
+|               | Clicking review books takes <br> users to the book review page   | Click Review books     | navigates to the book review page   | Pass   |
+|               | Clicking Profile takes users <br> to their profile page   | Click Profile   | navigates to the  priofile page    | Pass       |
+|               | Clicking Log Out <br> logs out the user     | Click Log Out   | User is logged out and taken <br> back to the log in page    | Pass
+| Social Media <br> Links   | Redirect to Facebook <br> in a new tap    | Click Facebook Icon  | Facebook page opens in new tap | Pass       |
+|               | Redirects to Twitter <br> in new tap   | Click Twitter  Icon   | Twitter page opens <br> in new tap  | Pass       |
+|                 | Redirects to Instagram <br> in new tap     | Click Instagram Icon  | Instagram page opens <br> in new tab     | Pass     |
 
 
--   ### Log In 
+## Buttons 
 
-    | Feature        | Expected                      | Testing             | Results                          | Pass/Fail  |
-    | -------------  | ----------------------------- | ---------------     | ------------------------------   | :--------: |
-    | Log In         | Enter the correct user,       | Log in with correct | Directs users to their profile   | Pass       |              
-    |                | password, email address will  | username/password/  | page with their name displayed   |            |
-    |                | direct users to their profile | email address       | and a welcome message            |            |
-    |                | page with name displayed      |                     |                                  |            |
-    |                | and a welcome flash message   |                     |                                  |            |
-  
+| <p align="center">Feature</p>  | <p align="center">Expected</p> | <p align="center">Testing</p>    | <p align="center">Results </p>  | Pass/Fail  |
+| ------------------------------ | -----------------------------  | -------------------------------- | ------------------------------  | :--------: |
+| Buy Now       | Clicking Buy Now button will <br> direct users to Amazon  | Click Buy Now   | navigates to the Amazon website   | Pass       |
+| Write A Review| Clicking the Write A Review <br> button will direct users to <br> the books add review page   | Click Write A Review   | navigates users to the <br> books add review page  | Pass    |
+| Scroll Up     | Click the scroll up button <br> to redirect users back <br> to the top of the page    | Click Scroll Up | Takes users back to <br> the top of the page     | Pass       |
+
+
+## Log In 
+
+| <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
+| ------------------------------   | -----------------------------     | ------------------------------     | ----------------------------   | :--------: |
+| Log In         | Enter the correct user, password, <br> email address will direct  users to <br> their profile page  with name <br> displayed and a welcome <br> flash message    | Log in with correct username/ <br> password/email address    | Directs users to their profile <br> page with their name displayed <br> and a welcome message  | Pass       |
+|                | Incorrect username/password/ <br> email address | Error showing "incorrect <br> username/password" | Flash message <br> displaying error | Pass|
+
+
+
+## Registration
+
+| <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
+| -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
+| Register   | Username and Password must <br> be between 5 and 15 characters | Attempt to enter username <br> and password with lessthan 5 <br> characters | error displays" please match the <br> requested formate" | Pass |
+
 
 
  
