@@ -40,16 +40,14 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     - As a First Time Visitor, I want to easily navigate throught the site to find books.
     - As a First Time Visitor, I want the site to be responsive on all devices.
     - As a First Time Visitor, I want to register my information so i can access features that are exclusive to registered users.
-    - As a First Time Visitor, I want to buy recomended books using the links provided.
-    - As a First Time Visitor, I want to see the book cover images to get an idea of what will be availble to reivew and buy.
-
+    - As a First Time Visitor, I want to be recommended books to buy using the links provided.
 
 -   ### Returning Visitor Goals 
 
     - As a Returning Visitor, I want to log in and see my reviews. 
     - As a Returning Visitor, I want to see if there are any newly added books to review.
     - As a Returning Visitor, I want to be able to edit and delete my reviews.
-    - As a Returning Visitor, I want to see all other user reviews on the site.
+    - As a Returning Visitor, I want to see reviews posted by other users.
 
 -   ### Frequent User Goals
 

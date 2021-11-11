@@ -63,6 +63,12 @@
 |  First Time <br> Visitor | "I want to understand <br> the main purpose of the site" | On entering the site <br> users are greeted with <br> images of book covers <br> and some informative text | "Join the UK's No.1 Hub <br> & START REVIEWING <br> TOP SELLING BOOKS" | Pass |
 |          | "I want to easily navigate <br> throught the site <br> to find books" | On entering the site <br> visitors can scroll down <br> to find featured books <br> with links to buy| Books can be found <br> at the bottom of <br> the home page | Pass |
 |          | "I want the site to be <br> responsive on all devices"| Navigate to site on laptop, <br> tablet and mobile, move <br> around the site to test for <br> responsiveness | Site responsive on all <br> devices | Pass |
+|          | "I want to register my <br> information so i can access <br> features that are exclusive <br> to registered users" | Click Register, fill a username, <br> email-address, password,<br> and click register | Registration successful | Pass |
+|          | "I want to be recommended  <br> books to buy using the <br> links provided" | On the home page <br> scroll down to find <br> recommended  books | Visitors will find <br> "Top Best Sellers" <br> "This Weeks Top Picks" <br> "Best Reviews Of The Week" <br> underneath each book <br> is an affiliate link to <br>  Amazon.co.uk| Pass |
+| As a <br> Returning <br> Visitor | "I want to log in  <br> and see my reviews" | Navigate to review books <br> page, click on the book <br> you wish to see a <br> review for, and scroll <br> down to find all reviews | All the latest reviews <br> for the chosen book <br> can be found below <br> | Pass |
+|          | "I want to see reviews <br> posted by other users" | Navigate to review books <br> page, click on the book <br>  you wish to see a <br> review for and scroll <br> down to find all reviews | All the latest reviews <br> posted by other users <br> interested in the <br> same book can be <br> found below  | Pass |
+
+
 
 
 
