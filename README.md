@@ -37,7 +37,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 -   ### First Time Visitor Goals
 
     - As a First Time Visitor, I want to understand the main purpose of the site and learn more about what the site has to offer.
-    - As a First Time Visitor, I want to easily navigate throught the site to find information.
+    - As a First Time Visitor, I want to easily navigate throught the site to find books.
     - As a First Time Visitor, I want the site to be responsive on all devices.
     - As a First Time Visitor, I want to register my information so i can access features that are exclusive to registered users.
     - As a First Time Visitor, I want to buy recomended books using the links provided.
@@ -267,20 +267,6 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     - Balsamiq was used to create the wireframes during the design process
 
 ## Testing
+
+-  ### All Testing can be foung [here](TESTING.md) 
     
--   ### Validator Testing    
-
-    - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-
--   ### HTML5 
-
-    -  [W3C Markup Validator](https://validator.w3.org/#validate_by_input+with_options)
-
--   ### CSS3
-
-    -  [W3C CSS Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
-
-        
-    -   ###  All pages came back with no errors.
-
-## Testing User Stories from User Experience (UX) Section
