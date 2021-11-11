@@ -70,6 +70,12 @@
 |         | "I want to see a good <br> selection of books <br> available to review" | Users can find all the <br> available books to review <br> by navigate to Review books <br> page | users have a variety <br> of different books to review | Pass | 
 | Frequent <br> User Goals | "I want to log into my <br> account and see what <br> date the reviews were <br> posted" | Click on Write A Review <br> scroll down to see all <br> reviews and view the date <br> in the review box | Date is visible <br> on reviews | Pass
 |          | "I want to see the names <br> of each user who post <br> and leave reviews" | Navigate to review books<br> page click on chosen book <br> scroll down to see all reviews| At the top of each <br> review box user names<br> can be seen | Pass |
+|          | "I want my reviews to <br> be safe and secure" | Jinja if statements were used <br> to hide the edit and delete <br> buttons on reviews <br> not made by user <br>  | users are restricted  <br> from editing and deleting <br> other users reviews | Pass |
+|         | "I want to add new <br> reviews" | Navigate to review books <br> page, click on the book you <br> wish  to leave a review for <br> Fill in the create review form <br> press submit | A Flash message will <br> displays to the user <br> "Review Successfully <br> Added" | Pass |
+|         | "I want to be able  to <br> edit and/or delete a review <br> when necessary" | Navigate to review books <br> page, click the book you <br> left a review for, and scroll <br> down to locate your review <br> press the edit/delete button | Flash message will<br> display either   <br>"Review Successfully <br> Updated or Deleted" | Pass |
+
+
+
 
 
 
