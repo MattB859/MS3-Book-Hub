@@ -45,14 +45,14 @@
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
-| Write a <br> new review | New reviews are saved  to the <br> selected books page | Fill in the form  and  click <br> submit | Flash message "Review <br>Successfully Added" informs <br> user the review was successful. <br> New reviews are added to the <br>  bottom of the books page | Pass |                        
+| Write a <br> new review | New reviews are saved  to the <br> selected books page | Fill in the form  and  click <br> submit | Flash message "Review <br>Successfully Added" informs user <br> the review was successful. <br> New reviews are added to the <br>  bottom of the books page | Pass |                        
 
 ## Edit/Delete Review Page 
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
-| Edit function                    | Only users who are <br> logged in can edit <br> reviews | Log in as a regular user, <br> navigate to Review Books <br> click the Write A Review <br> button underneath the <br> selected book, scroll down <br> to locate a  previous review, <br> click the blue  edit button <br> underneath  the review,<br> click submit | Flash message displays <br> "Review Successfully <br> Updated" | Pass
-| Delete function |  Only users who are <br> logged in can delete <br> their reviews | Log in as a regular user, <br> navigate to Review Books <br> click the Write A Review button <br> underneath the selected book, <br> scroll down to locate a previous <br> review, click the red delete button <br>underneath the review. <br> | Flash message displays <br> "Review Successfully <br> Deleted" | Pass         
+| Edit function                    | Only users who are <br> logged in can edit <br> reviews | Log in as a regular user, <br> navigate to Review Books <br> click the Write A Review <br> button underneath the <br> selected book, scroll <br> down  to locate a  previous <br> review, click the blue  edit <br> button underneath  the review,<br> click submit | Flash message displays <br> "Review Successfully <br> Updated" | Pass
+| Delete function |  Only users who are <br> logged in can delete <br> their reviews | Log in as a regular user, <br> navigate to Review Books <br> click the Write A Review button <br> underneath the selected book, <br> scroll down to locate a previous <br> review, click the red delete<br> button underneath the review. <br> | Flash message displays "Review <br> Successfully Deleted" | Pass         
 
 
 
@@ -67,6 +67,9 @@
 |          | "I want to be recommended  <br> books to buy using the <br> links provided" | On the home page <br> scroll down to find <br> recommended  books | Visitors will find <br> "Top Best Sellers" <br> "This Weeks Top Picks" <br> "Best Reviews Of The Week" <br> underneath each book <br> is an affiliate link to <br>  Amazon.co.uk| Pass |
 | As a <br> Returning <br> Visitor | "I want to log in  <br> and see my reviews" | Navigate to review books <br> page, click on the book <br> you wish to see a <br> review for, and scroll <br> down to find all reviews | All the latest reviews <br> for the chosen book <br> can be found below <br> | Pass |
 |          | "I want to see reviews <br> posted by other users" | Navigate to review books <br> page, click on the book <br>  you wish to see a <br> review for and scroll <br> down to find all reviews | All the latest reviews <br> posted by other users <br> interested in the <br> same book can be <br> found below  | Pass |
+|         | "I want to see a good <br> selection of books <br> available to review" | Users can find all the <br> available books to review <br> by navigate to Review books <br> page | users have a variety <br> of different books to review | Pass | 
+| Frequent <br> User Goals | "I want to log into my <br> account and see what <br> date the reviews were <br> posted" | Click on Write A Review <br> scroll down to see all <br> reviews and view the date <br> in the review box | Date is visible <br> on reviews | Pass
+|          | "I want to see the names <br> of each user who post <br> and leave reviews" | Navigate to review books<br> page click on chosen book <br> scroll down to see all reviews| At the top of each <br> review box user names<br> can be seen | Pass |
 
 
 

@@ -45,18 +45,17 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 -   ### Returning Visitor Goals 
 
     - As a Returning Visitor, I want to log in and see my reviews. 
-    - As a Returning Visitor, I want to see if there are any newly added books to review.
-    - As a Returning Visitor, I want to be able to edit and delete my reviews.
+    - As a Returning Visitor, I want to see a good selection of books available to review.
     - As a Returning Visitor, I want to see reviews posted by other users.
 
 -   ### Frequent User Goals
 
-    - As a Frequent User, I want to log into my account and read all the lastest reviews. 
+    - As a Frequent User, I want to log into my account and see on what date the reviews were posted. 
     - As a Frequent User, I want to add new reviews.
     - As a Frequent User, I want to see which books are the best to buy based on good or bad reviews from other users.
     - As a Frequent User, I want to edit and delete my reviews when necessary.
     - As a Frequent User, I want my reviews to be safe and secure.
-    - As a Frequent User, I want to see the dates for all reviews so I can determine when each review was made.
+    - As a Frequent User, I want to see the names of each user who post and leave reviews
 
 -   ### Site Owner Goals
 
