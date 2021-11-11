@@ -27,7 +27,7 @@
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | ------------------------------   | -----------------------------     | ------------------------------     | ----------------------------   | :--------: |
-| Log In         | Enter the correct user,<br>  password, email address<br>  will direct users to their<br> profile page with <br> name displayed and <br> a welcome flash<br> message    | Log in with correct <br> username/password/ <br> email address | Directs users to their<br> profile  page with their <br> name displayed and a <br> welcome message  | Pass       |
+| Log In         | Enter the correct user, password, <br> email address will direct users <br> to their profile page with name  <br> displayed and a welcome flash <br> message    | Log in with correct <br> username/password/ <br> email address | Directs users to their profile page <br> with their name displayed and <br> a welcome message  | Pass       |
 |                | Incorrect username/password/ <br> email address | Error showing "incorrect <br> username/password" | Flash message <br> displaying error | Pass|
 
 
@@ -36,8 +36,8 @@
 
 | <p align="center">Feature</p>    | <p align="center">Expected</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | -------------------------------  | -----------------------------     | -------------------------------    | ------------------------------ | :--------: |
-| Register   | Username and Password must <br> have a minimum length <br> of 5 characters | Attempt to enter username <br> and password with less than 5 <br> characters | error displays "please match the <br> requested formate" | Pass |
-|          | Username and Password must <br> have a maximum length <br> of 15 characters | Attempt to enter username <br> and password with more than 15 <br> characters | Form restrcits the user from <br> using more than 15 characters | Pass |
+| Register   | Username and Password must <br> have a minimum length <br> of 5 characters | Attempt to enter username <br> and password with less than <br> 5 characters | error displays "please match the <br> requested formate" | Pass |
+|          | Username and Password must <br> have a maximum length <br> of 15 characters | Attempt to enter username <br> and password with more <br> than 15 characters | Form restrcits the user from <br> using more than 15 characters | Pass |
 |          | Users can not register <br> with an existing username | Attempt to register with <br> an existing username | error flash message <br> "Username already exists" | Pass |
 
 
@@ -58,46 +58,11 @@
 
 ## Testing User Stories from User Experience (UX)
 
-| <p align="center">User Stories</p>    | <p align="center">Experience</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
+| <p align="center">User Stories</p>    | <p align="center">Expectation</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | -------------------------------       | -----------------------------       | -------------------------------    | ------------------------------ | :--------: |
 |  First Time <br> Visitor | "I want to understand <br> the main purpose of the site" | On entering the site <br> users are greeted with <br> images of book covers <br> and some informative text | "Join the UK's No.1 Hub <br> & START REVIEWING <br> TOP SELLING BOOKS" | Pass |
-|          | "As a First Time Visitor, <br> I want to easily navigate <br> throught the site <br> to find books" | On entering the site <br> visitors can scroll down <br> to find featured books <br> with links to buy| Books can be found <br> at the bottom of <br> the home page | Pass |
+|          | "I want to easily navigate <br> throught the site <br> to find books" | On entering the site <br> visitors can scroll down <br> to find featured books <br> with links to buy| Books can be found <br> at the bottom of <br> the home page | Pass |
+|          | "I want the site to be <br> responsive on all devices"| Navigate to site on laptop, <br> tablet and mobile, move <br> around the site to test for <br> responsiveness | Site responsive on all <br> devices | Pass |
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
--   ### Validator Testing    
-
-    - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-
--   ### HTML5 
-
-    -  [W3C Markup Validator](https://validator.w3.org/#validate_by_input+with_options)
-
--   ### CSS3
-
-    -  [W3C CSS Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
-
-        
-    -   ###  All pages came back with no errors.
-
-## Testing User Stories from User Experience (UX) Section
-
-
-
-
-
-
- 
