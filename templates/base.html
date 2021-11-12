@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-   
-    {% block styles %}
-    {% endblock %}
     <title>Book Hub</title>
 </head>
+
 <body>
-    
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -29,23 +31,18 @@
             style="width: 50px;" alt="">
     </header>
 
-    
-
     <!-- top navbar -->
     <nav class="nav-bg navbar-fixed" id="myHeader">
-        
         <div class="container center-align">
             <a class="header-logo" href="{{ url_for('home') }}"><span>Book Hub</span></a>
             <i class="fas fa-search"></i>
             <a href="https://www.google.com/maps/@51.3998848,-0.2081109,14z" target="_blank"><i
                     class="fas fa-map-marker-alt"></i></a>
             {% if session.user %}
-            <a class="btn-line" href="{{ url_for('profile', username=session['user']) }}"><i
-                    class="fas fa-user-alt"></i></a>
+            <a href="{{ url_for('profile', username=session['user']) }}"><i class="fas fa-user-alt"></i></a>
             {% else %}
-            <a class="btn-line" href="{{ url_for('register') }}"><i class="fas fa-user-alt"></i></a>
+            <a href="{{ url_for('register') }}"><i class="fas fa-user-alt"></i></a>
             {% endif %}
-            <!--<a href="#" class="brand-logo"><span>B</span>ook Hub</a>-->
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a class="btn-line" href="{{ url_for('home') }}">Home</a></li>
@@ -54,12 +51,12 @@
                 <li><a class="btn-line" href="{{ url_for('add_review') }}">Review Books</a></li>
                 <li><a class="btn-line" href="{{ url_for('logout') }}">Log Out</a></li>
                 {% else %}
-
                 <li><a class="btn-line" href="{{ url_for('login') }}">Sign In</a></li>
                 <li><a class="btn-line" href="{{ url_for('register') }}">Register</a></li>
                 {% endif %}
             </ul>
         </div>
+
         <!-- search form -->
         <form class="example" action="/action_page.php">
             <input type="text" placeholder="Title, author, keyword" name="search2">
@@ -70,16 +67,11 @@
         <!-- mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
             <li><h4 class="mobile-logo center-align"><span>B</span>ook Hub</h4></li>
-            <hr class="mobile-hr">
             <li><a href="{{ url_for('home') }}">Home</a></li>
-            <hr>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                <hr>
                 <li><a href="{{ url_for('add_review') }}">Review Books</a></li>
-                <hr>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
-                <hr class="mobile-hr">
             {% else %}
                 <li><a href="#">About Us</a></li>
                 <li><a href="{{ url_for('login') }}">Log In</a></li>
@@ -87,8 +79,6 @@
             {% endif %}   
         </ul>
    
-
-    
     <section>
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
@@ -107,15 +97,14 @@
         {% endblock %}
     </main>
 
-    
     <section>
         <div class="bag-logo">
             <div class="app grey lighten-2 ">
                 <h1>Download Our App</h1>
                 <p class="bold">Get your book reviews anytime, anywhwere with the bookhub app.</p>
                 <div class="app-logo ">
-                    <a href="https://www.apple.com/uk/app-store/" target="_blank"><img src="{{ url_for('static', filename='images/app-logo2.png') }}" style="width: 200px;"></a>
-                    <a href="https://play.google.com/store/search?q=bookhub&c=apps" target="_blank"><img src="{{ url_for('static', filename='images/app-logo4.png') }}" style="width: 200px;"></a>
+                    <a href="https://www.apple.com/uk/app-store/" target="_blank"><img src="{{ url_for('static', filename='images/app-logo2.png') }}" style="width: 200px;" alt="app store"></a>
+                    <a href="https://play.google.com/store/search?q=bookhub&c=apps" target="_blank"><img src="{{ url_for('static', filename='images/app-logo4.png') }}" style="width: 200px;" alt="app store"></a>
                 </div>
             </div>
         </div>
@@ -126,12 +115,12 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 l4">
-                    <h6 class="black-text"></i> Book Hub</h6>
+                    <h6 class="black-text">Book Hub</h6>
                     <p>Supporting local bookshops</p>
                     <h6 class="black-text"> Follow us</h6>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>  
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="col s12 l4 right">
                     <h5 class="black-text bold">Links</h5>
@@ -152,7 +141,6 @@
         </div>
     </footer>
     
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>

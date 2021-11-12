@@ -18,7 +18,6 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
 @app.route("/")
 @app.route("/home")
 def home():
@@ -37,22 +36,28 @@ def the_secret_book():
     return render_template("the_secret.html", reviews=reviews)
 
 
+@app.route("/power_of_now")
+def power_of_now():
+    reviews = mongo.db.reviews_2.find()
+    return render_template("the_power_of_now.html", reviews=reviews)
+
+
 @app.route("/edit_post")
 def edit_post():
     reviews = mongo.db.reviews.find()
     return render_template("edit_power.html", reviews=reviews)
 
 
+@app.route("/edit_secret_post")
+def edit_secret_post():
+    reviews = mongo.db.reviews_2.find()
+    return render_template("edit_secret.html", reviews=reviews)
+
+
 @app.route("/delete_post")
 def delete_post():
     reviews = mongo.db.reviews.find()
     return render_template("edit_power.html", reviews=reviews)
-
-
-@app.route("/profile_review")
-def profile_review():
-    reviews = mongo.db.reviews.find()
-    return render_template("profile.html", reviews=reviews)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -161,7 +166,7 @@ def the_secret():
     if request.method == "POST":
         the_secret_review = {
             "headline": request.form.get("headline"),
-            "the_secret_review": request.form.get("the_secret_review"),
+            "book_review": request.form.get("book_review"),
             "created_by": session["user"],
             "date_time": datetime.datetime.now().strftime("%d %B %Y")
         }
@@ -173,23 +178,40 @@ def the_secret():
     return render_template("the_secret.html")
 
 
+@app.route("/the_power_of", methods=["GET", "POST"])
+def the_power_of():
+    if request.method == "POST":
+        the_secret_review = {
+            "headline": request.form.get("headline"),
+            "book_review": request.form.get("book_review"),
+            "created_by": session["user"],
+            "date_time": datetime.datetime.now().strftime("%d %B %Y")
+        }
+        mongo.db.reviews_2.insert_one(the_secret_review)
+        flash("Review Successfully Added")
+        return redirect(url_for("the_secret_book"))
+        
+        reviews_2 = list(mongo.db.reviews_2.find())
+    return render_template("the_power_of_now.html")
+
+
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
     if request.method == "POST":
         submit = {
             "headline": request.form.get("headline"),
             "book_review": request.form.get("book_review"),
-            "the_secret_review": request.form.get("the_secret_review"),
             "created_by": session["user"],
             "date_time": datetime.datetime.now().strftime("%d %B %Y")
         }
         mongo.db.reviews.update({"_id": ObjectId(review_id)}, submit)
         flash("Review Successfully Updated")
+        return redirect(url_for("book_reviews"))
 
     edit = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     reviews = mongo.db.reviews.find().sort("reviews", 1)
     return render_template(
-        "edit_power.html, edit_secret.html", edit=edit, reviews=reviews)
+        "edit_power.html,", edit=edit, reviews=reviews)
 
 
 @app.route("/edit_secret/<review_id>", methods=["GET", "POST"])
@@ -197,12 +219,13 @@ def edit_secret(review_id):
     if request.method == "POST":
         submit = {
             "headline": request.form.get("headline"),
-            "the_secret_review": request.form.get("the_secret_review"),
+            "book_review": request.form.get("book_review"),
             "created_by": session["user"],
             "date_time": datetime.datetime.now().strftime("%d %B %Y")
         }
         mongo.db.reviews_2.update({"_id": ObjectId(review_id)}, submit)
         flash("Review Successfully Updated")
+        return redirect(url_for("the_secret_book"))
 
     edit = mongo.db.reviews_2.find_one({"_id": ObjectId(review_id)})
     reviews = mongo.db.reviews_2.find().sort("reviews", 1)
@@ -216,6 +239,12 @@ def delete_review(review_id):
     flash("Review Successfully Deleted")
     return redirect(url_for("book_reviews"))
 
+
+@app.route("/delete_review_2/<review_id>")
+def delete_review_2(review_id):
+    mongo.db.reviews_2.remove({"_id": ObjectId(review_id)})
+    flash("Review Successfully Deleted")
+    return redirect(url_for("the_secret_book"))
 
 
 if __name__ == "__main__":

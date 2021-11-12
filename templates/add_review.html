@@ -1,35 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-
-    <h3></h3>
-    <!--<div class="row">
-        <div class="col s12">
-        <div class="review_banner carousel carousel-slider center">
-            <div class="carousel-item" href="#">
-                <img src="{{ url_for('static', filename='images/Banners-4.jpg') }}"a lt="book">    
-            </div>
-            <div class="carousel-item" href="#">
-                <img src="{{ url_for('static', filename='images/design-book-promotional-banner.jpg') }}" alt="book">     
-            </div>
-        </div>
-        </div>
-    </div>-->
-
-
- 
+  
 <!-- books collection -->
 <section>
     <div class="container">
         <h1 class="small-header">This Weeks Top Picks...</h1>
-        <!--- the 48 laws of power --->
+        <!-- the 48 laws of power -->
         <div class="row">
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_reviews') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-1.png') }}" alt="book">
                 </a>
 
-                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write a review</i></a>
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write a review</a>
                 
                 <h5 class="center-align">The 48 Laws Of Power</h5>
                 <h5 class="center-align">Robert Greene</h5>
@@ -38,11 +22,10 @@
                     class="waves-effect waves-light btn-small orange darken-4 center-align" target="_blank">Buy Now</a>-->
             </div>
 
-            <!--- book the secret --->
+            <!-- book the secret -->
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('the_secret_book') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-2.jpg') }}" alt="book"></a>
-                </a>
 
                 <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write a review</a>
 
@@ -51,7 +34,7 @@
                 <h6 class="center-align">£15.31</h6>
             </div>
 
-            <!--- the wild silence --->
+            <!-- the wild silence -->
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-19.jpg') }}" alt="book"></a>
@@ -63,9 +46,9 @@
                 <h6 class="center-align">£7.99</h6>
             </div>
 
-            <!--- the power of now --->
+            <!-- the power of now -->
             <div class="col s6 m6 l3 book_reviews center-align">
-                <a href="{{ url_for('book_power') }}">
+                <a href="{{ url_for('power_of_now') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-4.jpg') }}" alt="book">
                 </a>
 
@@ -96,7 +79,7 @@
                 </div>
             </div>
 
-            <!--- Manifest --->
+            <!-- Manifest -->
             <div class="col s6 m6 l3 book_reviews center-align">
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-18.jpg') }}" alt="book">
@@ -142,7 +125,6 @@
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-9.jpg') }}" alt="book">
                 </a>
-
                 <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write a review</a>
 
                 <h5 class="center-align">The Four Agreements</h5>
@@ -197,9 +179,7 @@
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-14.jpg') }}" alt="book">
                 </a>
-
-                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write a review</i></a>
-
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write a review</a>
                 <h5 class="center-align">JavaScript & JQuery</h5>
                 <h5 class="center-align">Jon Duckett</h5>
                 <h6 class="center-align">£15.99</h6>
@@ -208,9 +188,7 @@
                 <a href="{{ url_for('book_power') }}">
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-15.jpg') }}" alt="book">
                 </a>
-
-                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you review</i></a>
-
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write you review</a>
                 <h5 class="center-align">HTML & CSS </h5>
                 <h5 class="center-align">Jon Duckett</h5>
                 <h6 class="center-align">£10.99</h6>
@@ -221,7 +199,7 @@
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-16.jpg') }}" alt="book">
                 </a>
 
-                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write a review</i></a>
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write a review</a>
 
                 <h5 class="center-align">The 1-Page Marketing Plan</h5>
                 <h5 class="center-align">Allan Dib</h5>
@@ -233,19 +211,15 @@
                     <img class="hoverable" src="{{ url_for('static', filename='images/book-17.jpg') }}" alt="book">
                 </a>
 
-                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write a review</i></a>
+                <a href="{{ url_for('book_reviews') }}" class="bold green darken-3 waves-effect waves-light btn-small center-align">Write a review</a>
 
                 <h5 class="center-align">Agile Scrum</h5>
                 <h5 class="center-align">Liam Taylor</h5>
                 <h6 class="center-align">£15.99</h6>
             </div>
         </div>
-
-        <hr>
-        
+        <hr>  
     </div>
 </section>
-
-
 
 {% endblock %}

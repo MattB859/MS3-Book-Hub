@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="text-black bold center-align"></h3>
+<h3 class="text-black bold center-align">The 48 Laws Of Power</h3>
 
 <div class="container">
     <div class="row">
          <!--book image -->
          <div class="col s12 l5 pull-l1">
-            <div class="center-align">
+            <div class="center-align materialboxed">
                 <img src="{{ url_for('static', filename='images/book-1.png') }}"
                     style="width: 60%;" alt="book">
             </div>    
@@ -24,13 +24,18 @@
                 </a>
 
                 <hr class="margin-bottom">
-
-                <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
-                    class="margin-bottom waves-effect waves-light btn-large orange darken-4" target="_blank">Buy Now</a>
                 
-                <p class="bold"><em>Price - £12.78</em></hp>   
+                <div class="col s12 m12 l12 line-height">
+                    <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
+                        class="margin-bottom waves-effect waves-light btn-large orange darken-4" target="_blank">Buy Now</a>
 
-                <h4 class="description">Description</h4>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>  
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    
+                    <p class="bold"><em>Price - £12.78</em></p>   
+                    <h4 class="description">Description</h4>
+                </div>
 
                 <p class="txt col s12">The 48 Laws of Power is a non-fiction book
                     by American author Robert Greene. The book is a bestseller, selling
@@ -50,7 +55,7 @@
             </span>
         </div>
     </div>
-
+    {% if session.user %}
     <hr class="hr">
 
     <h4 class="center-align title">Create Review</h4>
@@ -60,7 +65,7 @@
         <form class="text-body" method="POST" action="{{ url_for('book_power') }}">
             <div class="row">
 
-                <div class="col s12">
+               <!--<div class="col s12">
                     <h6>Overall rating</h6>
                     <input type="hidden" name="review_rating" value="3" required>
                     <input id="review_rating" name="review_rating" type="hidden" value="3" required>
@@ -69,7 +74,7 @@
                     <div id="review_rating" class="rating-star true"><input type="submit" value="&#9733;"></div>
                     <div id="review_rating" class="rating-star true"><input type="submit" value="&#9733;"></div>
                     <div id="review_rating" class="rating-star true"><input type="submit" value="&#9733;"></div>
-                </div>
+                </div>--> 
 
                 <!-- review headline  -->
                 <div class="col s12">
@@ -121,5 +126,6 @@
             </div>
         {% endfor %}
     </div>
+    {% endif %}
 </div>
 {% endblock %}

@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="text-black bold center-align">The Power Of Now</h3>
+
+<div class="container">
+    <div class="row">
+        <!--book image -->
+        <div class="col s12 l5 pull-l1">
+            <div class="center-align materialboxed">
+                <img src="{{ url_for('static', filename='images/book-4.jpg') }}" style="width: 60%;" alt="book">
+            </div>
+        </div>
+        <div class="col s12 l7 pull-7 description-txt">
+
+            <span class="flow-text">
+                <h4 class="description">The Power of Now: A Guide to Spiritual Enlightenment by Tolle, Eckhart (
+                    February 1, 2001) Paperback Paperback – 1 Jan. 1700</h4>
+
+                <a href="https://en.wikipedia.org/wiki/Eckhart_Tolle" target="_blank">
+                    <p class="txt-1"><span>by</span>Tolle, Eckhart</p>
+                </a>
+
+                <hr class="margin-bottom">
+
+                <div class="col s12 m12 l12 line-height">
+                    <a href="https://www.amazon.co.uk/Power-Now-Spiritual-Enlightenment-Paperback/dp/B0168SHVH2/ref=sr_1_2?keywords=the+power+of+now&qid=1636744208&s=books&sr=1-2"
+                        class="margin-bottom waves-effect waves-light btn-large orange darken-4" target="_blank">Buy
+                        Now</a>
+
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                    <p class="bold"><em>Price - £10.85</em></p>
+                    <h4 class="description">Description</h4>
+                </div>
+
+                <p class="txt col s12">The Power of Now: A Guide to Spiritual Enlightenment is a book by Eckhart Tolle.
+                    It presents itself as a discussion about how people interact with themselves and others. The concept
+                    of self reflection and presence in the moment are presented along with simple exercises for the
+                    achievement of its principles.In the book's introduction the author relates his past experiences of
+                    continuous anxiety with periods of suicidal depression. Later, when he was 29 years old, he had a
+                    personal epiphany and writes: "I heard the words 'resist nothing' as if spoken inside my chest." He
+                    relates that he felt as if he were falling into a void and afterwards "there was no more fear."
+                </p>
+
+            </span>
+        </div>
+    </div>
+    {% if session.user %}
+    <hr class="hr">
+
+    <h4 class="center-align title">Create Review</h4>
+
+    <!-- text form -->
+    <div class="row box" id="post">
+        <form class="text-body" method="POST" action="{{ url_for('power_of_now') }}">
+            <div class="row">
+
+                <!-- review headline  -->
+                <div class="col s12">
+                    <h6>Add a headline</h6>
+                    <label for="headline">comments:</label>
+                    <textarea id="headline" placeholder="What's most important to know?" name="headline" minlength="5"
+                        maxlength="100" required></textarea>
+                </div>
+
+                <!-- review textarea -->
+                <div class="col s12 height">
+                    <h6>Add a written review</h6>
+                    <label for="book_review">comments:</label>
+
+                    <textarea id="book_review" placeholder="What did you like or dislike about this book?"
+                        name="book_review" minlength="5" style="height: 150px;" maxlength="600" required></textarea>
+
+                    <!-- submit button -->
+                    <button class="btn waves-effect orange darken-4 waves-light" type="submit">Submit
+                        <i class="fas fa-share"></i>
+                    </button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <h6 class="text-darken-4 center-align margin-top">See All Top Reviews</h6>
+
+    <hr>
+
+    <div class="container post-box">
+        {% for review in reviews %}
+        <div class="row">
+            <div class="col s12 s6">
+                <div class="card-panel">
+                    <p><em><i class="fas fa-user-circle"></i> {{ review.created_by }}</em></p>
+                    <p class="post">{{ review.headline }}</p>
+                    <p class="bold">{{ review.ratings }}</p>
+                    <p class="post-2 bold text-color">Verified</p>
+                    <p class="post-2"><em>Reviewed in the United Kingdom on</em> {{ review.date_time }}</p>
+                    <p class="margin-bottom">{{ review.book_review }}</p>
+                    {% if session.user|lower == review.created_by|lower %}
+                    <a href="{{ url_for('edit_post', review_id=review._id) }}"
+                        class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
+                    <a href="{{ url_for('delete_review', review_id=review._id) }}"
+                        class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
