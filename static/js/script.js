@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
+    $('.modal').modal();
     $('.collapsible').collapsible();   
     $('.materialboxed').materialbox();
     $(window).scroll(function(){
@@ -17,13 +18,13 @@ $(document).ready(function(){
 
 validateMaterializeSelect();
 
+/* scroll up btn function*/
 $('.scroll-up-btn').click(function(){
-    $('html').animate({scrollTop: 0});  
-     
+    $('html').animate({scrollTop: 0});      
 });
    
 
-/** sticky header */
+/* sticky header */
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myHeader");
@@ -37,6 +38,8 @@ function myFunction() {
   }
 }
 
+
+/* form input validation */
 function validateMaterializeSelect() {
     let classValid = {
         "border-bottom": "1px solid #4caf50",
@@ -76,4 +79,21 @@ function validateMaterializeSelect() {
     });
 }
 });
+
+/* read more function from w3school.com */
+function toggleText() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("toggleBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
 

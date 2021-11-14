@@ -23,7 +23,7 @@
 
     <!-- edit review form -->
     <div class="row box" id="post">
-        <form class="text-body" method="POST" action="{{ url_for('edit_secret', review_id=review._id) }}">
+        <form class="text-body" method="POST" action="{{ url_for('edit_the_power_of', review_id=review._id) }}">
             <div class="row">
 
                 <!-- review headline -->
@@ -46,7 +46,7 @@
                     {{- review.book_review -}}     
                     </textarea>
                     <!-- cancel button -->
-                    <a href="{{ url_for('the_secret_book') }}" class="btn grey darken- text-shadow">
+                    <a href="{{ url_for('power_of_now') }}" class="btn grey darken- text-shadow">
                         cancel <i class="fas fa-times-circle right"></i>
                     </a>
 

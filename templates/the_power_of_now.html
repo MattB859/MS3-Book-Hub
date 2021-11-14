@@ -39,13 +39,13 @@
                 <p class="txt col s12">The Power of Now: A Guide to Spiritual Enlightenment is a book by Eckhart Tolle.
                     It presents itself as a discussion about how people interact with themselves and others. The concept
                     of self reflection and presence in the moment are presented along with simple exercises for the
-                    achievement of its principles.In the book's introduction the author relates his past experiences of
+                    achievement of its<span id="dots">...</span><span id="more"> principles.In the book's introduction the author relates his past experiences of
                     continuous anxiety with periods of suicidal depression. Later, when he was 29 years old, he had a
                     personal epiphany and writes: "I heard the words 'resist nothing' as if spoken inside my chest." He
                     relates that he felt as if he were falling into a void and afterwards "there was no more fear."
-                </p>
-
+            </span></p>
             </span>
+            <a class="toggle-text" onclick="toggleText()" id="toggleBtn">Read more</a> 
         </div>
     </div>
     {% if session.user %}
@@ -55,7 +55,7 @@
 
     <!-- text form -->
     <div class="row box" id="post">
-        <form class="text-body" method="POST" action="{{ url_for('power_of_now') }}">
+        <form class="text-body" method="POST" action="{{ url_for('the_power_of') }}">
             <div class="row">
 
                 <!-- review headline  -->
@@ -100,7 +100,7 @@
                     <p class="post-2"><em>Reviewed in the United Kingdom on</em> {{ review.date_time }}</p>
                     <p class="margin-bottom">{{ review.book_review }}</p>
                     {% if session.user|lower == review.created_by|lower %}
-                    <a href="{{ url_for('edit_post', review_id=review._id) }}"
+                    <a href="{{ url_for('edit_the_power_of', review_id=review._id) }}"
                         class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
                     <a href="{{ url_for('delete_review', review_id=review._id) }}"
                         class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>

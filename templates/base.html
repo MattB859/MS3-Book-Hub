@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <title>Book Hub</title>
 </head>
@@ -58,9 +57,10 @@
         </div>
 
         <!-- search form -->
-        <form class="example" action="/action_page.php">
-            <input type="text" placeholder="Title, author, keyword" name="search2">
+        <form class="example" action="{{ url_for('search') }}" method="POST">
+            <input type="text" placeholder="Search, Title, author" minlength="3" id="query" name="query" required>
             <button type="submit">Search</button>
+            <label for="query"></label>
         </form>
     </nav>
 
