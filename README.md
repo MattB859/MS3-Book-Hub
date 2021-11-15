@@ -266,4 +266,27 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 ## Testing
 
 -  ### All Testing can be foung [here](TESTING.md) 
-    
+
+## Deployment
+
+-   ### GitHub Pages
+
+    - The project was developed using [Gitpod](https://www.gitpod.io/) and pushed [GitHub](https://github.com/) then deployed on
+    [Heroku](https://id.heroku.com/) using the following steps...    
+ 
+    1. Create requirements.txt file using command pip3 freeze --local > requirements.txt
+    2. Create a Procfile with the terminal command echo web: python app.py > Procfile and at this point checking the Procfile to make sure there is no stray line as this can cause issues when deploying to Heroku.
+    3. The new requirements file and Procfile committed to GitHub.
+    4. New app created in Heroku by clicking "New" and "Create New App" and giving it an original name and setting the region to closest to location.
+    5. From Heroku dashboard click "Deploy" -> "Deployment Method" and select "GitHub"
+    6. Search for GitHub repo and connect.
+    7. In the dashboard click "Settings" -> "Reveal Config Vars"
+    8. Set config vars:
+
+    1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+    2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+    3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+    4. Under "Source", click the dropdown called "None" and select "Master Branch".
+    5. The page will automatically refresh.
+    6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.

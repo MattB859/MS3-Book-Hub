@@ -1,99 +1,111 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.sidenav').sidenav();
     $('.modal').modal();
-    $('.collapsible').collapsible();   
+    $('.collapsible').collapsible();
     $('.materialboxed').materialbox();
-    $(window).scroll(function(){
-        if(this.scrollY > 20){
+    $(window).scroll(function () {
+        if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
-        }else{
+        } else {
             $('.navbar').removeClass("sticky");
         }
-        if(this.scrollY > 500){
+        if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
-        }else{
+        } else {
             $('.scroll-up-btn').removeClass("show");
         }
     });
 
-validateMaterializeSelect();
-
-/* scroll up btn function*/
-$('.scroll-up-btn').click(function(){
-    $('html').animate({scrollTop: 0});      
-});
-   
-
-/* sticky header */
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-
-/* form input validation */
-function validateMaterializeSelect() {
-    let classValid = {
-        "border-bottom": "1px solid #4caf50",
-        "box-shadow": "0 1px 0 0 #4caf50"
-    };
-    let classInvalid = {
-        "border-bottom": "1px solid #f44336",
-        "box-shadow": "0 1px 0 0 #f44336"
-    };
-    if ($("select.validate").prop("required")) {
-        $("select.validate").css({
-            "display": "block",
-            "height": "0",
-            "padding": "0",
-            "width": "0",
-            "position": "absolute"
+    /* scroll up btn function*/
+    $('.scroll-up-btn').click(function () {
+        $('html').animate({
+            scrollTop: 0
         });
-    }
-    $(".select-wrapper input.select-dropdown").on("focusin", function () {
-        $(this).parent(".select-wrapper").on("change", function () {
-            if ($(this).children("ul").children("li.selected:not(.disabled)").on("click", function () {})) {
-                $(this).children("input").css(classValid);
-            }
-        });
-    }).on("click", function () {
-        if ($(this).parent(".select-wrapper").children("ul").children("li.selected:not(.disabled)").css("background-color") === "rgba(0, 0, 0, 0.03)") {
-            $(this).parent(".select-wrapper").children("input").css(classValid);
-        } else {
-            $(".select-wrapper input.select-dropdown").on("focusout", function () {
-                if ($(this).parent(".select-wrapper").children("select").prop("required")) {
-                    if ($(this).css("border-bottom") != "1px solid rgb(76, 175, 80)") {
-                        $(this).parent(".select-wrapper").children("input").css(classInvalid);
-                    }
-                }
+    });
+
+    /* form input validation */
+    validateMaterializeSelect();
+
+    function validateMaterializeSelect() {
+        let classValid = {
+            "border-bottom": "1px solid #4caf50",
+            "box-shadow": "0 1px 0 0 #4caf50"
+        };
+        let classInvalid = {
+            "border-bottom": "1px solid #f44336",
+            "box-shadow": "0 1px 0 0 #f44336"
+        };
+        if ($("select.validate").prop("required")) {
+            $("select.validate").css({
+                "display": "block",
+                "height": "0",
+                "padding": "0",
+                "width": "0",
+                "position": "absolute"
             });
         }
-    });
-}
+        $(".select-wrapper input.select-dropdown").on(
+            "focusin", function () {
+            $(this).parent(".select-wrapper").on(
+                "change", function () {
+                if ($(this).children("ul").children(
+                    "li.selected:not(.disabled)").on(
+                        "click", function () {})) {
+                    $(this).children("input").css(classValid);
+                }
+            });
+        }).on("click", function () {
+            if ($(this).parent(".select-wrapper").children("ul").children(
+                "li.selected:not(.disabled)").css(
+                    "background-color") === "rgba(0, 0, 0, 0.03)") {
+                $(this).parent(".select-wrapper").children(
+                    "input").css(classValid);
+            } else {
+                $(".select-wrapper input.select-dropdown").on(
+                    "focusout", function () {
+                    if ($(this).parent(".select-wrapper").children(
+                        "select").prop("required")) {
+                        if ($(this).css(
+                            "border-bottom") !== "1px solid rgb(76, 175, 80)") {
+                            $(this).parent(".select-wrapper").children(
+                                "input").css(classInvalid);
+                        }
+                    }
+                });
+            }  
+        });
+    }
 });
+
+ /* sticky header */
+ window.onscroll = function () {
+    myFunction();
+};
+
+let header = document.getElementById("myHeader");
+let sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
 
 /* read more function from w3school.com */
 function toggleText() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("toggleBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
-    }
-  }
+    let dots = document.getElementById("dots");
+    let moreText = document.getElementById("more");
+    let btnText = document.getElementById("toggleBtn");
 
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
+}

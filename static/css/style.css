@@ -38,7 +38,6 @@
     z-index: 9999;
     font-size: 30px;
     background: rgb(78, 78, 78);
-    border: solid rgb(78, 78, 78);
     border-radius: 1px;
     opacity: 0;
     pointer-events: none;
@@ -50,7 +49,7 @@
 .scroll-up-btn.show {
     bottom: 30px;
     opacity: 1;
-    pointer-events: auto;
+    pointer-events: visible;
 }
 
 /* scroll up button */
@@ -94,7 +93,7 @@
     font-family: 'Yeseva One', cursive;
     font-size: 60px;
     text-transform: uppercase;
-    z-index: 0.5;
+    z-index: 1;
     font-weight: 600;
     top: 1em;
     left: 1.5em;

@@ -74,10 +74,77 @@
 |         | "I want to add new <br> reviews" | Navigate to review books <br> page, click on the book you <br> wish  to leave a review for <br> Fill in the create review form <br> press submit | A Flash message will <br> displays to the user <br> "Review Successfully <br> Added" | Pass |
 |         | "I want to be able  to <br> edit and/or delete a review <br> when necessary" | Navigate to review books <br> page, click the book you <br> left a review for, and scroll <br> down to locate your review <br> press the edit/delete button | Flash message will<br> display either   <br>"Review Successfully <br> Updated or Deleted" | Pass |
 
+## Validator
+
+## HTML Validator
+
+HTML validated on [https://validator.w3.org/](https://validator.w3.org/)
+
+- The W3C Markup Validator was used to validate all HTML pages to ensure there were no major errors in the project.
+
+-   ### [HTML](/static/images/jigsaw.w3.org.png) 
+
+-  ### Add Review Page
+-  ### Log In Page
+-  ### Register Page
+-  ### Home Page
+-  ### Profile Page
+-  ### the power of now Page
+-  ### the secret Page
+-  ### Edit Power Page
+-  ### Edit Secret Page
+-  ### Delete User Page
+ 
+ 
+## CSS Jigsaw
+
+CSS3 Validated using [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)
+
+-   ### [CSS](/static/images/jigsaw.w3.org.png) 
+
+## PEP8
+
+Python was checked to PEP8 compliance and passed with no errors [http://pep8online.com/](http://pep8online.com/)
+-   ### [PEP8](/static/images/PEP8.png) 
+   
+## JSHint
+
+JSHint was used to validate JavaScript with no major issues. [https://jshint.com/](https://jshint.com/)
+ 
+
+## Debugging
+
+-   ### Chrome Developer Tools
+
+    -  Chrome Dev Tools was used for inspection of HTML, and CSS. It helped to diagnose problems, and debug issues right in the browers.
+
+-   ### Further Testing
+
+    -   All pages on the site were tested to be fully responsive on all devices
+
+    -   The Website was tested on Google Chrome, Firefox, Microsoft Edge and Safari browsers.
+
+    -   The website was viewed on a variety of devices such as 
+        - Desktop 
+        - Laptop 
+        - Motorola G4 
+        - Galaxy S5/7
+        - Pixel 2
+        - Pixel 2 XL 
+        - iPhone 5/SE 
+        - iPhone 6/7/8/Plus 
+        - iPhone X, 
+        - ipad/Pro.
+
+    -   A large amount of testing was done to ensure that all pages were linking correctly.
+
+    -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+-   ### Bugs Found and not fixed
+
+    -   On some mobile devices the top page is cut off.
+
+    -   A modal message was used to confirm the deletion of a review a bug has caused random unorderly reviews to be deleted that were not indented. The feature has now been removed to prevent users from deleting the wrong review.
 
 
-
-
-
-
-
+  

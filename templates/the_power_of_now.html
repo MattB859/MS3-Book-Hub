@@ -12,13 +12,11 @@
             </div>
         </div>
         <div class="col s12 l7 pull-7 description-txt">
-
-            <span class="flow-text">
                 <h4 class="description">The Power of Now: A Guide to Spiritual Enlightenment by Tolle, Eckhart (
                     February 1, 2001) Paperback Paperback – 1 Jan. 1700</h4>
 
                 <a href="https://en.wikipedia.org/wiki/Eckhart_Tolle" target="_blank">
-                    <p class="txt-1"><span>by</span>Tolle, Eckhart</p>
+                    <span class="txt-1">by Tolle Eckhart</span>
                 </a>
 
                 <hr class="margin-bottom">
@@ -44,7 +42,6 @@
                     personal epiphany and writes: "I heard the words 'resist nothing' as if spoken inside my chest." He
                     relates that he felt as if he were falling into a void and afterwards "there was no more fear."
             </span></p>
-            </span>
             <a class="toggle-text" onclick="toggleText()" id="toggleBtn">Read more</a> 
         </div>
     </div>
@@ -101,9 +98,9 @@
                     <p class="margin-bottom">{{ review.book_review }}</p>
                     {% if session.user|lower == review.created_by|lower %}
                     <a href="{{ url_for('edit_the_power_of', review_id=review._id) }}"
-                        class="waves-effect waves-light blue btn"><i class="far fa-edit"></i></a>
+                        class="waves-effect waves-light blue btn"><i class="far fa-edit"></i> Edit</a>
                     <a href="{{ url_for('delete_review_3', review_id=review._id) }}"
-                        class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i></a>
+                        class="waves-effect waves-light red btn"><i class="far fa-trash-alt"></i> Delete</a>
                     {% endif %}
                 </div>
             </div>
