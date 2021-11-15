@@ -20,6 +20,10 @@
 
 }
 
+.delete-btn{
+    width: 43.33%;
+}
+
 /* scroll up button */
 .scroll-up-btn {
     position: fixed;
@@ -329,6 +333,7 @@ h3 {
 }
 
 .profile-user-2{
+    margin-bottom: 10px;
     height: 70vh;   
 }
 

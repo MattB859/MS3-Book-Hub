@@ -1,7 +1,7 @@
 import os
 import datetime
 from flask import (
-    Flask, flash, render_template, 
+    Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
@@ -68,12 +68,6 @@ def edit_post():
 def edit_secret_post():
     reviews = mongo.db.reviews_2.find()
     return render_template("edit_secret.html", reviews=reviews)
-
-
-@app.route("/delete_post")
-def delete_post():
-    reviews = mongo.db.reviews.find()
-    return render_template("edit_power.html", reviews=reviews)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -161,6 +155,8 @@ def add_review():
 
 @app.route("/book_power", methods=["GET", "POST"])
 def book_power():
+
+    # allows users to add reviews
     if request.method == "POST":
         review = {
             "title": "The 48 Laws Of Power",
@@ -173,13 +169,14 @@ def book_power():
         mongo.db.reviews.insert_one(review)
         flash("Review Successfully Added")
         return redirect(url_for("book_reviews"))
-        
+
         reviews = list(mongo.db.reviews.find())
     return render_template("book_power.html")
 
 
 @app.route("/the_secret", methods=["GET", "POST"])
 def the_secret():
+    # allows users to add reviews
     if request.method == "POST":
         the_secret_review = {
             "headline": request.form.get("headline"),
@@ -190,13 +187,14 @@ def the_secret():
         mongo.db.reviews_2.insert_one(the_secret_review)
         flash("Review Successfully Added")
         return redirect(url_for("the_secret_book"))
-        
+
         reviews_2 = list(mongo.db.reviews_2.find())
     return render_template("the_secret.html")
 
 
 @app.route("/the_power_of", methods=["GET", "POST"])
 def the_power_of():
+    # function allows users to add reviews
     if request.method == "POST":
         the_secret_review = {
             "title": "The Power Of Now",
@@ -209,13 +207,15 @@ def the_power_of():
         mongo.db.reviews_3.insert_one(the_secret_review)
         flash("Review Successfully Added")
         return redirect(url_for("power_of_now"))
-        
+
         reviews_3 = list(mongo.db.reviews_3.find())
     return render_template("the_power_of_now.html")
 
 
 @app.route("/edit_the_power_of/<review_id>", methods=["GET", "POST"])
 def edit_the_power_of(review_id):
+
+    # allows users to edit 'the power of now' book reviews
     if request.method == "POST":
         submit = {
             "title": "The Power Of Now",
@@ -228,7 +228,7 @@ def edit_the_power_of(review_id):
         mongo.db.reviews_3.update({"_id": ObjectId(review_id)}, submit)
         flash("Review Successfully Updated")
         return redirect(url_for("power_of_now"))
-        
+
     edit = mongo.db.reviews_3.find_one({"_id": ObjectId(review_id)})
     reviews = mongo.db.reviews_3.find().sort("reviews", 1)
     return render_template(
@@ -237,6 +237,10 @@ def edit_the_power_of(review_id):
 
 @app.route("/edit_review/<review_id>", methods=["GET", "POST"])
 def edit_review(review_id):
+
+    """
+    allows a user to edit 'the 48 laws of power' book reviews
+    """
     if request.method == "POST":
         submit = {
             "headline": request.form.get("headline"),
@@ -256,6 +260,10 @@ def edit_review(review_id):
 
 @app.route("/edit_secret/<review_id>", methods=["GET", "POST"])
 def edit_secret(review_id):
+
+    """
+    allows a user to edit 'the secret' book reviews
+    """
     if request.method == "POST":
         submit = {
             "headline": request.form.get("headline"),
@@ -273,51 +281,49 @@ def edit_secret(review_id):
         "edit_secret.html", edit=edit, reviews=reviews)
 
 
-@app.route("/edit_user/<user_id>")
-def edit_user(user_id):
-    if request.method == "POST":
-        submit = {
-            "username": request.form.get("username"),
-            "email_address": request.form.get("email_address"),
-            "password": request.form.get("password")
-        }
-        mongo.db.users.update({"_id": ObjectId(user_id)}, submit)
-        flash("Review Successfully Updated")
-        return redirect(url_for("book_reviews"))
-
-    admin = mongo.db.users.find_one({"_id": ObjectId(user_id)})
-    users = mongo.db.users.find().sort("usres", 1)
-    return render_template(
-        "user_admin", users=users, admin=admin)
-
-
 @app.route("/delete_review/<review_id>")
 def delete_review(review_id):
-    if session["user"]:
-        mongo.db.reviews.remove({"_id": ObjectId(review_id)})
-        flash("Review Successfully Deleted")
-        return redirect(url_for("book_reviews"))
+
+    # allows user to delete 'the 48 laws of power' reviews
+    mongo.db.reviews.remove({"_id": ObjectId(review_id)})
+    flash("Review Successfully Deleted")
+    return redirect(url_for("book_reviews"))
 
 
 @app.route("/delete_review_2/<review_id>")
 def delete_review_2(review_id):
-    if session["user"]:
-        mongo.db.reviews_2.remove({"_id": ObjectId(review_id)})
-        flash("Review Successfully Deleted")
-        return redirect(url_for("the_secret_book"))
+
+    """
+    allows user to delete 'the secret' reviews
+    """
+    mongo.db.reviews_2.remove({"_id": ObjectId(review_id)})
+    flash("Review Successfully Deleted")
+    return redirect(url_for("the_secret_book"))
+
+
+@app.route("/delete_review_3/<review_id>")
+def delete_review_3(review_id):
+
+    """
+    allows user to delete 'the power of now' reviews
+    """
+    mongo.db.reviews_3.remove({"_id": ObjectId(review_id)})
+    flash("Review Successfully Deleted")
+    return redirect(url_for("power_of_now"))
 
 
 @app.route("/delete_user/<user_id>")
 def delete_user(user_id):
+
     """
-    allows user to delete their account
+    allows users to delete their user account
     """
     if session["user"]:
         mongo.db.users.remove({"_id": ObjectId(user_id)})
         flash("User Successfully Deleted")
         session.pop("user")
         return redirect(url_for("login"))
-    
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

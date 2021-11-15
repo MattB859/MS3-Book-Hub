@@ -10,9 +10,9 @@
      
         <div class="col s12">
             <div class="card-panel  profile-user-2">
-                <h6 class="center-align font">
+                <h4 class="center-align">
                     User Settings
-                </h6>
+                </h4>
 
                   <!-- user  -->
                   <div class="row center-align">
@@ -23,22 +23,22 @@
                     </div>
                 </div>
               
-
-                <div id="modal1" class="modal">    
+                <!-- modal box -->
+                <div id="modal1" class="col l4 m4 offset-l2 modal">    
                     <div class="modal-content">
                         <h4 class="bold">Delete Account</h4>
                         <p>Are you sure you want to delete your account?</p>
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="bold modal-close waves-effect grey waves-grey btn-flat">Cancle</a>
+                        <a href="#!" class="bold modal-close waves-effect grey white-text waves-grey btn-flat">Cancle</a>
                         <a href="{{ url_for('delete_user', user_id=user._id) }}" class="bold modal-close waves-effect red white-text waves-red btn-flat">Delete</a>
                     </div>
                 </div> 
+
                 <div class="container center-align margin-top">
-                    <a class="waves-effect waves-light btn-large red modal-trigger" href="#modal1">Delete Account</a>
-                    <a class="waves-effect waves-light btn-large grey modal-trigger" href="#">Cancle</a>
+                    <a class="bold waves-effect waves-light btn-large grey modal-trigger delete-btn" href="{{ url_for('home') }}">Cancel</a>
+                    <a class="bold waves-effect waves-light btn-large red modal-trigger delete-btn" href="#modal1">Delete Account</a> 
                 </div>
-                      
                 </div>    
             </div>
         </div>
