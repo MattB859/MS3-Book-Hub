@@ -37,9 +37,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 -   ### First Time Visitor Goals
 
     - As a First Time Visitor, I want to understand the main purpose of the site and learn more about what the site has to offer.
-    - As a First Time Visitor, I want to easily navigate throught the site to find books.
+    - As a First Time Visitor, I want to easily navigate through out the site to find books.
     - As a First Time Visitor, I want the site to be responsive on all devices.
-    - As a First Time Visitor, I want to register my information so i can access features that are exclusive to registered users.
+    - As a First Time Visitor, I want to register my information so I can access features that are exclusive to registered users.
     - As a First Time Visitor, I want to be recommended books to buy using the links provided.
 
 -   ### Returning Visitor Goals 
@@ -50,12 +50,12 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -   ### Frequent User Goals
 
-    - As a Frequent User, I want to log into my account and see on what date the reviews were posted. 
+    - As a Frequent User, I want to log into my account and see which date the reviews were posted. 
     - As a Frequent User, I want to add new reviews.
     - As a Frequent User, I want to see which books are the best to buy based on good or bad reviews from other users.
-    - As a Frequent User, I want to edit and delete my reviews when necessary.
+    - As a Frequent User, I want to edit and delete my reviews where necessary.
     - As a Frequent User, I want my reviews to be safe and secure.
-    - As a Frequent User, I want to see the names of each user who post and leave reviews
+    - As a Frequent User, I want to see the reviews are genuine by actual visitors to the site.
 
 -   ### Site Owner Goals
 
@@ -142,7 +142,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -   ### Navigation bar
 
-    - On entering the website, users are greeted with a clean and easy to read navigation bar which contains links that are fixed to the top of the page so users are never left without accsess to go to the page of their choice.
+    - On entering the website, users are greeted with a clean and easy to read navigation bar which contains links that are fixed to the top of the page, so users are never left without access to navigate to the page of their choice.
 
     - On the navigation bar is a registration link that allows visitors to create an account by registering their details.
 
@@ -162,21 +162,21 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
  
 -  ### Sign Up Page 
 
-    -  New visitors are able to Register their details by providing an email address, user name and password to create an account.
+    -  New visitors are able to register their details by providing an email address, user name and password to create an account.
 
-    - Registered users have accsess to their profile page that gives a warm greeting when logged in.
+    - Registered users have access to their profile page that presents a welcome greeting when logged in.
 
 ###  Profile Page 
 
 -   ### Welcome    
 
-    - Flask provides a really simple way to give feedback to a user with the flashing system. The message is shown at the top of the page and reads "log in was successful" this lets the user know they have logged in. 
+    - Flask provides a really simple way to give feedback to a user with the flashing system. The message is shown at the top of the page and reads "log in was successful" this informs the user they are logged in. 
 
 ###  Review books [see here](/static/images/book-review.png)
 
 -  ### Book Reviews 
 
-    - Users can add reviews by clicking on the book cover image or pressing the write a review button below. Users are then taken to a page where they can fill out a form that promps them to enter a heading and written review. 
+    - Users can add reviews by clicking on the book cover image or pressing the 'write a review' button below. Users are then taken to a page where they can fill out a form that prompts them to enter a heading and written review. 
 
     - The website has sub pages with more description of the books, and allows all registered users to view and leave reviews.
 
@@ -184,15 +184,15 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -  ### Edit OR Delete Reviews
 
-   - User are able to edit their own reviews using an edit button located at the bottom of the reivew.
+   - Users are able to edit their own reviews using an edit button located at the bottom of the reivew.
 
-   - User are able to delete their reviews using the delete button located at the bottom of the reivew.
+   - Users are able to delete their reviews using the delete button located at the bottom of the reivew.
 
 ###  Log Out Page
 
 -  ### User Log Out
 
-    - When a user logs out of their account a flash message is  displayed that reads "You have been logged out" to let users know they have logged out.
+    - When a user logs out of their account a flash message is displayed that reads "You have been logged out" to inform them they are logged out.
 
 ###  Features
 
@@ -263,30 +263,92 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 -  ### [Balsamiq](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process
 
-## Testing
+# Testing
 
 -  ### All Testing can be foung [here](TESTING.md) 
 
-## Deployment
+# Deployment
 
--   ### GitHub Pages
-
-    - The project was developed using [Gitpod](https://www.gitpod.io/) and pushed [GitHub](https://github.com/) then deployed on
-    [Heroku](https://id.heroku.com/) using the following steps...    
+### The project was developed using [Gitpod](https://www.gitpod.io/) and pushed to [GitHub](https://github.com/) then deployed on
+Heroku using the following steps...    
  
-    1. Create requirements.txt file using command pip3 freeze --local > requirements.txt
-    2. Create a Procfile with the terminal command echo web: python app.py > Procfile and at this point checking the Procfile to make sure there is no stray line as this can cause issues when deploying to Heroku.
-    3. The new requirements file and Procfile committed to GitHub.
-    4. New app created in Heroku by clicking "New" and "Create New App" and giving it an original name and setting the region to closest to location.
-    5. From Heroku dashboard click "Deploy" -> "Deployment Method" and select "GitHub"
-    6. Search for GitHub repo and connect.
-    7. In the dashboard click "Settings" -> "Reveal Config Vars"
-    8. Set config vars:
+1. Create requirements.txt file using command pip3 freeze --local > requirements.txt
+2. Create a Procfile with the terminal command echo web: python app.py > Procfile and at this point checking the Procfile to make sure there is no stray line as this can cause issues when deploying to Heroku.
+ 3. The new requirements file and Procfile committed to GitHub.
+4. New app created in Heroku by clicking "New" and "Create New App" and giving it an original name and setting the region to closest to location.
+5. From Heroku dashboard click "Deploy" -> "Deployment Method" and select "GitHub"
+6. Search for GitHub repo and connect.
+7. In the dashboard click "Settings" -> "Reveal Config Vars"
+8. Set config vars:
 
-    1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-    2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-    3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-    4. Under "Source", click the dropdown called "None" and select "Master Branch".
-    5. The page will automatically refresh.
-    6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+## GitHub Pages
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+   Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+ 5. Change the current working directory to the location where you want the cloned directory to be made.
+ 6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+        7. Press Enter. Your local clone will be created.
+
+```
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+    > Cloning into `CI-Clone`...
+    > remote: Counting objects: 10, done.
+    > remote: Compressing objects: 100% (8/8), done.
+    > remove: Total 10 (delta 1), reused 10 (delta 1)
+    > Unpacking objects: 100% (10/10), done.
+```
+---
+
+## Credits
+
+-   ### Code
+
+    - The Code Institute material was the main source of information used to create this project.
+
+    - Materialize CSS Library used throughout the project mainly to make site responsive using the Grid System [https://materializecss.com/](https://materializecss.com/)
+
+-   ### Content
+
+    -  All content was written by the developer.
+
+    -  Psychological properties of colours text in the README.md was found - [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+
+    - w3schools was used as a general source of knowledge.
+
+    - Materialize for creating a responsive website.
+
+-   ### Media
+
+    -  Hero Image was created by the developer using affinity designer to crop and edit photo on to background [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
+
+    - All Images on the site were sourced from [Amazon.co.uk](https://www.amazon.co.uk/)
+
+  
+-   ### Acknowledgements
+
+    - Tutor support at Code Institute for their support.
