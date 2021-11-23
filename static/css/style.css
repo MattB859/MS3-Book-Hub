@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-#more {display: none;}
 
+/* Toggle text code taken from www.w3schools.com */
 .toggle-text{
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,8 +17,9 @@
     color: #fff;
     top: 10px;
     left: 10px;
-
 }
+
+#more {display: none;}
 
 .delete-btn{
     width: 43.33%;
@@ -45,14 +46,12 @@
     cursor: pointer;
 }
 
-/* scroll up button */
 .scroll-up-btn.show {
     bottom: 30px;
     opacity: 1;
     pointer-events: visible;
 }
 
-/* scroll up button */
 .scroll-up-btn:hover {
     background: rgb(16, 87, 194);
     color: rgb(240, 240, 240);
@@ -67,6 +66,7 @@
     font-size: 50px;
 }
 
+/* Create review header styling*/
 .title{
     font-weight: 600;
     color: rgb(4, 15, 37);
@@ -76,6 +76,7 @@
     display: none;
 }
 
+/* Logo header styling */
 .main-header span {
     color: rgb(5, 11, 44);
     padding: 10px;
@@ -86,6 +87,7 @@
     text-transform: uppercase;
 }
 
+/* Home page text*/
 .header {
     color: rgb(26, 3, 3);
     position: absolute;
@@ -135,18 +137,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-/* home page styling */
-.book-header {
-    left: 0;
-    right: 0;
-    font-size: 35px;
-    color: rgb(20, 6, 53);
-    font-weight: 600;
-    font-family: 'Yeseva One', cursive;
-    text-align: center;
-    align-items: center;
-}
-
+/* Home page btn styling */
 .button-1{
     position: absolute;
     z-index: 1;
@@ -156,8 +147,7 @@
     width: 250px;
 }
 
-
-/* mobile icon */
+/* Mobile icon */
 .fa-search{
     display: none;
 }
@@ -234,6 +224,7 @@ h3 {
     left: 0;
 }
 
+/* Social icon styling */
 .fab {
     font-size: 20px;
     padding: 9px;
@@ -260,25 +251,13 @@ h3 {
     width: 200px;
 }
 
-/* home section styling */
+/* Hero section styling */
 .home {
     position: relative;
     background: url("../images/pexels-pixabay.jpg"
     ) no-repeat right;
     background-size: cover;
     height: 800px;
-}
-
-.home-btn {
-    position: relative;
-    float: right;
-   
-}
-
-.buy-button{
-    width: 60%;
-    border-radius: 5%;
-    background-color: rgb(37, 139, 207);  
 }
 
 .bg-img{
@@ -293,6 +272,19 @@ h3 {
     height: 780px; 
 }
 
+.home-btn {
+    position: relative;
+    float: right;
+   
+}
+
+.buy-button{
+    width: 60%;
+    border-radius: 5%;
+    background-color: rgb(37, 139, 207);  
+}
+
+/* App banner stying */
 .badge img {
     position: absolute;
     top: 50px;
@@ -307,6 +299,7 @@ h3 {
     width: 180px;
 }
 
+/* Navbar underline hover animation */
 .btn-line::after {
     content: '';
     display: block;
@@ -319,6 +312,7 @@ h3 {
 .btn-line:hover::after {
     width: 100%;
 }
+
 
 .book_reviews img {
     margin: 10px 0;
@@ -352,13 +346,6 @@ h3 {
     font-size: 30px;
 }
 
-.font{
-    font-weight: 600;
-    font-size: 3vw;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-
 .header-2 {
     color: rgb(26, 3, 3);
     position: absolute;
@@ -375,7 +362,12 @@ h3 {
     font-family: Arial, Helvetica, sans-serif
 }
 
-/* all text stying */
+/* All website text stying */
+.font{
+    font-weight: 600;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif
+}
 
 .bold{
     font-weight: 600;
@@ -438,7 +430,6 @@ h6 {
 
 .post-box{
     padding: 5px;
-    /*background-color: rgb(243, 243, 243);*/
 }
 
 .price {
@@ -459,25 +450,7 @@ h6 {
     color: rgb(145, 145, 145);
 }
 
-.fa-star{
-    font-size: 25px;
-    color: rgb(231, 213, 110);
-}
-
-.rating-star > input[type="submit"] {
-    padding: 0px 2px;
-    float: left;
-    font-size: 45px;
-    color: rgb(204, 204, 204);
-    background: transparent;
-    border:0 none;
-}
-  
-  .rating-star > input[type="submit"]:hover {
-    color: rgb(230, 211, 47);
-}
-
-/* review box */
+/* review box styling */
 .box {
     width: 60%;
     height: 380px;
@@ -536,6 +509,7 @@ h6 {
     width:60px;
 }
 
+/* Search form */
 form.example input[type=text] {
     padding: 15px;
     height: 5px;
@@ -571,10 +545,114 @@ form.example input[type=text] {
     content: "";
     clear: both;
     display: table;
-  }
+}
+
+/* Media query for large screens */
+@media only screen and (max-width: 1100px) {
+    .bg-img {
+        position: relative;
+        width: 100%;
+        top: 200px;
+    }
+
+     /* mobile nav header */
+    .header-logo span{
+        color: rgb(2, 2, 2);
+        border-left: 1px solid rgb(175, 175, 175);
+        border-right: 1px solid rgb(175, 175, 175);
+        font-family: 'Yeseva One', cursive;
+        padding: 5px;
+        font-weight: 100;
+        font-size: 7vw;
+    }
+
+      /* small header */
+      .small-header{
+        margin-top: 80px;
+        font-size: 20px;
+    }
+    
+    /* sidenav header */
+    .mobile-logo {
+        font-family: 'Yeseva One', cursive;
+        color: rgb(2, 2, 2);
+        text-transform: uppercase;
+    }
+    
+    img{
+        margin: 5px 0 0;
+    }
+
+    
+    .app_banner img{
+        width: 50%;
+    }
+
+    .book_reviews img{
+        width: 100%;
+    }
+
+    .home {
+        position: relative;
+        height: 100%;
+        background: url("../images/pexels-pixabay.jpg"
+        ) no-repeat center;
+        background-size: cover;
+    }
+
+    .button-1{
+        display: none;
+    }
+
+    .book-header {
+        font-size: 15px;
+    }
 
 
+    /* review box */
+    .box {
+        width: 100%;
+        height: 380px;
+        margin-top: 50px;
+        border: 1.5px solid rgb(0, 0, 0);
+    }
 
+    .description {
+        font-size: 15px;
+    }
+
+    .txt {
+        font-size: 10px;
+    }
+    form.example input[type=text]{
+        display: none;
+    }
+    form.example button {
+        display: none;
+    }
+
+    /* home text header */
+    .header {
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: rgba(236, 236, 236, 0.404);
+        background-size: cover;
+        padding: 15px;
+        color: rgb(1, 7, 68);
+        position: absolute;
+        font-size: 5vw;
+        top: -10px;
+
+    }
+
+    .header span-1{
+        font-size: 4vw;
+    }
+    
+}
+   
+/* Media query for tablet screens */
 @media only screen and (max-width: 800px) {
     .bg-img {
         position: relative;
@@ -741,6 +819,7 @@ form.example input[type=text] {
     
 }
 
+/* Media query for mobile screens */
 @media only screen and (max-width: 500px) {
     .bg-img {
         background: url("../images/hero-background.png"

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
-    <h4 class="center-align title edit">Edit/Delete Review</h4>
+    <h4 class="center-align title edit">Edit Review</h4>
 
     {% for review in reviews %} 
     {% if session.user|lower == review.created_by|lower %}

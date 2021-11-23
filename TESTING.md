@@ -60,7 +60,7 @@
 
 | <p align="center">User Stories</p>    | <p align="center">Expectation</p>    | <p align="center">Testing </p>     | <p align="center">Results</p>  | Pass/Fail  |
 | -------------------------------       | -----------------------------       | -------------------------------    | ------------------------------ | :--------: |
-|  First Time <br> Visitor | "I want to understand <br> the main purpose of the site" | On entering the site <br> users are greeted with <br> images of book covers <br> and some informative text | "Join the UK's No.1 Hub <br> & START REVIEWING <br> TOP SELLING BOOKS" | Pass |
+|  First Time <br> Visitor | "I want to understand <br> the main purpose of the site" | On entering the site <br> users are greeted with <br> book cover images <br> and some informative text | "Join the UK's No.1 Hub <br> & START REVIEWING <br> TOP SELLING BOOKS" | Pass |
 |          | "I want to easily navigate <br> throught the site <br> to find books" | On entering the site <br> visitors can scroll down <br> to find featured books <br> with links to buy| Books can be found <br> at the bottom of <br> the home page | Pass |
 |          | "I want the site to be <br> responsive on all devices"| Navigate to site on laptop, <br> tablet and mobile, move <br> around the site to test for <br> responsiveness | Site responsive on all <br> devices | Pass |
 |          | "I want to register my <br> information so i can access <br> features that are exclusive <br> to registered users" | Click Register, fill a username, <br> email-address, password,<br> and click register | Registration successful | Pass |

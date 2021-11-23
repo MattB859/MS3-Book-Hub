@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="text-black bold center-align">The Alchemist</h3>
+
+<div class="container">
+    <div class="row">
+         <!--book image -->
+         <div class="col s12 l5 pull-l1">
+            <div class="center-align materialboxed">
+                <img src="{{ url_for('static', filename='images/book-11.jpg') }}"
+                    style="width: 60%;" alt="book">
+            </div>    
+        </div>
+        <div class="col s12 l7 pull-7 description-txt">
+
+                <h4 class="description">The Alchemist: By Paulo Coelho </h4> 
+                 
+
+                <a href="https://en.wikipedia.org/wiki/Paulo_Coelho" target="_blank">
+                    <p class="txt-1"><span>by</span>Paulo Coelho</p>
+                </a>
+
+                <hr class="margin-bottom">
+                
+                <div class="col s12 m12 l12 line-height">
+                    <a href="https://www.amazon.co.uk/Coelho-Paulo-Author-Alchemist-Anniversary/dp/B01DHEWSG4/ref=sr_1_3?crid=3GCEXVYUOSK0X&keywords=the+alchemist&qid=1637670001&s=books&sprefix=the+a%2Cstripbooks%2C160&sr=1-3"
+                        class="margin-bottom waves-effect waves-light btn-large orange darken-4" target="_blank">Buy Now</a>
+
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>  
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    
+                    <p class="bold"><em>Price - £19.95</em></p>   
+                    <h4 class="description">Description</h4>
+                </div>
+                
+                <p class="txt col s12">Paulo Coelho's enchanting novel has inspired a 
+                    devoted following around the world. This story, dazzling in its powerful 
+                    simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy 
+                    named Santiago, who travels from his homeland in Spain to the Egyptian 
+                    desert in search of a treasure 
+                    buried near the Pyramids.<span id="dots">...</span>
+                    <span id="more">Along the way he meets a Romany woman, a man who calls himself a 
+                    king, and an alchemist, all of whom point Santiago in the right direction for his quest. 
+                    No one knows what the treasure is, or whether Santiago will be able to surmount the 
+                    obstacles in his path; but what starts out as a journey to find worldly goods turns into a discovery of treasure within.
+                    Lush, evocative, and deeply humane, the story of Santiago is an eternal testament to the transforming power 
+                    of our dreams and the importance of listening to our hearts.
+                </span></p>
+               
+            <a class="toggle-text" onclick="toggleText()" id="toggleBtn">Read more</a> 
+        </div>
+        
+    </div>
+    {% if session.user %}
+    <hr class="hr">
+
+    <h4 class="center-align title">Create Review</h4>
+
+    <!-- text form -->
+    <div class="row box" id="post">
+        <form class="text-body" method="POST" action="{{ url_for('the_alchemist_book') }}">
+            <div class="row">
+                
+                <!-- review headline  -->
+                <div class="col s12">
+                    <h6>Add a headline</h6>
+                    <label for="headline">comments:</label>
+                    <textarea id="headline" placeholder="What's most important to know?" name="headline" minlength="5"
+                        maxlength="100" required></textarea>
+                </div>
+                
+                <!-- review textarea -->
+                <div class="col s12 height">
+                    <h6>Add a written review</h6>
+                    <label for="book_review">comments:</label>
+                    
+                    <textarea id="book_review" placeholder="What did you like or dislike about this book?"
+                        name="book_review" minlength="5" style="height: 150px;" maxlength="600" required></textarea>
+                        
+                    <!-- submit button -->
+                    <button class="btn waves-effect orange darken-4 waves-light" type="submit">Submit
+                        <i class="fas fa-share"></i>
+                    </button>
+                                       
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <h6 class="text-darken-4 center-align margin-top">See All Top Reviews</h6>
+
+    <hr>
+
+    <div class="container post-box">
+        {% for review in reviews %}   
+            <div class="row">
+                <div class="col s12 s6">  
+                    <div class="card-panel">  
+                        <p><em><i class="fas fa-user-circle"></i> {{ review.created_by }}</em></p>
+                        <p class="post">{{ review.headline }}</p>
+                        <p>{{ review.title }}</p>
+                        <p class="post-2 bold text-color">Verified</p>
+                        <p class="post-2"><em>Reviewed in the United Kingdom on</em> {{ review.date_time }}</p>
+                        <p class="margin-bottom">{{ review.book_review }}</p>   
+                        {% if session.user|lower == review.created_by|lower %}
+                            <a href="{{ url_for('edit_alchemist', review_id=review._id) }}" class="waves-effect waves-light blue btn"><i class="far fa-edit"></i> Edit</a>
+                            <a href="{{ url_for('delete_review', review_id=review._id) }}" class="modal-trigger waves-effect waves-light red btn"><i class="far fa-trash-alt"></i> Delete</a>
+                        {% endif %}
+                    </div>
+                </div>  
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
