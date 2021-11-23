@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* Toggle text code taken from www.w3schools.com */
 .toggle-text{
     position: relative;
@@ -195,13 +194,11 @@ h3 {
 
 .brand-logo {
     font-weight: 600;
-
 }
 
 .brand-logo span {
     color: rgb(49, 162, 228);
 }
-
 
 .bk-8 img {
     width: 100%;
@@ -274,8 +271,7 @@ h3 {
 
 .home-btn {
     position: relative;
-    float: right;
-   
+    float: right;  
 }
 
 .buy-button{
@@ -332,13 +328,12 @@ h3 {
 
 .profile {
     text-align: center;
-    border: 2px solid rgb(92, 92, 92);
     border-radius: 50%;
     padding: 30px;
     left: 0;
     right: 0;
     font-size: 50px;
-    background-color: rgb(121, 121, 121);
+    background-color: rgb(194, 194, 194);
     color: rgb(247, 247, 247);
 }
 
@@ -354,7 +349,6 @@ h3 {
     font-weight: 600;
     top: -30px;
 }
-
 
 .description {
     font-weight: 300;
@@ -401,7 +395,6 @@ h6 {
     color: rgb(5, 5, 5);
 }
 
-
 .hr {
     margin: 50px 0;
 }
@@ -428,6 +421,7 @@ h6 {
     font-size: 14px;
 }
 
+/* all review box styling */
 .overflow {
     overflow: scroll;
     height: 700px;
@@ -560,7 +554,7 @@ form.example input[type=text] {
         top: 200px;
     }
 
-     /* mobile nav header */
+    /* mobile nav header */
     .header-logo span{
         color: rgb(2, 2, 2);
         border-left: 1px solid rgb(175, 175, 175);
@@ -571,8 +565,8 @@ form.example input[type=text] {
         font-size: 7vw;
     }
 
-      /* small header */
-      .small-header{
+    /* small header */
+    .small-header{
         margin-top: 80px;
         font-size: 20px;
     }
@@ -588,7 +582,6 @@ form.example input[type=text] {
         margin: 5px 0 0;
     }
 
-    
     .app_banner img{
         width: 50%;
     }
@@ -612,7 +605,6 @@ form.example input[type=text] {
     .book-header {
         font-size: 15px;
     }
-
 
     /* review box */
     .box {
@@ -648,13 +640,11 @@ form.example input[type=text] {
         position: absolute;
         font-size: 5vw;
         top: -10px;
-
     }
 
     .header span-1{
         font-size: 4vw;
     }
-    
 }
    
 /* Media query for tablet screens */
