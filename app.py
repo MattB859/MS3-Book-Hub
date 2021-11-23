@@ -140,7 +140,12 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+    reviews = mongo.db.reviews.find()
+
+    views = mongo.db.reviews_2.find()
+
+    return render_template("profile.html",
+    reviews=reviews, views=views, username=username)
 
     if session["user"]:
         return render_template("profile.html", username=username).capitalize()
