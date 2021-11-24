@@ -27,12 +27,20 @@ def home():
 
 @app.route("/user_admin")
 def user_admin():
+
+    """
+    find the user in the database
+    """
     users = mongo.db.users.find()
     return render_template("delete_user.html", users=users)
 
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+
+    """
+    allows users to search reviews
+    """
     query = request.form.get("query")
     reviews = mongo.db.reviews.find({"$text": {"$search": query}})
     return render_template("book_power.html", reviews=reviews)
@@ -40,8 +48,9 @@ def search():
 
 @app.route("/book_reviews")
 def book_reviews():
+
     """
-    get the list of reviews to show on book_power.html
+    find the list of reviews in the database to view
     """
     reviews = mongo.db.reviews.find()
     return render_template("book_power.html", reviews=reviews)
@@ -49,24 +58,40 @@ def book_reviews():
 
 @app.route("/the_secret_book")
 def the_secret_book():
+
+    """
+    find the list of reviews_2 in the database to view
+    """
     reviews = mongo.db.reviews_2.find()
     return render_template("the_secret.html", reviews=reviews)
 
 
 @app.route("/power_of_now")
 def power_of_now():
+
+    """
+    find the list of reviews_3 in the database to view
+    """
     reviews = mongo.db.reviews_3.find()
     return render_template("the_power_of_now.html", reviews=reviews)
 
 
 @app.route("/the_alchemist")
 def the_alchemist():
+
+    """
+    find the list of reviews_4 in the database
+    """
     reviews = mongo.db.reviews_4.find()
     return render_template("alchemist_book.html", reviews=reviews)
 
 
 @app.route("/edit_post")
 def edit_post():
+
+    """
+    find the list of reviews in the database
+    """
     reviews = mongo.db.reviews.find()
     return render_template("edit_power.html", reviews=reviews)
 
