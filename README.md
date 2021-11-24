@@ -1,6 +1,6 @@
 <h1 align="center">The Book Hub</h1>
 
-<img align="center" src="./static/images/book-hub-site.png">
+<img align="center" src="./static/images/book-hub-site.jpg">
 
 <h1>About</h1>
 
@@ -156,7 +156,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 ###  Log In
 
--  ### User Log In
+-  ### User Log In [see here](/static/images/lon-in.jpg)
 
     - Frequent users can log in to accsess additional links to leave reviews on all the latest books.
 
@@ -168,13 +168,17 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - Registered users have access to their profile page that presents a welcome greeting when logged in.
 
-###  Profile Page 
+###  Profile Page [see here](/static/images/profile-log-in.jpg)
 
 -   ### Welcome    
 
-    - Flask provides a really simple way to give feedback to a user with the flashing system. The message is shown at the top of the page and reads "log in was successful" this informs the user they are logged in. 
+    - Flask provides a really simple way to give feedback to a user with the flashing system. The message is shown at the top of the page and reads "log in was successful" this informs the user they are logged in.
 
-###  Review books [see here](/static/images/book-review.png)
+-   ### User Reviews
+
+    - All user reviews are saved to their profile page, including book names, and the date they were made. Users are also able to edit and delete their reviews.
+
+###  Review books [see here](/static/images/my-reviews.jpg)
 
 -  ### Book Reviews 
 
@@ -182,13 +186,15 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - The website has sub pages with more description of the books, and allows all registered users to view and leave reviews.
 
-### Edit/Delete [see here](/static/images/edit-delete.png)
+    - [create reviews](/static/images/create-reviews.jpg)
 
--  ### Edit OR Delete Reviews
+
+
+### Edit Reviews [see here](/static/images/edit-reviews.jpg)
+
+-  ### Edit Reviews
 
    - Users are able to edit their own reviews using an edit button located at the bottom of the reivew.
-
-   - Users are able to delete their reviews using the delete button located at the bottom of the reivew.
 
 ###  Log Out Page
 
@@ -201,6 +207,66 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 -  ### Future Features
 
     - To add an online payment system that allows users to buy books directly from the website.
+
+
+## Database Layout
+
+-  ### Book Hub Collections
+
+    | Title         | Field          | Data Type |
+    | ------------- | -------------  | --------- |
+    | reviews       | _id            | ObjectId  |
+    |               |                |           |
+    |               | title          | string    |
+    |               | author         | string    |
+    |               | headline:      | string    |
+    |               | book_review    | string    |
+    |               | created_by     | string    |
+    |               | date_time      | string    |
+    
+    | Title         | Field          | Data Type |
+    | ------------- | -------------  | --------- |
+    | Rrviews_2     | _id            | ObjectId  |
+    |               |                |           |
+    |               | title          | string    |
+    |               | author         | string    |
+    |               | headline:      | string    |
+    |               | book_review    | string    |
+    |               | created_by     | string    |
+    |               | date_time      | string    |
+
+    | Title         | Field          | Data Type |
+    | ------------- | -------------  | --------- |
+    | reviews_3     | _id            | ObjectId  |
+    |               |                |           |
+    |               | title          | string    |
+    |               | author         | string    |
+    |               | headline:      | string    |
+    |               | book_review    | string    |
+    |               | created_by     | string    |
+    |               | date_time      | string    |
+
+    | Title         | Field          | Data Type |
+    | ------------- | -------------  | --------- |
+    | reviews_4     | _id            | ObjectId  |
+    |               |                |           |
+    |               | title          | string    |
+    |               | author         | string    |
+    |               | headline:      | string    |
+    |               | book_review    | string    |
+    |               | created_by     | string    |
+    |               | date_time      | string    |
+
+    | Title         | Field          | Data Type |
+    | ------------- | -------------  | --------- |
+    | users         | _id            | ObjectId  |
+    |               |                |           |
+    |               | username       | string    |
+    |               | email_address  | string    |
+    |               | password       | string    |
+   
+    
+    
 
 ## Technologies Used
 
@@ -353,4 +419,4 @@ By forking the GitHub Repository we make a copy of the original repository on ou
   
 -   ### Acknowledgements
 
-    - Tutor support at Code Institute for their support.
+    - Code Institute for their support and providing all of the necessary material.
