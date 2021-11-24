@@ -33,9 +33,8 @@
 
     <!-- top navbar -->
     <nav class="nav-bg navbar-fixed" id="myHeader">
-        <div class="container center-align">
+        <div class="container">
             <a class="header-logo" href="{{ url_for('home') }}"><span>Book Hub</span></a>
-            <i class="fas fa-search"></i>
             <a href="https://www.google.com/maps/@51.3998848,-0.2081109,14z" target="_blank"><i
                     class="fas fa-map-marker-alt"></i></a>
             {% if session.user %}
@@ -56,14 +55,7 @@
                 <li><a class="btn-line" href="{{ url_for('register') }}">Register</a></li>
                 {% endif %}
             </ul>
-        </div>
-
-        <!-- search form -->
-        <form class="example" action="{{ url_for('search') }}" method="POST">
-            <input type="text" placeholder="Search, Title, author" minlength="3" id="query" name="query" required>
-            <button type="submit">Search</button>
-            <label for="query"></label>
-        </form>
+        </div>     
     </nav>
 
         <!-- mobile sidenav -->
@@ -129,7 +121,7 @@
                     <ul>
                         <li><a class="black-text text-lighten-3" href="#">About</a></li>
                         <li><a class="black-text text-lighten-3" href="#">Support / Help</a></li>
-                        <li><a class="black-text text-lighten-3" href="#">Become an Affiliate</a></li>
+                        <li><a class="black-text text-lighten-3" href="https://affiliate-program.amazon.co.uk/" target="_blank">Become an Affiliate</a></li>
                         <li><a class="black-text text-lighten-3" href="#">Contacts</a></li>
                     </ul>
                 </div>

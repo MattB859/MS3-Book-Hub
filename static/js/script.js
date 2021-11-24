@@ -3,12 +3,7 @@ $(document).ready(function () {
     $('.modal').modal();
     $('.collapsible').collapsible();
     $('.materialboxed').materialbox();
-    $(window).scroll(function () {
-        if (this.scrollY > 20) {
-            $('.navbar').addClass("sticky");
-        } else {
-            $('.navbar').removeClass("sticky");
-        }
+    $(window).scroll(function () {     
         if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
         } else {
@@ -44,28 +39,27 @@ $(document).ready(function () {
         });
     });
 
-     // Add smooth scrolling to all links
-     $("a").on('click', function(event) {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          // Store hash
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-       
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
         } // End if
-        });
-    
+    });
 
     // form input validation 
     validateMaterializeSelect();

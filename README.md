@@ -34,28 +34,30 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 ### User stories
 
--   ### First Time Visitor Goals
+-   ### As a First Time User
 
-    - As a First Time Visitor, I want to understand the main purpose of the site and learn more about what the site has to offer.
-    - As a First Time Visitor, I want to easily navigate through out the site to find books.
-    - As a First Time Visitor, I want the site to be responsive on all devices.
-    - As a First Time Visitor, I want to register my information so I can access features that are exclusive to registered users.
-    - As a First Time Visitor, I want to be recommended books to buy using the links provided.
+    - I want to understand the main purpose of the site. 
+    - I want to easily navigate through out the site to find books.
+    - I want the site to be responsive on all devices.
+    - I want to be recommended books to buy using the links provided.
 
--   ### Returning Visitor Goals 
+-   ### As a Returning User
 
-    - As a Returning Visitor, I want to log in and see my reviews. 
-    - As a Returning Visitor, I want to see a good selection of books available to review.
-    - As a Returning Visitor, I want to see reviews posted by other users.
+    - I want to register my details to create an account.
+    - I want to log in and read reviews.
+    - I want to see a selection of books available to review.
+    - I want to see reviews posted by other users.
 
--   ### Frequent User Goals
+-   ### Frequent User
 
-    - As a Frequent User, I want to log into my account and see which date the reviews were posted. 
-    - As a Frequent User, I want to add new reviews.
-    - As a Frequent User, I want to see which books are the best to buy based on good or bad reviews from other users.
-    - As a Frequent User, I want to edit and delete my reviews where necessary.
-    - As a Frequent User, I want my reviews to be safe and secure.
-    - As a Frequent User, I want to see the reviews are genuine by actual visitors to the site.
+    - I want to add new reviews.
+    - I want to be informed when new books are becoming available to review
+    - I want to see reviews I have written saved to my profile page.
+    - I want my reviews to be safe and secure.
+    - I want to have the option of deleting my reviews.
+    - I want to have the option to edit my reviews.
+    - I want to have the option of deleting my account.
+    - I want to see the dates on all my reviews.
 
 -   ### Site Owner Goals
 
