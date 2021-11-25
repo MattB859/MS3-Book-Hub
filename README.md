@@ -208,29 +208,26 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - To add an online payment system that allows users to buy books directly from the website.
 
-
 ## Database Layout
 
--  ### Book Hub Collections
+-  ### Collections
 
     | Title         | Field          | Data Type |
     | ------------- | -------------  | --------- |
     | reviews       | _id            | ObjectId  |
-    |               |                |           |
     |               | title          | string    |
     |               | author         | string    |
-    |               | headline:      | string    |
+    |               | headline       | string    |
     |               | book_review    | string    |
     |               | created_by     | string    |
     |               | date_time      | string    |
     
     | Title         | Field          | Data Type |
     | ------------- | -------------  | --------- |
-    | Rrviews_2     | _id            | ObjectId  |
-    |               |                |           |
+    | reviews_2     | _id            | ObjectId  |
     |               | title          | string    |
     |               | author         | string    |
-    |               | headline:      | string    |
+    |               | headline       | string    |
     |               | book_review    | string    |
     |               | created_by     | string    |
     |               | date_time      | string    |
@@ -238,10 +235,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     | Title         | Field          | Data Type |
     | ------------- | -------------  | --------- |
     | reviews_3     | _id            | ObjectId  |
-    |               |                |           |
     |               | title          | string    |
     |               | author         | string    |
-    |               | headline:      | string    |
+    |               | headline       | string    |
     |               | book_review    | string    |
     |               | created_by     | string    |
     |               | date_time      | string    |
@@ -249,10 +245,9 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     | Title         | Field          | Data Type |
     | ------------- | -------------  | --------- |
     | reviews_4     | _id            | ObjectId  |
-    |               |                |           |
     |               | title          | string    |
     |               | author         | string    |
-    |               | headline:      | string    |
+    |               | headline       | string    |
     |               | book_review    | string    |
     |               | created_by     | string    |
     |               | date_time      | string    |
@@ -260,14 +255,11 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     | Title         | Field          | Data Type |
     | ------------- | -------------  | --------- |
     | users         | _id            | ObjectId  |
-    |               |                |           |
     |               | username       | string    |
     |               | email_address  | string    |
     |               | password       | string    |
    
     
-    
-
 ## Technologies Used
 
 ### Languages Used
@@ -288,7 +280,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 ### Frameworks & Libraries
 
--  ### [JQuery:](https://jquery.com/)
+-  ### [JQuery](https://jquery.com/)
     -  Used for the initialisation of Materialize CSS components
 -  ### [Materialize:](https://getbootstrap.com/docs/5.0/getting-started/download/) 
     -  Used to design a mobile-first responsive website along with custom components
