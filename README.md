@@ -36,7 +36,6 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -  ###  [Credits](#Credits)
 
-
 ## User Experience (UX)
 
 ### User stories
@@ -361,7 +360,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 ## Testing
 
--  ### All Testing can be foung [here](TESTING.md) 
+-  ### All testing can be found [here](TESTING.md) 
 
 ## Deployment
 
