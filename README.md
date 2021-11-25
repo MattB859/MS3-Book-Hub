@@ -29,9 +29,10 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     -   [Site Navigation](#Site-Navigation)
     -   [Current Features](#Current-Features)
 
--  ###  [Testing](#Testing)
+-  ###  [Testing](TESTING.md)
 
 -  ###  [Deployment](#Deployment)
+    -   [GitHub Pages](#GitHub-Pages)
 
 -  ###  [Credits](#Credits)
 
