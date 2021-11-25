@@ -2,16 +2,12 @@
 {% block content %}
 <div class="container">
     <h4 class="center-align title edit">Edit Review</h4>
-
-    {% for review in reviews %} 
+    {% for review in reviews %}
     {% if session.user|upper == review.created_by|upper %}
-    
-
     <!-- edit review form -->
     <div class="row box" id="post">
         <form class="text-body" method="POST" action="{{ url_for('edit_alchemist', review_id=review._id) }}">
             <div class="row">
-
                 <!-- review headline -->
                 <div class="col s12">
                     <h6>Add a headline</h6>
@@ -21,36 +17,32 @@
                     {{- review.headline -}}
                     </textarea>
                 </div>
-                
+
                 <!-- review textarea -->
                 <div class="col s12 height">
                     <h6>Add a written review</h6>
                     <label for="book_review">comments:</label>
-                  
                     <textarea id="book_review" placeholder="What did you like or dislike about this book?"
                         name="book_review" minlength="5" style="height: 150px;" maxlength="600" required>
                     {{- review.book_review -}}     
                     </textarea>
+
                     <!-- cancel button -->
                     <a href="{{ url_for('the_alchemist') }}" class="btn grey darken- text-shadow">
                         cancel <i class="fas fa-times-circle right"></i>
                     </a>
-
+                    
                     <!-- submit button -->
                     <button class="btn waves-effect waves-light blue" type="submit">Update
                         <i class="fas fa-edit"></i>
                     </button>
-        
-                </div>       
-            </div>    
-        </form> 
+                </div>
+            </div>
+        </form>
     </div>
-
-    {% endif %} 
-    {% endfor %} 
+    {% endif %}
+    {% endfor %}
     <h6 class="text-darken-4 center-align margin-top">Top Reviews from United Kindom</h6>
-
     <hr>
-    
 </div>
 {% endblock %}

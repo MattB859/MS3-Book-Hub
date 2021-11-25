@@ -126,8 +126,9 @@
 
 /* sticky navbar */
 .sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
+ 
     width: 100%;
 }
   
@@ -251,7 +252,6 @@ h3 {
     position: relative;
     background: url("../images/pexels-pixabay.jpg"
     ) no-repeat right;
-    filter: saturate(s);
     background-size: cover;
     height: 800px;
 }
@@ -590,6 +590,10 @@ h6 {
         background-size: cover;
     }
 
+    .buy-button{
+        width: 100%;
+    }
+
     .button-1{
         display: none;
     }
@@ -718,7 +722,7 @@ h6 {
     }
 
     .book_reviews img{
-        width: 70%;
+        width: 100%;
     }
 
     .home {
@@ -785,7 +789,7 @@ h6 {
     .header span-1{
         font-size: 4vw;
     }
-    
+
 }
 
 /* Media query for mobile screens */

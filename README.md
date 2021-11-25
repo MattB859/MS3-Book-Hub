@@ -1,6 +1,6 @@
 <h1 align="center">The Book Hub</h1>
 
-<img align="center" src="./static/images/book-hub-site.jpg">
+<img align="center" src="./static/images/book-hub-site.png">
 
 <h1>About</h1>
 
@@ -28,6 +28,12 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 -  ###  [Features](#Features)  
     -   [Site Navigation](#Site-Navigation)
     -   [Current Features](#Current-Features)
+
+-  ###  [Testing](#Testing)
+
+-  ###  [Deployment](#Deployment)
+
+-  ###  [Credits](#Credits)
 
 
 ## User Experience (UX)
@@ -82,7 +88,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 ##  Imagery
 
--   ### Home [see here](/static/images/home-hero-img.png)
+-   ### Home [see here](/static/images/hero-img.jpg)
 
     - The background hero image shows a book shelf with a wooden background and images of books that are featured on the site.
 
@@ -104,6 +110,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     - [Edit/Delete](https://balsamiq.cloud/seqremb/pt4bgf1/r5BA5)
     - [User Profile](https://balsamiq.cloud/seqremb/pt4bgf1/rA5CC)
     - [Log Out](https://balsamiq.cloud/seqremb/pt4bgf1/rDE5E)
+    - [Account Settings](https://balsamiq.cloud/seqremb/pt4bgf1/r6B5D)
     - [Site Map](https://balsamiq.cloud/seqremb/pt4bgf1/r3295)
 
 -   ### Mobile view
@@ -122,7 +129,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -  ### User site map
 
-    <img align="center" src="./static/images/site-map-1.png">  
+    <img align="center" src="./static/images/site-map.jpg">  
 
 -   ### Current Features
 
@@ -154,13 +161,13 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
 
-###  Log In
+###  Log In  [see here](/static/images/log-in.jpg)
 
--  ### User Log In [see here](/static/images/lon-in.jpg)
+-  ### User Log In 
 
     - Frequent users can log in to accsess additional links to leave reviews on all the latest books.
 
-###  Register [see here](/static/images/register.png)
+###  Register  [see here](/static/images/register.png)
  
 -  ### Sign Up Page 
 
@@ -168,45 +175,55 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - Registered users have access to their profile page that presents a welcome greeting when logged in.
 
-###  Profile Page [see here](/static/images/profile-log-in.jpg)
+###  Profile  [see here](/static/images/my-profile.png)  
 
--   ### Welcome    
+-   ### User Profile  
 
     - Flask provides a really simple way to give feedback to a user with the flashing system. The message is shown at the top of the page and reads "log in was successful" this informs the user they are logged in.
 
 -   ### User Reviews
 
-    - All user reviews are saved to their profile page, including book names, and the date they were made. Users are also able to edit and delete their reviews.
+    - User reviews are saved to the profile page, including book names, and the date they were made. Users are also able to edit and delete their reviews.
 
-###  Review books [see here](/static/images/my-reviews.jpg)
+###  Review books  [see here](/static/images/review.png)
+
+-  ### Add Reviews 
+
+    - Users can add reviews by clicking on the book cover image or pressing the 'write a review' button below. Users are then taken to a page where they can fill out a form that will prompt them to enter a heading and written review. 
+
+###  Read Reviews  [see here](/static/images/my-reviews.jpg)
 
 -  ### Book Reviews 
 
-    - Users can add reviews by clicking on the book cover image or pressing the 'write a review' button below. Users are then taken to a page where they can fill out a form that prompts them to enter a heading and written review. 
+    - Users can read all reviews made by registered users. 
 
-    - The website has sub pages with more description of the books, and allows all registered users to view and leave reviews.
-
-    - [create reviews](/static/images/create-reviews.jpg)
-
-
-
-### Edit Reviews [see here](/static/images/edit-reviews.jpg)
+### Edit Page  [see here](/static/images/edit-reviews.jpg)
 
 -  ### Edit Reviews
 
-   - Users are able to edit their own reviews using an edit button located at the bottom of the reivew.
+   - Users are able to edit and update their reviews using the submit button located at the bottom of the review form.
 
-###  Log Out Page
+### Log Out  [see here](/static/images/log-in.jpg)
 
--  ### User Log Out
+-  ### Users Logged Out
 
-    - When a user logs out of their account a flash message is displayed that reads "You have been logged out" to inform them they are logged out.
+    - When a user logs out of their account a flash message is displayed that reads "You have been logged out" to inform the user they have logged out.
+
+### Account Settings  [see here](/static/images/account-settings.jpg)
+
+-  ### User Account 
+
+    - All users have the option to delete their own accounts where necessary.
 
 ###  Features
 
 -  ### Future Features
 
     - To add an online payment system that allows users to buy books directly from the website.
+
+    - To give users the option to add star ratings.
+
+    - To allow users to add friends to their profile.
 
 ## Database Layout
 
@@ -334,13 +351,24 @@ Heroku using the following steps...
  
 1. Create requirements.txt file using command pip3 freeze --local > requirements.txt
 2. Create a Procfile with the terminal command echo web: python app.py > Procfile and at this point checking the Procfile to make sure there is no stray line as this can cause issues when deploying to Heroku.
- 3. The new requirements file and Procfile committed to GitHub.
+3. The new requirements file and Procfile committed to GitHub.
 4. New app created in Heroku by clicking "New" and "Create New App" and giving it an original name and setting the region to closest to location.
 5. From Heroku dashboard click "Deploy" -> "Deployment Method" and select "GitHub"
 6. Search for GitHub repo and connect.
 7. In the dashboard click "Settings" -> "Reveal Config Vars"
 8. Set config vars:
 
+- ## Table
+
+    | Key           | Location        | 
+    | ------------- | -------------   | 
+    | PORT          | 5000            | 
+    | IP            | 0.0.0.0         |
+    | SECRET_KEY    | USER_SECRET_KEY |
+    | MONGO_URI     | USER_MONGO_URI  | 
+    | MONGO_DBNAME  | book_hub        |
+ 
+  
 ## GitHub Pages
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)

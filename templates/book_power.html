@@ -2,7 +2,6 @@
 {% block content %}
 
 <h3 class="text-black bold center-align">The 48 Laws Of Power</h3>
-
 <div class="container">
     <div class="row">
          <!--book image -->
@@ -13,17 +12,14 @@
             </div>    
         </div>
         <div class="col s12 l7 pull-7 description-txt">
-
                 <h4 class="description">The 48 Laws Of Power: Robert Greene
                     (The Modern Machiavellian Robert Greene, 1) Paperback –
-                    20 Nov. 2000</h4>
-
+                    20 Nov. 2000
+                </h4>
                 <a href="https://en.wikipedia.org/wiki/Robert_Greene_(American_author)" target="_blank">
                     <p class="txt-1"><span>by</span> Robert Greene</p>
                 </a>
-
                 <hr class="margin-bottom">
-                
                 <div class="col s12 m12 l12 line-height">
                     <a href="https://www.amazon.co.uk/dp/1861972784/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=842b3362559d1d22c80469eae331d600&hsa_cr_id=4263877860302&pd_rd_plhdr=t&pd_rd_r=1b44e231-efbd-4eba-83a3-58e52e915e8f&pd_rd_w=hA6Ry&pd_rd_wg=erTI4&ref_=sbx_be_s_sparkle_mcd_asin_1_img"
                         class="margin-bottom waves-effect waves-light btn-large orange darken-4" target="_blank">Buy Now</a>
@@ -49,54 +45,41 @@
                     and replete with fables and unique word sculptures. The 48 laws are
                     illustrated through the tactics, triumphs and failures of great
                     figures from the past who have wielded - or been victimised by - power.
-                </span></p>
-               
+                </span></p>       
             <a class="toggle-text" onclick="toggleText()" id="toggleBtn">Read more</a> 
-        </div>
-        
+        </div>      
     </div>
     {% if session.user %}
     <hr class="hr">
-
     <h4 class="center-align title">Create Review</h4>
-
     <!-- text form -->
     <div class="row box" id="post">
         <form class="text-body" method="POST" action="{{ url_for('book_power') }}">
             <div class="row">
-                
                 <!-- review headline  -->
                 <div class="col s12">
                     <h6>Add a headline</h6>
                     <label for="headline">comments:</label>
                     <textarea id="headline" placeholder="What's most important to know?" name="headline" minlength="5"
                         maxlength="100" required></textarea>
-                </div>
-                
+                </div>  
                 <!-- review textarea -->
                 <div class="col s12 height">
                     <h6>Add a written review</h6>
                     <label for="book_review">comments:</label>
                     
                     <textarea id="book_review" placeholder="What did you like or dislike about this book?"
-                        name="book_review" minlength="5" style="height: 150px;" maxlength="600" required></textarea>
-                        
+                        name="book_review" minlength="5" style="height: 150px;" maxlength="600" required></textarea>         
                     <!-- submit button -->
                     <button class="btn waves-effect orange darken-4 waves-light" type="submit">Submit
                         <i class="fas fa-share"></i>
-                    </button>
-                                       
+                    </button>                      
                 </div>
             </div>
         </form>
     </div>
-
-    
-
     <h6 class="text-darken-4 center-align margin-top">See All Top Reviews</h6>
-
     <hr>
-
     <div class="container post-box">
         {% for review in reviews %}   
             <div class="row">
