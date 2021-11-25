@@ -39,17 +39,6 @@ def user_admin():
     return render_template("delete_user.html", users=users)
 
 
-@app.route("/search", methods=["GET", "POST"])
-def search():
-
-    """
-    allows users to search reviews
-    """
-    query = request.form.get("query")
-    reviews = mongo.db.reviews.find({"$text": {"$search": query}})
-    return render_template("book_power.html", reviews=reviews)
-
-
 @app.route("/book_reviews")
 def book_reviews():
 

@@ -147,7 +147,7 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
     | Delete        | Book Reviews   | 
     
     
-###  Header
+###  Header  [see here](/static/images/navbar-header.png)
 
 -   ### Navigation bar
 
@@ -159,9 +159,14 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     - Jinja if statements were used to ensure only certain navigation links are visible to registered users. Unregistered users will not have accsess to review books. 
 
+### Mobile [see here](/static/images/mobile.jpg)
+
+-   ### Navigation bar
+
     - For mobile and tablet view there is a hamburger icon which will collapses once clicked on to display the navbar menu.
 
-###  Log In  [see here](/static/images/log-in.jpg)
+
+###  Log In  [see here](/static/images/log-in-img.png)
 
 -  ### User Log In 
 
@@ -173,17 +178,16 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
     -  New visitors are able to register their details by providing an email address, user name and password to create an account.
 
-    - Registered users have access to their profile page that presents a welcome greeting when logged in.
 
-###  Profile  [see here](/static/images/my-profile.png)  
+###  Profile  [see here](/static/images/welcome.png)  
 
 -   ### User Profile  
 
-    - Flask provides a really simple way to give feedback to a user with the flashing system. The message is shown at the top of the page and reads "log in was successful" this informs the user they are logged in.
+    - Registered users have access to their profile page that presents a welcome message when logged in.
 
 -   ### User Reviews
 
-    - User reviews are saved to the profile page, including book names, and the date they were made. Users are also able to edit and delete their reviews.
+    - User reviews are saved to the profile page, including book names, and the dates they were made. Users have the option to edit and delete their reviews.
 
 ###  Review books  [see here](/static/images/review.png)
 
@@ -214,6 +218,20 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 -  ### User Account 
 
     - All users have the option to delete their own accounts where necessary.
+
+### App banner  [see here](/static/images/app-download.png)
+
+-  ### App Store 
+
+    - At the bottom of every page users will find links to download the Book Hub app.
+
+### Footer  [see here](/static/images/app-download.png)
+
+-  ### Links 
+
+    - The footer contains links to social media.
+
+    - Copyright information can be found here.    
 
 ###  Features
 
@@ -340,11 +358,11 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 -  ### [Balsamiq](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process
 
-# Testing
+## Testing
 
 -  ### All Testing can be foung [here](TESTING.md) 
 
-# Deployment
+## Deployment
 
 ### The project was developed using [Gitpod](https://www.gitpod.io/) and pushed to [GitHub](https://github.com/) then deployed on
 Heroku using the following steps...    
