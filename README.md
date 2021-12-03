@@ -31,10 +31,14 @@ This is the main website for Book Hub. Book Hub is a community for book lovers t
 
 -  ###  [Testing](TESTING.md)
 
--  ###  [Deployment](#Deployment)
+-  ###  [Deployment](#GitHub-Pages)
     -   [GitHub Pages](#GitHub-Pages)
 
--  ###  [Credits](#Credits)
+-  ###  [Credits](#Code)
+    -   [Code](#Code)
+    -   [Content](#Content)
+    -   [Media](#Media)
+    
 
 ## User Experience (UX)
 
