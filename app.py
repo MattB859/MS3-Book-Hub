@@ -43,7 +43,8 @@ def user_admin():
 def book_reviews():
 
     """
-    find the list of reviews in the database to view
+    Code by the developer.
+    Find the list of reviews in the database to view
     """
     reviews = mongo.db.reviews.find()
     return render_template("book_power.html", reviews=reviews)
@@ -53,7 +54,8 @@ def book_reviews():
 def the_secret_book():
 
     """
-    find the list of reviews_2 in the database to view
+    Code by the developer.
+    Find the list of reviews_2 in the database to view
     """
     reviews = mongo.db.reviews_2.find()
     return render_template("the_secret.html", reviews=reviews)
@@ -63,7 +65,8 @@ def the_secret_book():
 def power_of_now():
 
     """
-    find the list of reviews_3 in the database to view
+    Code by the developer.
+    Find the list of reviews_3 in the database to view
     """
     reviews = mongo.db.reviews_3.find()
     return render_template("the_power_of_now.html", reviews=reviews)
@@ -73,7 +76,8 @@ def power_of_now():
 def the_alchemist():
 
     """
-    find the list of reviews_4 in the database
+    Code by the developer.
+    Find the list of reviews_4 in the database
     """
     reviews = mongo.db.reviews_4.find()
     return render_template("alchemist_book.html", reviews=reviews)
@@ -83,7 +87,8 @@ def the_alchemist():
 def edit_post():
 
     """
-    find the list of reviews in the database
+    Code by the developer.
+    Find the list of reviews in the database
     """
     reviews = mongo.db.reviews.find()
     return render_template("edit_power.html", reviews=reviews)
@@ -93,7 +98,8 @@ def edit_post():
 def edit_secret_post():
 
     """
-    find the list of reviews_2 in the database
+    Code by the developer.
+    Find the list of reviews_2 in the database
     """
     reviews = mongo.db.reviews_2.find()
     return render_template("edit_secret.html", reviews=reviews)
@@ -103,6 +109,7 @@ def edit_secret_post():
 def register():
 
     """
+    Code source from code institute tutorial.
     check if username already exists in the database
     """
     if request.method == "POST":
@@ -136,7 +143,8 @@ def register():
 def login():
 
     """
-    grab the session user's username from db
+    Code source from code institute tutorial.
+    Grab the session user's username from db
     """
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
@@ -166,7 +174,9 @@ def login():
 def profile(username):
 
     """
-    grab the session user's username from db
+    Code source from code institute tutorial and edited
+    by the developer.
+    Grab the session user's username from db
     """
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -184,7 +194,7 @@ def profile(username):
 def logout():
 
     """
-    remove user from session cookie
+    Remove user from session cookie
     """
     flash("You have been logged out")
     session.pop("user")
@@ -195,6 +205,7 @@ def logout():
 def add_review():
 
     """
+    Code by the developer.
     map routing for add reviews page
     """
     return render_template("add_review.html")
@@ -204,6 +215,7 @@ def add_review():
 def book_power():
 
     """
+    Code by the developer,
     allows users to create and add reviews
     """
     if request.method == "POST":
@@ -226,6 +238,7 @@ def book_power():
 def the_secret():
 
     """
+    Code by the developer,
     allows users to create and add reviews
     """
     if request.method == "POST":
@@ -248,6 +261,7 @@ def the_secret():
 def the_power_of():
 
     """
+    Code by the developer,
     allows users to create and add reviews
     """
     if request.method == "POST":
@@ -270,6 +284,7 @@ def the_power_of():
 def the_alchemist_book():
 
     """
+    Code by the developer,
     allows users to create and add reviews
     """
     if request.method == "POST":
@@ -292,6 +307,7 @@ def the_alchemist_book():
 def edit_alchemist(review_id):
 
     """
+    Code by the developer,
     allows users to edit their reviews
     """
     if request.method == "POST":
@@ -316,6 +332,7 @@ def edit_alchemist(review_id):
 def edit_the_power_of(review_id):
 
     """
+    Code by the developer,
     allows users to edit their reviews
     """
     if request.method == "POST":
@@ -341,6 +358,7 @@ def edit_the_power_of(review_id):
 def edit_review(review_id):
 
     """
+    Code by the developer,
     allows users to edit their book reviews
     """
     if request.method == "POST":
@@ -364,6 +382,7 @@ def edit_review(review_id):
 def edit_secret(review_id):
 
     """
+    Code by the developer,
     allows a user to edit 'the secret' book reviews
     """
     if request.method == "POST":
@@ -387,6 +406,7 @@ def edit_secret(review_id):
 def delete_review(review_id):
 
     """
+    Code by the developer,
     allows user to delete 'the 48 laws of power' reviews
     """
     mongo.db.reviews.remove({"_id": ObjectId(review_id)})
@@ -398,6 +418,7 @@ def delete_review(review_id):
 def delete_review_2(review_id):
 
     """
+    Code by the developer,
     allows user to delete 'the secret' reviews
     """
     mongo.db.reviews_2.remove({"_id": ObjectId(review_id)})
@@ -409,6 +430,7 @@ def delete_review_2(review_id):
 def delete_review_3(review_id):
 
     """
+    Code by the developer,
     allows user to delete 'the power of now' reviews
     """
     mongo.db.reviews_3.remove({"_id": ObjectId(review_id)})
@@ -420,6 +442,7 @@ def delete_review_3(review_id):
 def delete_review_4(review_id):
 
     """
+    Code by the developer,
     allows user to delete their reviews
     """
     mongo.db.reviews_4.remove({"_id": ObjectId(review_id)})
@@ -431,6 +454,7 @@ def delete_review_4(review_id):
 def delete_user(user_id):
 
     """
+    Code by the developer,
     allows users to delete their user account
     """
     if session["user"]:
